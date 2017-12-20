@@ -10,4 +10,4 @@ Copyright © 2012 European Union. This vocabulary is published under the ISA Ope
 
 The current version of the Core Business Vocabulary can be downloaded from https://joinup.ec.europa.eu/release/core-business-vocabulary/100.
 
-Any problems encountered, or suggestions for new functionalities can be submitted as issues on the DCAT-AP repository on GitHub. A short guideline for submitting issues can be found at https://github.com/SEMICeu/Core-Business-Vocabulary/wiki/Submission-guidelines.
+Any problems encountered, or suggestions for new functionalities can be submitted as issues on the Coer Business Vocabilary repository on GitHub. A short guideline for submitting issues can be found at https://github.com/SEMICeu/Core-Business-Vocabulary/wiki.
