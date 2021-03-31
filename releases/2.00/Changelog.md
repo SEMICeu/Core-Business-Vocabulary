@@ -1,4 +1,4 @@
-# Transition from CCCEV v1.0.0 to v2.0.0
+# Transition from Core Business v1.0.0 to v2.0.0
 
 ## Introduction
 
