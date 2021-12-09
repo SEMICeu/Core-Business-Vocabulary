@@ -1,0 +1,96 @@
+name: Use case
+description: Create a use case
+title: "[Use case]: "
+labels: ["use_case"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to create this use case
+  - type: input
+    id: usecase_name
+    attributes:
+      label: Use case name
+      description: Please insert the name of the use case
+    validations:
+      required: true
+  - type: dropdown
+    id: usecase_status
+    attributes:
+      label: Please insert the status of the use case
+      multiple: true
+      options:
+        - Idea
+        - Under Development
+        - Tested
+        - In application
+  - type: input
+    id: usecase_creator
+    attributes:
+      label: Use case creator
+      description: Please insert your first and last name 
+    validations:
+      required: true
+  - type: textarea
+    id: usecase_stakeholders
+    attributes:
+      label: Stakeholders
+      description: Mandatory list of stakeholders experiencing the problem. When describing the stakeholder, please be as specific as possible (e.g., citizens, service provider, base register, data consumer, data producer, data publisher, program, etc.) and avoid using the term user.
+      placeholder: List of stakeholders
+      value: "List of stakeholders"
+    validations:
+      required: true
+  - type: textarea
+    id: usecase_problem_statement
+    attributes:
+      label: Problem statement
+      description: Mandatory statement of the current situation, including a description of the problem, the stakeholders experiencing the problem, and what the stakeholder(s) are expected to supply (i.e. what contextual knowledge are they expected to have available) and/or receive to resolve the problem they are experiencing.
+      placeholder: Problem statement
+      value: "Problem statement"
+    validations:
+      required: true
+  - type: textarea
+    id: usecase_existing_approaches
+    attributes:
+      label: Existing approaches
+      description: References to standards and examples of established approaches with a potential for reuse in the Core Vocabulary.
+      placeholder: Existing approachest
+      value: "Existing approaches"
+    validations:
+      required: false
+  - type: textarea
+    id: usecase_links
+    attributes:
+      label: Links
+      description: Link list to documents, data and projects this use case refers to.
+      placeholder: Link list
+      value: "Link list"
+    validations:
+      required: false
+  - type: textarea
+    id: usecase_requirements
+    attributes:
+      label: Requirements
+      description: Mandatory information requirements suggested by this use case. Imperative sentence starting with a verb each describing an individual task in order to solve the stated problem
+      placeholder: Requirements
+      value: "Requirements"
+    validations:
+      required: true
+  - type: textarea
+    id: usecase_related
+    attributes:
+      label: Related use cases
+      description: Optional references to related local (refer to anchor identifier <nowiki>[[#Id...]]</nowiki>) and remote use cases (e.g. POE-WG UCs)
+      placeholder: Related use cases
+      value: "Related use cases"
+    validations:
+      required: false
+  - type: textarea
+    id: usecase_comments
+    attributes:
+      label: Comments
+      description: Optional section for editorial comments, suggestion and their interactive resolution
+      placeholder: Comments
+      value: "Comments"
+    validations:
+      required: false
