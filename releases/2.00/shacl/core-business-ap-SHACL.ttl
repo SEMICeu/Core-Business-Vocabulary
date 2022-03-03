@@ -161,6 +161,6 @@
  [
     shacl:class <http://www.w3.org/ns/locn#Address>;
     shacl:description "The address at which the Legal Entity is legally registered."@en;
-    shacl:name " registered address"@en;
+    shacl:name "registered address"@en;
     shacl:path <http://www.w3.org/ns/legal#registeredAddress>
   ] .
