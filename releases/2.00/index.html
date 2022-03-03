@@ -54,7 +54,7 @@
               <div class="head" role="status" id="status">
               <dl>
               <dt>Status</dt><dd>Semic Recommendation</dd>
-              <dt>Published at</dt><dd>2022-02-18</dd>
+              <dt>Published at</dt><dd>2022-03-01</dd>
               <dt>This version</dt><dd><a href="https://semiceu.github.io/Core-Business-Vocabulary/releases/2.00">https://semiceu.github.io/Core-Business-Vocabulary/releases/2.00</a></dd>
               
               
@@ -191,7 +191,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><a href="https://github.com/SEMICeu/Core-Business-Vocabulary/tree/master/releases/2.00">https://github.com/SEMICeu/Core-Business-Vocabulary/tree/master/releases/2.00</a></dd>
-              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/635e74b281c0f83d627cf1ba6637457654e2beae/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/635e74b281c0f83d627cf1ba6637457654e2beae/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/e8405e9ac525da6fefa0437422910673af1abf50/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/e8405e9ac525da6fefa0437422910673af1abf50/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues">https://github.com/SEMICeu/Core-Business-Vocabulary/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="Core-Business-Vocabulary">Core-Business-Vocabulary</a></dd>-->
 
@@ -233,7 +233,7 @@
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status of this document</h2>
                 
                 <p>
-                  This Core Vocabulary has the status of Semic Recommendation published on 2022-02-18.
+                  This Core Vocabulary has the status of Semic Recommendation published on 2022-03-01.
 	        </p>
                 
               </section>
@@ -963,23 +963,44 @@ A changelog describing the (major) changes to the previous version (1.0.0) of th
 <p>
 
             </div>
-	    
+
+            <div class="region region--no-space-top" id="uml">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">UML representation</h2>
+                (non-normative)
+                
+		<p>The UML representation from which this Core Vocabulary has been build is available <a href="./core-business-ap.eap" target="_blank">here</a>.
+		</p>
+                
+            </div>
+
+            <div class="region region--no-space-top" id="rdf">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">RDF representation</h2>
+                (non-normative)
+                
+		<p>A reusable RDF representation (in turtle) for this Core Vocabulary is retrievable <a href="./voc/core-business-ap.ttl" target="_blank">here</a>.
+		<br>
+                This RDF file contains only the terminology for which the URI is minted in the Core Vocabularies domain http://data.europa.eu/m8g.
+                Terms that are mapped on an existing URI (hence reused from other vocabularies) are not included.
+		</p>
+                
+            </div>
+
             <div class="region region--no-space-top" id="jsonld">
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
                 (non-normative)
                 
-		<p>A reusable JSON-LD context definition for this Core Vocabulary is retrievable <a href="./context/core-business-ap.jsonld" target="_blank">here</a></p>
+		<p>A reusable JSON-LD context definition for this Core Vocabulary is retrievable <a href="./context/core-business-ap.jsonld" target="_blank">here</a>.</p>
                 
             </div>
-	    <!--
+	    
             <div class="region region--no-space-top" id="shacl">
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
                 (non-normative)
                 
-		<p>A reusable SHACL template for this Core Vocabulary is retrievable at: <a href="/doc/core-vocabulary/core-business/shacl/core-business-ap_en-SHACL.ttl" target="_blank">/doc/core-vocabulary/core-business/shacl/core-business-ap_en-SHACL.ttl</a></p>
+		<p>A reusable SHACL template for this Core Vocabulary is retrievable <a href="./shacl/core-business-ap-SHACL.ttl" target="_blank">here</a>.</p>
                 
             </div>
-	    -->
+	    
           </div>
           <div class="col--3-12 col--12-12--s col--4-12--m push--1-12 push--reset--m" id="sideNav">
               <nav class="side-navigation js-sticky region" id="sideNav">
@@ -993,7 +1014,7 @@ A changelog describing the (major) changes to the previous version (1.0.0) of th
                                   <a href="#summary">Summary</a>
                               </li>
                               <li class="side-navigation__item">
-                                  <a href="#status">Status of this document</a>
+                                  <a href="#sotd">Status of this document</a>
                               </li>
                               <!--
 			      <li class="side-navigation__item">
@@ -1015,13 +1036,19 @@ A changelog describing the (major) changes to the previous version (1.0.0) of th
                                   <a href="#changelog">Changelog</a>
                               </li>
                               <li class="side-navigation__item">
-                                  <a href="#jsonld">JSON-LD Context</a>
+                                  <a href="#jsonld">UML representation</a>
                               </li>
-			      <!--
+                              <li class="side-navigation__item">
+                                  <a href="#jsonld">RDF represenatation</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#jsonld">JSON-LD context</a>
+                              </li>
+			      
                               <li class="side-navigation__item">
                                   <a href="#shacl">SHACL template</a>
                               </li>
-			      -->
+			      
                           </ul>
                       </div>
                   </div>

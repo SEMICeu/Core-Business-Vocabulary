@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns="https://data.europa.eu/m8g/xml/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://data.europa.eu/m8g/xml/" version="2.0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:cv="https://data.europa.eu/m8g/xml/">
+  <xs:element name="Identifier" type="IdentifierType"/>
+  <xs:element name="LegalEntity" type="LegalEntityType"/>
+  <xs:element name="Address" type="AddressType"/>
+  <xs:element name="FormalOrganization" type="FormalOrganizationType"/>
+  <xs:complexType name="IdentifierType">
+    <xs:sequence>
+      <xs:element name="dateOfIssue" type="http://www.w3.org/2001/XMLSchema#date" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="identifies" ref="LegalEntity" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="issuingAuthorityName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="notation" type="http://www.w3.org/2000/01/rdf-schema#Literal" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="schemeName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="schemeUri" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LegalEntityType">
+    <xs:sequence>
+      <xs:element name="alternativeName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="identifier" ref="Identifier" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="legalEntityActivity" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="legalEntityStatus" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="legalFormType" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="legalIdentifier" ref="Identifier" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="legalName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="registeredAddress" ref="Address" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element name="addressArea" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="addressId" type="http://www.w3.org/2001/XMLSchema#string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="administrativeUnitLevel1 (country)" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="administrativeUnitLevel2 (country/region/state)" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="fullAddress" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="locatorDesignator" type="http://www.w3.org/2001/XMLSchema#string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="locatorName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="postOfficeBox" type="http://www.w3.org/2001/XMLSchema#string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="postCode" type="http://www.w3.org/2001/XMLSchema#string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="postName (city)" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="thoroughfare" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FormalOrganizationType">
+    <xs:sequence/>
+  </xs:complexType>
+</xs:schema>
