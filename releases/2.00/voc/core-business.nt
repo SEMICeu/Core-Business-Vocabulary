@@ -1,0 +1,82 @@
+<https://data.europa.eu/m8g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/license> <https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic> .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/mediator> _:g47213256268580 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#label> "core-business"@en .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#label> "core-business"@nl .
+<https://data.europa.eu/m8g> <http://xmlns.com/foaf/0.1/maker> _:g47213256267920 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47213256267480 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47213256266640 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47213256265800 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47213256264960 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47213256264120 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47213256263280 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47213256262440 .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/contributor> _:g47213256277900 .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/issued> "TODO" .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/legal#LegalEntity> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/legal#legalName> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/legal#companyType> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/legal#companyStatus> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/legal#companyActivity> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/alternative> .
+<https://data.europa.eu/m8g/identifies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g> .
+<https://data.europa.eu/m8g/identifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/identifies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/adms#Identifier> .
+<https://data.europa.eu/m8g/identifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/legal#LegalEntity> .
+<http://www.w3.org/ns/legal#LegalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/legal#LegalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Legal Entity"@en .
+_:g47213256268580 <http://xmlns.com/foaf/0.1/homepage> <https://semic.eu> .
+_:g47213256268580 <http://xmlns.com/foaf/0.1/name> "Semantic Interoperability Community (SEMIC)" .
+_:g47213256267920 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47213256267920 <http://xmlns.com/foaf/0.1/firstName> "Core Vocabularies Working Group" .
+_:g47213256267480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47213256267480 <https://schema.org/affiliation> _:g47213256267100 .
+_:g47213256267480 <http://xmlns.com/foaf/0.1/firstName> "Bert" .
+_:g47213256267480 <http://xmlns.com/foaf/0.1/lastName> "Van Nuffelen" .
+_:g47213256267100 <http://xmlns.com/foaf/0.1/name> "TenForce" .
+_:g47213256266640 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47213256266640 <https://schema.org/affiliation> _:g47213256266260 .
+_:g47213256266640 <http://xmlns.com/foaf/0.1/firstName> "Emidio" .
+_:g47213256266640 <http://xmlns.com/foaf/0.1/lastName> "Stani" .
+_:g47213256266260 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47213256265800 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47213256265800 <https://schema.org/affiliation> _:g47213256265420 .
+_:g47213256265800 <http://xmlns.com/foaf/0.1/firstName> "Dimitri" .
+_:g47213256265800 <http://xmlns.com/foaf/0.1/lastName> "Schepers" .
+_:g47213256265420 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47213256264960 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47213256264960 <https://schema.org/affiliation> _:g47213256264580 .
+_:g47213256264960 <http://xmlns.com/foaf/0.1/firstName> "Pavlina" .
+_:g47213256264960 <http://xmlns.com/foaf/0.1/lastName> "Fragkou" .
+_:g47213256264580 <http://xmlns.com/foaf/0.1/name> "European Commission" .
+_:g47213256264120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47213256264120 <https://schema.org/affiliation> _:g47213256263740 .
+_:g47213256264120 <http://xmlns.com/foaf/0.1/firstName> "Michiel" .
+_:g47213256264120 <http://xmlns.com/foaf/0.1/lastName> "De Keyzer" .
+_:g47213256263740 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47213256263280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47213256263280 <https://schema.org/affiliation> _:g47213256262900 .
+_:g47213256263280 <http://xmlns.com/foaf/0.1/firstName> "Alexandre" .
+_:g47213256263280 <http://xmlns.com/foaf/0.1/lastName> "Beaufays" .
+_:g47213256262900 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47213256262440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47213256262440 <https://schema.org/affiliation> _:g47213256262060 .
+_:g47213256262440 <http://xmlns.com/foaf/0.1/firstName> "Florian" .
+_:g47213256262440 <http://xmlns.com/foaf/0.1/lastName> "Barthelemy" .
+_:g47213256262060 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47213256277900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47213256277900 <https://schema.org/affiliation> _:g47213256277520 .
+_:g47213256277900 <http://xmlns.com/foaf/0.1/firstName> "Seth" .
+_:g47213256277900 <http://xmlns.com/foaf/0.1/lastName> "van Hooland" .
+_:g47213256277520 <http://xmlns.com/foaf/0.1/name> "European Commission" .
+<http://www.w3.org/ns/legal#legalName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/legal#legalName> <http://www.w3.org/2000/01/rdf-schema#label> "legal name"@en .
+<http://www.w3.org/ns/legal#companyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/legal#companyType> <http://www.w3.org/2000/01/rdf-schema#label> "legal form type"@en .
+<http://www.w3.org/ns/legal#companyStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/legal#companyStatus> <http://www.w3.org/2000/01/rdf-schema#label> "legal entity status"@en .
+<http://www.w3.org/ns/legal#companyActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/legal#companyActivity> <http://www.w3.org/2000/01/rdf-schema#label> "legal entity activity"@en .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#label> "alternative name"@en .

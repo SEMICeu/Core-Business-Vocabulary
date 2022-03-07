@@ -1,0 +1,267 @@
+{
+  "dcterms:license": "https://creativecommons.org/licenses/by/4.0/",
+  "dcterms:mediator": {
+    "foaf:homepage": "https://semic.eu",
+    "foaf:mbox": "mailto: contact@semic.eu",
+    "foaf:name": "Semantic Interoperability Community (SEMIC)"
+  },
+  "@id": "https://data.europa.eu/m8g",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "label": {
+    "en": "core-business",
+    "nl": "core-business"
+  },
+  "authors": [
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Core Vocabularies Working Group"
+    }
+  ],
+  "editors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "TenForce"
+      },
+      "foaf:firstName": "Bert",
+      "foaf:lastName": "Van Nuffelen"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC EU Services"
+      },
+      "foaf:firstName": "Emidio",
+      "foaf:lastName": "Stani"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC EU Services"
+      },
+      "foaf:firstName": "Dimitri",
+      "foaf:lastName": "Schepers"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "European Commission"
+      },
+      "foaf:firstName": "Pavlina",
+      "foaf:lastName": "Fragkou"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC EU Services"
+      },
+      "foaf:firstName": "Michiel",
+      "foaf:lastName": "De Keyzer"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC EU Services"
+      },
+      "foaf:firstName": "Alexandre",
+      "foaf:lastName": "Beaufays"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC EU Services"
+      },
+      "foaf:firstName": "Florian",
+      "foaf:lastName": "Barthelemy"
+    }
+  ],
+  "contributors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "European Commission"
+      },
+      "foaf:firstName": "Seth",
+      "foaf:lastName": "van Hooland"
+    }
+  ],
+  "license": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic",
+  "issued": "TODO",
+  "navigation": {},
+  "publication-state": "Semic Recommendation",
+  "publication-date": "2022-03-01",
+  "classes": [],
+  "externals": [
+    {
+      "name": {
+        "en": "Legal Entity"
+      },
+      "@id": "http://www.w3.org/ns/legal#LegalEntity",
+      "@type": "rdfs:Class"
+    }
+  ],
+  "properties": [
+    {
+      "@id": "https://data.europa.eu/m8g/identifies",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The entity that is referenced by the Identifier."
+      },
+      "domain": [
+        "http://www.w3.org/ns/adms#Identifier"
+      ],
+      "range": [
+        "http://www.w3.org/ns/legal#LegalEntity"
+      ],
+      "generalization": []
+    }
+  ],
+  "externalproperties": [
+    {
+      "name": {
+        "en": "legal name"
+      },
+      "@id": "http://www.w3.org/ns/legal#legalName",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "legal form type"
+      },
+      "@id": "http://www.w3.org/ns/legal#companyType",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "legal entity status"
+      },
+      "@id": "http://www.w3.org/ns/legal#companyStatus",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "legal entity activity"
+      },
+      "@id": "http://www.w3.org/ns/legal#companyActivity",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "alternative name"
+      },
+      "@id": "http://purl.org/dc/terms/alternative",
+      "@type": "rdf:Property"
+    }
+  ],
+  "@context": {
+    "m8g": "http://data.europa.eu/m8g/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "person": "http://www.w3.org/ns/person#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "vann": "http://purl.org/vocab/vann/",
+    "sh": "http://w3.org/ns/shacl#",
+    "label": {
+      "@id": "rdfs:label",
+      "@container": "@language"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "license": {
+      "@id": "dcterms:license",
+      "@type": "@id"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "authors": {
+      "@type": "person:Person",
+      "@id": "foaf:maker"
+    },
+    "editors": {
+      "@type": "person:Person",
+      "@id": "rec:editor"
+    },
+    "contributors": {
+      "@type": "person:Person",
+      "@id": "dcterms:contributor"
+    },
+    "affiliation": {
+      "@id": "https://schema.org/affiliation"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "name": {
+      "@id": "rdfs:label",
+      "@container": "@language"
+    },
+    "description": {
+      "@id": "rdfs:comment",
+      "@container": "@language"
+    },
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "domain": {
+      "@id": "rdfs:domain",
+      "@type": "@id"
+    },
+    "range": {
+      "@id": "rdfs:range",
+      "@type": "@id"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "generalization": {
+      "@id": "rdfs:subPropertyOf",
+      "@type": "@id"
+    },
+    "externals": {
+      "@id": "rdfs:seeAlso"
+    },
+    "externalproperties": {
+      "@id": "rdfs:seeAlso"
+    },
+    "usage": {
+      "@id": "vann:usageNote",
+      "@container": "@language"
+    },
+    "parents": {
+      "@id": "rdfs:subClassOf",
+      "@type": "@id"
+    },
+    "foaf:homepage": {
+      "@id": "foaf:homepage",
+      "@type": "@id"
+    },
+    "foaf:mbox": {
+      "@id": "foaf:mbox",
+      "@type": "@id"
+    },
+    "equivalent": {
+      "@id": "owl:equivalentClass",
+      "@type": "@id"
+    }
+  }
+}

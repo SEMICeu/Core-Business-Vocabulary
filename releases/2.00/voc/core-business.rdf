@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<rdf:RDF xmlns:dc='http://purl.org/dc/terms/' xmlns:foaf='http://xmlns.com/foaf/0.1/' xmlns:ns0='http://www.w3.org/2001/02pd/rec54#' xmlns:owl='http://www.w3.org/2002/07/owl#' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#' xmlns:schemas='https://schema.org/'>
+<rdfs:Class rdf:about='http://www.w3.org/ns/legal#LegalEntity'>
+<rdfs:label xml:lang='en'>Legal Entity</rdfs:label>
+
+</rdfs:Class>
+
+<owl:ObjectProperty rdf:about='https://data.europa.eu/m8g/identifies'>
+<rdfs:domain rdf:resource='http://www.w3.org/ns/adms#Identifier' />
+
+<rdfs:isDefinedBy>
+<owl:Ontology rdf:about='https://data.europa.eu/m8g'>
+<rdfs:label xml:lang='en'>core-business</rdfs:label>
+ <rdfs:label xml:lang='nl'>core-business</rdfs:label>
+
+<dc:contributor>
+<foaf:Person rdf:nodeID='g47294290833300'>
+<foaf:firstName>Seth</foaf:firstName>
+
+<foaf:lastName>van Hooland</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g47294290832920'>
+<foaf:name>European Commission</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</dc:contributor>
+
+<dc:issued>TODO</dc:issued>
+
+<dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
+ <dc:license rdf:resource='https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic' />
+
+<dc:mediator>
+<rdf:Description rdf:nodeID='g47294290815780'>
+<foaf:homepage rdf:resource='https://semic.eu' />
+
+<foaf:name>Semantic Interoperability Community (SEMIC)</foaf:name>
+
+</rdf:Description>
+
+</dc:mediator>
+
+<rdfs:seeAlso rdf:resource='http://www.w3.org/ns/legal#LegalEntity' />
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/legal#legalName'>
+<rdfs:label xml:lang='en'>legal name</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/legal#companyType'>
+<rdfs:label xml:lang='en'>legal form type</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/legal#companyStatus'>
+<rdfs:label xml:lang='en'>legal entity status</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/legal#companyActivity'>
+<rdfs:label xml:lang='en'>legal entity activity</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://purl.org/dc/terms/alternative'>
+<rdfs:label xml:lang='en'>alternative name</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+
+<ns0:editor>
+<foaf:Person rdf:nodeID='g47294290814680'>
+<foaf:firstName>Bert</foaf:firstName>
+
+<foaf:lastName>Van Nuffelen</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g47294290814300'>
+<foaf:name>TenForce</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g47294290813840'>
+<foaf:firstName>Emidio</foaf:firstName>
+
+<foaf:lastName>Stani</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g47294290813460'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g47294290813000'>
+<foaf:firstName>Dimitri</foaf:firstName>
+
+<foaf:lastName>Schepers</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g47294290837160'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g47294290836700'>
+<foaf:firstName>Pavlina</foaf:firstName>
+
+<foaf:lastName>Fragkou</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g47294290836320'>
+<foaf:name>European Commission</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g47294290835860'>
+<foaf:firstName>Michiel</foaf:firstName>
+
+<foaf:lastName>De Keyzer</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g47294290835480'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g47294290835020'>
+<foaf:firstName>Alexandre</foaf:firstName>
+
+<foaf:lastName>Beaufays</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g47294290834640'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g47294290834180'>
+<foaf:firstName>Florian</foaf:firstName>
+
+<foaf:lastName>Barthelemy</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g47294290833800'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+
+<foaf:maker>
+<foaf:Person rdf:nodeID='g47294290815120'>
+<foaf:firstName>Core Vocabularies Working Group</foaf:firstName>
+
+</foaf:Person>
+
+</foaf:maker>
+
+</owl:Ontology>
+
+</rdfs:isDefinedBy>
+
+<rdfs:range rdf:resource='http://www.w3.org/ns/legal#LegalEntity' />
+
+</owl:ObjectProperty>
+
+</rdf:RDF>
