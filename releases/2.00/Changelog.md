@@ -45,4 +45,4 @@ The table below gives an overview of the classes (and their definitions) within 
 
 ### Definitions
 
-Changes in definitions are registered in this [this file](Changelog_definitions.md.md)
+Changes in definitions are registered in [this file](Changelog_definitions.md.md)
