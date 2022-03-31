@@ -132,7 +132,7 @@
 
  [
     shacl:class skos:Concept;
-    shacl:description "information about the viability of the current position of the legal entity."@en;
+    shacl:description "Information about the viability of the current position of the legal entity."@en;
     shacl:name "legal entity status"@en;
     shacl:path <http://www.w3.org/ns/legal#companyStatus>
   ] .

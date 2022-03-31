@@ -77,7 +77,7 @@
       </xs:element>
       <xs:element name="legalEntityStatus" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">information about the viability of the current position of the legal entity.</xs:documentation>
+          <xs:documentation xml:lang="en">Information about the viability of the current position of the legal entity.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="legalFormType" type="ConceptType" maxOccurs="unbounded" minOccurs="0">

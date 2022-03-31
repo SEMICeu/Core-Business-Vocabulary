@@ -191,7 +191,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><a href="https://github.com/SEMICeu/Core-Business-Vocabulary/tree/master/releases/2.00">https://github.com/SEMICeu/Core-Business-Vocabulary/tree/master/releases/2.00</a></dd>
-              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/2de8b027b96afbd74e924a7c8565e063fa08699a/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/2de8b027b96afbd74e924a7c8565e063fa08699a/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/72232f1d5b87a07f92d4cccfee080e9f52b9b8a0/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/72232f1d5b87a07f92d4cccfee080e9f52b9b8a0/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues">https://github.com/SEMICeu/Core-Business-Vocabulary/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="Core-Business-Vocabulary">Core-Business-Vocabulary</a></dd>-->
 
@@ -295,8 +295,8 @@ The representation of Addresses varies widely from one country's postal system t
 <br/><br/>
 This specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of properties, we add two further properties:
 <br/><br/>
-- full address (the complete address as a formatted string)
-- addressID (a unique identifier for the address)
+- full address (the complete address as a formatted string)<br/>
+- addressID (a unique identifier for the address).
 The first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href="https://www.w3.org/TR/vcard-rdf/#d4e953">vCard's label property</a>.
 <br/><br/>
 The addressID is part of the INSPIRE guidelines and provides a hook that can be used to link the Address to an alternative representation, such as vCard or OASIS xAL.
@@ -850,7 +850,7 @@ The key difference between a locator and a locator name is that the latter is a 
                             
                           
                         </td>
-                        <td property="rdfs:comment">information about the viability of the current position of the legal entity.</td>
+                        <td property="rdfs:comment">Information about the viability of the current position of the legal entity.</td>
                         <td property="skos:scopeNote">Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used.</td>
                         <td></td>
                       </tr>
