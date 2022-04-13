@@ -9,3 +9,5 @@ This specification was produced by the Core Vocabularies Working Group (Business
 The current version of the Core Business Vocabulary can be downloaded from https://semiceu.github.io/Core-Business-Vocabulary/releases/2.00/.
 
 Any problems encountered, or suggestions for new functionalities can be submitted as issues on the Core Business Vocabulary repository on GitHub. A short guideline for submitting issues can be found at https://github.com/SEMICeu/Core-Business-Vocabulary/wiki.
+
+Copyright © 2021 European Union. All material in this repository is published under the license [CC-By 4.0](https://creativecommons.org/licenses/by/4.0/), unless explicitly otherwise mentioned.
