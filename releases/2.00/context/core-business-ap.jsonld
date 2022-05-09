@@ -65,7 +65,7 @@
     },
     "Identifier.identifies": {
       "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/identifies",
+      "@id": "http://data.europa.eu/m8g/identifies",
       "@type": "@id"
     },
     "Identifier.issuingAuthorityName": {
@@ -80,7 +80,7 @@
     },
     "Identifier.schemeName": {
       "@container": "@set",
-      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Identifier.schemeUri": {
