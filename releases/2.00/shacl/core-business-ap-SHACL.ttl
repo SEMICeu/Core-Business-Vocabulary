@@ -85,7 +85,7 @@
     shacl:class <http://www.w3.org/ns/legal#LegalEntity>;
     shacl:description "The entity that is referenced by the Identifier."@en;
     shacl:name "identifies"@en;
-    shacl:path <https://data.europa.eu/m8g/identifies>
+    shacl:path <http://data.europa.eu/m8g/identifies>
   ], [
     shacl:datatype rdf:langString;
     shacl:description "The name of the agency responsible for issuing the Identifier."@en;
@@ -100,7 +100,7 @@
     shacl:datatype rdf:langString;
     shacl:description "Name of the scheme used to construct the identifier."@en;
     shacl:name "scheme name"@en;
-    shacl:path dc:conformsTo
+    shacl:path rdfs:label
   ], [
     shacl:datatype rdf:langString;
     shacl:description "URI of the scheme used to construct the identifier."@en;
