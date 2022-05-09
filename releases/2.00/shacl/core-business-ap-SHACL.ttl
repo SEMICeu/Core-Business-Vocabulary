@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://semiceu.github.io//shacl/core-business-ap-SHACL_en> <https://semiceu.github.io//shacl/core-business-ap-SHACL_enshapes> <https://semiceu.github.io//shacl/core-business-ap-SHACL_en#IdentifierShape>,
+    <https://semiceu.github.io//shacl/core-business-ap-SHACL_en#LegalEntityShape>,
     <https://semiceu.github.io//shacl/core-business-ap-SHACL_en#AddressShape>,
     <https://semiceu.github.io//shacl/core-business-ap-SHACL_en#FormalOrganizationShape> .
 
@@ -109,58 +110,47 @@
   ];
   shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
 
- [
+<https://semiceu.github.io//shacl/core-business-ap-SHACL_en#LegalEntityShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
     shacl:datatype rdf:langString;
     shacl:description "Any name by which a Legal Entity is known, other than their legal name."@en;
     shacl:name "alternative name"@en;
     shacl:path dc:alternative
-  ] .
-
- [
+  ], [
     shacl:class <http://www.w3.org/ns/adms#Identifier>;
     shacl:description "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status."@en;
     shacl:name "identifier"@en;
     shacl:path dc:identifier
-  ] .
-
- [
+  ], [
     shacl:class skos:Concept;
     shacl:description "The area of work in which the Legal Entity is engaged."@en;
     shacl:name "legal entity activity"@en;
     shacl:path <http://www.w3.org/ns/legal#companyActivity>
-  ] .
-
- [
+  ], [
     shacl:class skos:Concept;
     shacl:description "Information about the viability of the current position of the legal entity."@en;
     shacl:name "legal entity status"@en;
     shacl:path <http://www.w3.org/ns/legal#companyStatus>
-  ] .
-
- [
+  ], [
     shacl:class skos:Concept;
     shacl:description "The classification of the Legal Entity as a member of a particular group in the context of legal registration."@en;
     shacl:name "legal form type"@en;
     shacl:path <http://www.w3.org/ns/legal#companyType>
-  ] .
-
- [
+  ], [
     shacl:class <http://www.w3.org/ns/adms#Identifier>;
     shacl:description "The unambiguous structured reference assigned to the Legal Entity by the legal authority that registered it."@en;
     shacl:name "legal identifier"@en;
     shacl:path <http://www.w3.org/ns/legal#legalIdentifier>
-  ] .
-
- [
+  ], [
     shacl:datatype rdf:langString;
     shacl:description "The name under which the Legal Entity is legally registered."@en;
     shacl:name "legal name"@en;
     shacl:path <http://www.w3.org/ns/legal#legalName>
-  ] .
-
- [
+  ], [
     shacl:class <http://www.w3.org/ns/locn#Address>;
     shacl:description "The address at which the Legal Entity is legally registered."@en;
     shacl:name "registered address"@en;
     shacl:path <http://www.w3.org/ns/legal#registeredAddress>
-  ] .
+  ];
+  shacl:targetClass <http://www.w3.org/ns/legal#LegalEntity> .
