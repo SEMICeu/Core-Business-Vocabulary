@@ -43,6 +43,17 @@ The table below gives an overview of the classes (and their definitions) within 
 | D2 | Address:AdminUnitL1:Code             | Address:AdminUnitL1:Text                                            | In compliance with W3C location                     | [https://github.com/SEMICeu/Core-Location-Vocabulary/issues/12](https://github.com/SEMICeu/Core-Location-Vocabulary/issues/12) |
 | D3 | Address:AdminUnitL2:Code             | Address:AdminUnitL1:Text                                            | In compliance with W3C location                     | [https://github.com/SEMICeu/Core-Location-Vocabulary/issues/12](https://github.com/SEMICeu/Core-Location-Vocabulary/issues/12)
 
+| Nr | Core Business Vocabulary v2.0.0 | Core Business Vocabulary v2.1.0 | Rationale                                | GitHub/Change                                                                                                                              |
+| -- | ------------------------------- | ------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| C1 | \-                              | AccountingDocument              | alignment to HVD implementing regulation | [#31](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/31), [#39](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/39) |
+| P1 | \-                              | registrationDate                | alignment to HVD implementing regulation | [#31](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/31), [#39](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/39) |
+| C2 | \-                              | ContactPoint                    | alignment to BRIS directive              | [#40](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/40)                                                                       |
+| R1 | \-                              | hasMember                       | alignment to BRIS directive              | [#40](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/40)                                                                       |
+| R2 | \-                              | memberOf                        | alignment to BRIS directive              | [#40](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/40)                                                                       |
+| R3 | \-                              | headOf                          | alignment to BRIS directive              | [#40](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/40)                                                                       |
+| R4 | \-                              | subOrganizationOf               | alignment to BRIS directive              | [#40](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/40)                                                                       |
+| R5 | \-                              | hasSubOrganization              | alignment to BRIS directive              | [#40](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/40)                                                                       |
+
 ### Definitions
 
 Changes in definitions are registered in [this file](Changelog_definitions.md)
