@@ -1,0 +1,1353 @@
+{
+  "@context": {
+    "@vocab": "https://semiceu.github.io//doc/core-vocabulary/core-business",
+    "qb": "http://purl.org/linked-data/cube#",
+    "qb:codeList": {
+      "@id": "qb:codeList",
+      "@type": "@id"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdf:first": {
+      "@type": "@id"
+    },
+    "rdf:rest": {
+      "@type": "@id"
+    },
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdfs:comment": {
+      "@id": "rdfs:comment"
+    },
+    "sh": "http://www.w3.org/ns/shacl#",
+    "sh:and": {
+      "@container": "@set",
+      "@id": "sh:and",
+      "@type": "@id"
+    },
+    "sh:class": {
+      "@id": "sh:class",
+      "@type": "@id"
+    },
+    "sh:datatype": {
+      "@id": "sh:datatype",
+      "@type": "@id"
+    },
+    "sh:description": {
+      "@container": "@language",
+      "@id": "sh:description"
+    },
+    "sh:hasValue": {
+      "@id": "sh:hasValue",
+      "@type": "@id"
+    },
+    "sh:in": {
+      "@container": "@set",
+      "@id": "sh:in",
+      "@type": "@id"
+    },
+    "sh:maxCount": {
+      "@id": "sh:maxCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:minCount": {
+      "@id": "sh:minCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:name": {
+      "@container": "@language",
+      "@id": "sh:name"
+    },
+    "sh:node": {
+      "@id": "sh:node",
+      "@type": "@id"
+    },
+    "sh:nodeKind": {
+      "@id": "sh:nodeKind",
+      "@type": "@id"
+    },
+    "sh:or": {
+      "@container": "@set",
+      "@id": "sh:or",
+      "@type": "@id"
+    },
+    "sh:path": {
+      "@id": "sh:path",
+      "@type": "@id"
+    },
+    "sh:property": {
+      "@id": "sh:property",
+      "@type": "@id"
+    },
+    "sh:severity": {
+      "@id": "sh:severity",
+      "@type": "@id"
+    },
+    "sh:targetClass": {
+      "@id": "sh:targetClass",
+      "@type": "@id"
+    },
+    "sh:uniqueLang": {
+      "@id": "sh:uniqueLang",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "shapes": {
+      "@id": "rdfs:member",
+      "@type": "@id"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vl": "https://purl.eu/ns/shacl#",
+    "vl:message": {
+      "@container": "@language",
+      "@id": "vl:message"
+    }
+  },
+  "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business",
+  "shapes": [
+    {
+      "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AccountingDocumentShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://data.europa.eu/m8g/AccountingDocument"
+    },
+    {
+      "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#ContactPointShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#ContactPointShape/0c404fa56c64463c15f65878d02efa16eec065b0",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#ContactPoint%3Ahas%20email",
+          "sh:description": {
+            "en": "An electronic address through which the Contact Point can be contacted."
+          },
+          "sh:name": {
+            "en": "has email"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/email",
+          "vl:message": {
+            "en": "The expected value for has email is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#ContactPointShape/8547f9fea103d51b54d608cf10f98b003fde7378",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#ContactPoint%3Ahas%20telephone",
+          "sh:description": {
+            "en": "A telephone number through which the Contact Point can be contacted."
+          },
+          "sh:name": {
+            "en": "has telephone"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/telephone",
+          "vl:message": {
+            "en": "The expected value for has telephone is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#ContactPoint%3Acontact%20page",
+          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:description": {
+            "en": "A web page that could be used to reach out the Contact Point."
+          },
+          "sh:name": {
+            "en": "contact page"
+          },
+          "sh:path": "http://data.europa.eu/m8g/contactPage",
+          "vl:message": {
+            "en": "The range of contact page must be of type <http://xmlns.com/foaf/0.1/Document>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#ContactPointShape/a736c4b01ea7557518c0c146f3e311947ce00ccc",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#ContactPoint%3Acontact%20page",
+          "sh:description": {
+            "en": "A web page that could be used to reach out the Contact Point."
+          },
+          "sh:name": {
+            "en": "contact page"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/contactPage",
+          "vl:message": {
+            "en": "The expected value for contact page is a rdfs:Resource (URI or blank node)"
+          }
+        }
+      ],
+      "sh:targetClass": "http://data.europa.eu/m8g/ContactPoint"
+    },
+    {
+      "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/02979d67c706a6886ef581ec3af63f1c67325a24",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Aidentifies",
+          "sh:description": {
+            "en": "The entity that is referenced by the Identifier."
+          },
+          "sh:name": {
+            "en": "identifies"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/identifies",
+          "vl:message": {
+            "en": "The expected value for identifies is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Anotation",
+          "sh:description": {
+            "en": "A string of characters to uniquely identify a concept."
+          },
+          "sh:name": {
+            "en": "notation"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
+          "vl:message": {
+            "en": "The expected value for notation is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Ascheme%20URI",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "URI of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme URI"
+          },
+          "sh:path": "http://purl.org/dc/terms/conformsTo",
+          "vl:message": {
+            "en": "The range of scheme URI must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/19a8c28b6b8faa24df544d81a43730e4fa7878d0",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Aissuing%20authority%20name",
+          "sh:description": {
+            "en": "The name of the agency responsible for issuing the Identifier."
+          },
+          "sh:name": {
+            "en": "issuing authority name"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#schemeAgency",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for issuing authority name"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Ascheme%20name",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Name of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme name"
+          },
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
+          "vl:message": {
+            "en": "The range of scheme name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/51bb668356193afa459fd0a35bef46bd1f351ccf",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Ascheme%20URI",
+          "sh:description": {
+            "en": "URI of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme URI"
+          },
+          "sh:path": "http://purl.org/dc/terms/conformsTo",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for scheme URI"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/561379c5a289dfe97488bc20c49d7e80b1271b47",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Aissuing%20authority%20name",
+          "sh:description": {
+            "en": "The name of the agency responsible for issuing the Identifier."
+          },
+          "sh:name": {
+            "en": "issuing authority name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/adms#schemeAgency",
+          "vl:message": {
+            "en": "The expected value for issuing authority name is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/886a37c0a64d5093fa1e6f0352c72d6c9999de5f",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Adate%20of%20issue",
+          "sh:description": {
+            "en": "The date on which the Identifier was assigned."
+          },
+          "sh:name": {
+            "en": "date of issue"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/issued",
+          "vl:message": {
+            "en": "The expected value for date of issue is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/96725f4e9a21bc55e077ed6f796b20e9c550b021",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Aissuing%20authority%20name",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The name of the agency responsible for issuing the Identifier."
+          },
+          "sh:name": {
+            "en": "issuing authority name"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#schemeAgency",
+          "vl:message": {
+            "en": "The range of issuing authority name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Adate%20of%20issue",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "sh:description": {
+            "en": "The date on which the Identifier was assigned."
+          },
+          "sh:name": {
+            "en": "date of issue"
+          },
+          "sh:path": "http://purl.org/dc/terms/issued",
+          "vl:message": {
+            "en": "The range of date of issue must be of type <http://www.w3.org/2001/XMLSchema#date>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/b66ff3c38dc89b4412b1715099a98c00ae8118c9",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Ascheme%20name",
+          "sh:description": {
+            "en": "Name of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
+          "vl:message": {
+            "en": "The expected value for scheme name is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Aidentifies",
+          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
+          "sh:description": {
+            "en": "The entity that is referenced by the Identifier."
+          },
+          "sh:name": {
+            "en": "identifies"
+          },
+          "sh:path": "http://data.europa.eu/m8g/identifies",
+          "vl:message": {
+            "en": "The range of identifies must be of type <http://www.w3.org/ns/legal#LegalEntity>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/cc40d454ac926043491df929ab05a361896b0021",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Ascheme%20URI",
+          "sh:description": {
+            "en": "URI of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme URI"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/conformsTo",
+          "vl:message": {
+            "en": "The expected value for scheme URI is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#IdentifierShape/ce99d905817e35ff5ebdf871e45b1e25e2e85188",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Identifier%3Ascheme%20name",
+          "sh:description": {
+            "en": "Name of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme name"
+          },
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for scheme name"
+          }
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
+    },
+    {
+      "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/35a0c5bc0ce5ab144bd063c0f462c983de54579b",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "en": "The unambiguous structured reference assigned to the Legal Entity by the legal authority that registered it."
+          },
+          "sh:name": {
+            "en": "legal identifier"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#legalIdentifier",
+          "vl:message": {
+            "en": "The range of legal identifier must be of type <http://www.w3.org/ns/adms#Identifier>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/434f52bb8676f1a00f73aac6c7689aa7b812f4fa",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Ahas%20accounting%20document",
+          "sh:description": {
+            "en": "The accounting document provided by an organisation."
+          },
+          "sh:name": {
+            "en": "has accounting document"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasAccountingDocument",
+          "vl:message": {
+            "en": "The expected value for has accounting document is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/45b15ba29c98ac584fc8a034f731f0f0183997ad",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Aalternative%20name",
+          "sh:description": {
+            "en": "Any name by which a Legal Entity is known, other than their legal name."
+          },
+          "sh:name": {
+            "en": "alternative name"
+          },
+          "sh:path": "http://purl.org/dc/terms/alternative",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for alternative name"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/48fd2b59954e54cc1eccd6d9ad700094a9348522",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Aregistered%20address",
+          "sh:description": {
+            "en": "The address at which the Legal Entity is legally registered."
+          },
+          "sh:name": {
+            "en": "registered address"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/registeredAddress",
+          "vl:message": {
+            "en": "The expected value for registered address is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/4dd03ad6c360519b06f690850d3c58cc69369d1f",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20identifier",
+          "sh:description": {
+            "en": "The unambiguous structured reference assigned to the Legal Entity by the legal authority that registered it."
+          },
+          "sh:name": {
+            "en": "legal identifier"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal#legalIdentifier",
+          "vl:message": {
+            "en": "The expected value for legal identifier is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/5de7dd3454af7271c3bf268f0cf8723b4a9667ec",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20name",
+          "sh:description": {
+            "en": "The name under which the Legal Entity is legally registered."
+          },
+          "sh:name": {
+            "en": "legal name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/legal#legalName",
+          "vl:message": {
+            "en": "The expected value for legal name is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/67e99f01ae88b60e2e57fe2797aea1894ac1d63c",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Aregistration%20date",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "sh:description": {
+            "en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."
+          },
+          "sh:name": {
+            "en": "registration date"
+          },
+          "sh:path": "http://data.europa.eu/m8g/registrationDate",
+          "vl:message": {
+            "en": "The range of registration date must be of type <http://www.w3.org/2001/XMLSchema#date>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/6b95f7afa0acb115254af4469b3de83d9414e899",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20entity%20activity",
+          "sh:description": {
+            "en": "The area of work in which the Legal Entity is engaged."
+          },
+          "sh:name": {
+            "en": "legal entity activity"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal#companyActivity",
+          "vl:message": {
+            "en": "The expected value for legal entity activity is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/718ae9bbdedff1ecd80c1da376fb9ece011dd216",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20entity%20status",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "Information about the viability of the current position of the legal entity."
+          },
+          "sh:name": {
+            "en": "legal entity status"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#companyStatus",
+          "vl:message": {
+            "en": "The range of legal entity status must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Acontact%20point",
+          "sh:class": "http://data.europa.eu/m8g/ContactPoint",
+          "sh:description": {
+            "en": "The main contact information of the resource."
+          },
+          "sh:name": {
+            "en": "contact point"
+          },
+          "sh:path": "http://data.europa.eu/m8g/contactPoint",
+          "vl:message": {
+            "en": "The range of contact point must be of type <http://data.europa.eu/m8g/ContactPoint>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/88c7bac3bf428d0c0abcd15cc9806d565ab6e8b4",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20name",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The name under which the Legal Entity is legally registered."
+          },
+          "sh:name": {
+            "en": "legal name"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#legalName",
+          "vl:message": {
+            "en": "The range of legal name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/8a3a5192f0c9731ae0fb58d760e00cc2c338c8a9",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20entity%20activity",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The area of work in which the Legal Entity is engaged."
+          },
+          "sh:name": {
+            "en": "legal entity activity"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#companyActivity",
+          "vl:message": {
+            "en": "The range of legal entity activity must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/9adf9f5890592909cf3e67021ae7ab4f895a7745",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Acontact%20point",
+          "sh:description": {
+            "en": "The main contact information of the resource."
+          },
+          "sh:name": {
+            "en": "contact point"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/contactPoint",
+          "vl:message": {
+            "en": "The expected value for contact point is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/aab7e8ce8d8a6014be2c882e224b34488a2b6274",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Aregistration%20date",
+          "sh:description": {
+            "en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."
+          },
+          "sh:name": {
+            "en": "registration date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/registrationDate",
+          "vl:message": {
+            "en": "The expected value for registration date is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Aidentifier",
+          "sh:description": {
+            "en": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "en": "The expected value for identifier is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/af46641918ae164394ce82dcf9d46838a8c9a31d",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Ahas%20accounting%20document",
+          "sh:class": "http://data.europa.eu/m8g/AccountingDocument",
+          "sh:description": {
+            "en": "The accounting document provided by an organisation."
+          },
+          "sh:name": {
+            "en": "has accounting document"
+          },
+          "sh:path": "http://data.europa.eu/m8g/hasAccountingDocument",
+          "vl:message": {
+            "en": "The range of has accounting document must be of type <http://data.europa.eu/m8g/AccountingDocument>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/b690ef515b6791ab0c0cec778dc753dd45e21324",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20name",
+          "sh:description": {
+            "en": "The name under which the Legal Entity is legally registered."
+          },
+          "sh:name": {
+            "en": "legal name"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#legalName",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for legal name"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Aalternative%20name",
+          "sh:description": {
+            "en": "Any name by which a Legal Entity is known, other than their legal name."
+          },
+          "sh:name": {
+            "en": "alternative name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/alternative",
+          "vl:message": {
+            "en": "The expected value for alternative name is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/cf9602ea5422d929eccf1b7ba9f66046b2fce096",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Aregistered%20address",
+          "sh:class": "http://www.w3.org/ns/locn#Address",
+          "sh:description": {
+            "en": "The address at which the Legal Entity is legally registered."
+          },
+          "sh:name": {
+            "en": "registered address"
+          },
+          "sh:path": "http://data.europa.eu/m8g/registeredAddress",
+          "vl:message": {
+            "en": "The range of registered address must be of type <http://www.w3.org/ns/locn#Address>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Aidentifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "en": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "en": "The range of identifier must be of type <http://www.w3.org/ns/adms#Identifier>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/e397ea40389111be56f8ee88be0d4571f77cd3fc",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20entity%20status",
+          "sh:description": {
+            "en": "Information about the viability of the current position of the legal entity."
+          },
+          "sh:name": {
+            "en": "legal entity status"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal#companyStatus",
+          "vl:message": {
+            "en": "The expected value for legal entity status is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Aalternative%20name",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Any name by which a Legal Entity is known, other than their legal name."
+          },
+          "sh:name": {
+            "en": "alternative name"
+          },
+          "sh:path": "http://purl.org/dc/terms/alternative",
+          "vl:message": {
+            "en": "The range of alternative name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/legal#LegalEntity"
+    },
+    {
+      "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/006de06965023999963c4307153479c8629991d9",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Alocator%20name",
+          "sh:description": {
+            "en": "Proper noun(s) applied to the real world entity identified by the locator."
+          },
+          "sh:name": {
+            "en": "locator name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#locatorName",
+          "vl:message": {
+            "en": "The expected value for locator name is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/03690748629ed1c685fc6a365780375be09bce76",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aadministrative%20unit%20level%201",
+          "sh:description": {
+            "en": "The name of the uppermost level of the address, almost always a country."
+          },
+          "sh:name": {
+            "en": "administrative unit level 1"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for administrative unit level 1"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Athoroughfare",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The name of a passage or way through from one location to another."
+          },
+          "sh:name": {
+            "en": "thoroughfare"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#thoroughfare",
+          "vl:message": {
+            "en": "The range of thoroughfare must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aadministrative%20unit%20level%202",
+          "sh:description": {
+            "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+          },
+          "sh:name": {
+            "en": "administrative unit level 2"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#adminUnitL2",
+          "vl:message": {
+            "en": "The expected value for administrative unit level 2 is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aadministrative%20unit%20level%201",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The name of the uppermost level of the address, almost always a country."
+          },
+          "sh:name": {
+            "en": "administrative unit level 1"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
+          "vl:message": {
+            "en": "The range of administrative unit level 1 must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/3a0fcecd9e5f4e8deb4d102b9d072a4b067b773e",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Afull%20address",
+          "sh:description": {
+            "en": "The complete address written as a string."
+          },
+          "sh:name": {
+            "en": "full address"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#fullAddress",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for full address"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aaddress%20area",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The name of a geographic area that groups Addresses."
+          },
+          "sh:name": {
+            "en": "address area"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#addressArea",
+          "vl:message": {
+            "en": "The range of address area must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Alocator%20name",
+          "sh:description": {
+            "en": "Proper noun(s) applied to the real world entity identified by the locator."
+          },
+          "sh:name": {
+            "en": "locator name"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#locatorName",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for locator name"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aadministrative%20unit%20level%202",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+          },
+          "sh:name": {
+            "en": "administrative unit level 2"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#adminUnitL2",
+          "vl:message": {
+            "en": "The range of administrative unit level 2 must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/8b4c4bdd61e921f78483a3141338773693d4b2ef",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aaddress%20ID",
+          "sh:description": {
+            "en": "A globally unique identifier for each instance of an Address."
+          },
+          "sh:name": {
+            "en": "address ID"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#addressId",
+          "vl:message": {
+            "en": "The expected value for address ID is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/9097b947404def8604330ec2fc5a0bd405128b35",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Alocator%20designator",
+          "sh:description": {
+            "en": "A number or sequence of characters that uniquely identifies the locator within the relevant scope."
+          },
+          "sh:name": {
+            "en": "locator designator"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#locatorDesignator",
+          "vl:message": {
+            "en": "The expected value for locator designator is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Apost%20name",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+          },
+          "sh:name": {
+            "en": "post name"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#postName",
+          "vl:message": {
+            "en": "The range of post name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/9aaaf1750887d905949d78ac718f18c02809a28e",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aadministrative%20unit%20level%201",
+          "sh:description": {
+            "en": "The name of the uppermost level of the address, almost always a country."
+          },
+          "sh:name": {
+            "en": "administrative unit level 1"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
+          "vl:message": {
+            "en": "The expected value for administrative unit level 1 is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/9c278b09ca17b0ef710224829c0354dc4c2f9a40",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Apost%20office%20box",
+          "sh:description": {
+            "en": "A location designator for a postal delivery point at a post office, usually a number."
+          },
+          "sh:name": {
+            "en": "post office box"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#poBox",
+          "vl:message": {
+            "en": "The expected value for post office box is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/9c2d6af39a55e5e6a76f6b852bbcbada029c21af",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Afull%20address",
+          "sh:description": {
+            "en": "The complete address written as a string."
+          },
+          "sh:name": {
+            "en": "full address"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#fullAddress",
+          "vl:message": {
+            "en": "The expected value for full address is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/a9a46434014b93624ab68c9a56a5bc66a38da9a4",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Apost%20name",
+          "sh:description": {
+            "en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+          },
+          "sh:name": {
+            "en": "post name"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#postName",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for post name"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/aa9622c05f497ef1b06496716742dd5cbfc6f0c9",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Athoroughfare",
+          "sh:description": {
+            "en": "The name of a passage or way through from one location to another."
+          },
+          "sh:name": {
+            "en": "thoroughfare"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#thoroughfare",
+          "vl:message": {
+            "en": "The expected value for thoroughfare is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/ac2d62a08fd924f88a79f0e70cda9fca4d484fd2",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Athoroughfare",
+          "sh:description": {
+            "en": "The name of a passage or way through from one location to another."
+          },
+          "sh:name": {
+            "en": "thoroughfare"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#thoroughfare",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for thoroughfare"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aadministrative%20unit%20level%202",
+          "sh:description": {
+            "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+          },
+          "sh:name": {
+            "en": "administrative unit level 2"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#adminUnitL2",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for administrative unit level 2"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/b35e8c8ed2d85ea47f163d53cafca733ecb29389",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aaddress%20area",
+          "sh:description": {
+            "en": "The name of a geographic area that groups Addresses."
+          },
+          "sh:name": {
+            "en": "address area"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#addressArea",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for address area"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Apost%20code",
+          "sh:description": {
+            "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+          },
+          "sh:name": {
+            "en": "post code"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#postCode",
+          "vl:message": {
+            "en": "The expected value for post code is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Alocator%20name",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Proper noun(s) applied to the real world entity identified by the locator."
+          },
+          "sh:name": {
+            "en": "locator name"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#locatorName",
+          "vl:message": {
+            "en": "The range of locator name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Afull%20address",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The complete address written as a string."
+          },
+          "sh:name": {
+            "en": "full address"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#fullAddress",
+          "vl:message": {
+            "en": "The range of full address must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Aaddress%20area",
+          "sh:description": {
+            "en": "The name of a geographic area that groups Addresses."
+          },
+          "sh:name": {
+            "en": "address area"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#addressArea",
+          "vl:message": {
+            "en": "The expected value for address area is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Address%3Apost%20name",
+          "sh:description": {
+            "en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+          },
+          "sh:name": {
+            "en": "post name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#postName",
+          "vl:message": {
+            "en": "The expected value for post name is a Literal"
+          }
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/locn#Address"
+    },
+    {
+      "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#FormalOrganizationShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/ns/org#FormalOrganization"
+    },
+    {
+      "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#OrganizationShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#OrganizationShape/09939b0ad16b044cbce79d53c6c97efcc6ad682d",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Organization%3Ahas%20member",
+          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
+          "sh:description": {
+            "en": "Indicates an agent (person or other organization) who is a member of the subject Organization."
+          },
+          "sh:name": {
+            "en": "has member"
+          },
+          "sh:path": "http://www.w3.org/ns/org#hasMember",
+          "vl:message": {
+            "en": "The range of has member must be of type <http://xmlns.com/foaf/0.1/Agent>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#OrganizationShape/678afe5ba59824ab6bd10b0acd13799900fa2bf3",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Organization%3Asub%20organization%20of",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:description": {
+            "en": "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization."
+          },
+          "sh:name": {
+            "en": "sub organization of"
+          },
+          "sh:path": "http://www.w3.org/ns/org#subOrganizationOf",
+          "vl:message": {
+            "en": "The range of sub organization of must be of type <http://www.w3.org/ns/org#Organization>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#OrganizationShape/92c74470235a279a2d61934b4fefb7b590a20196",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Organization%3Ahas%20sub%20organization",
+          "sh:description": {
+            "en": "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an organization which is a sub-part or child of this organization."
+          },
+          "sh:name": {
+            "en": "has sub organization"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/org#hasSubOrganization",
+          "vl:message": {
+            "en": "The expected value for has sub organization is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#OrganizationShape/9a3fb2f7985ffdaf5c668c29a107a7e8ac02f1ce",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Organization%3Asub%20organization%20of",
+          "sh:description": {
+            "en": "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization."
+          },
+          "sh:name": {
+            "en": "sub organization of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/org#subOrganizationOf",
+          "vl:message": {
+            "en": "The expected value for sub organization of is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#OrganizationShape/bbecfa203e6e90f7af31994066ab46b0a8172e2a",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Organization%3Ahas%20sub%20organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:description": {
+            "en": "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an organization which is a sub-part or child of this organization."
+          },
+          "sh:name": {
+            "en": "has sub organization"
+          },
+          "sh:path": "http://www.w3.org/ns/org#hasSubOrganization",
+          "vl:message": {
+            "en": "The range of has sub organization must be of type <http://www.w3.org/ns/org#Organization>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#OrganizationShape/fa88865dff8487890f122fd7257ebca0d81ff275",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Organization%3Ahas%20member",
+          "sh:description": {
+            "en": "Indicates an agent (person or other organization) who is a member of the subject Organization."
+          },
+          "sh:name": {
+            "en": "has member"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/org#hasMember",
+          "vl:message": {
+            "en": "The expected value for has member is a rdfs:Resource (URI or blank node)"
+          }
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/org#Organization"
+    },
+    {
+      "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/20e72c692090ea97cd328f03c7904cac5e165bc2",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Ahead%20of",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:description": {
+            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
+          },
+          "sh:name": {
+            "en": "head of"
+          },
+          "sh:path": "http://www.w3.org/ns/org#headOf",
+          "vl:message": {
+            "en": "The range of head of must be of type <http://www.w3.org/ns/org#Organization>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Aname",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The noun given to the Agent."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "en": "The range of name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/3fd45972245296a986ad73d13d316ec9d1e5533f",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Amember%20of",
+          "sh:description": {
+            "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played."
+          },
+          "sh:name": {
+            "en": "member of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/org#memberOf",
+          "vl:message": {
+            "en": "The expected value for member of is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Atype",
+          "sh:description": {
+            "en": "A classification assigned to an Agent."
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/type",
+          "vl:message": {
+            "en": "The expected value for type is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/803b12f15a761ac251e073bd57d79d58d35c7186",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Ahead%20of",
+          "sh:description": {
+            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
+          },
+          "sh:name": {
+            "en": "head of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/org#headOf",
+          "vl:message": {
+            "en": "The expected value for head of is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Aname",
+          "sh:description": {
+            "en": "The noun given to the Agent."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "en": "The expected value for name is a Literal"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Aname",
+          "sh:description": {
+            "en": "The noun given to the Agent."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "en": "Only 1 value for each language is allowed for name"
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/f6a439dacfd0da602e5b64f14f007fe9ab33a467",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Amember%20of",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:description": {
+            "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played."
+          },
+          "sh:name": {
+            "en": "member of"
+          },
+          "sh:path": "http://www.w3.org/ns/org#memberOf",
+          "vl:message": {
+            "en": "The range of member of must be of type <http://www.w3.org/ns/org#Organization>."
+          }
+        }
+      ],
+      "sh:targetClass": "http://xmlns.com/foaf/0.1/Agent"
+    }
+  ]
+}

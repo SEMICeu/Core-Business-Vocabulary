@@ -1,0 +1,137 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schemas: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/ns/legal#LegalEntity> a rdfs:Class;
+  rdfs:label "Legal Entity"@en .
+
+<http://data.europa.eu/m8g/AccountingDocument> a owl:Class;
+  <http://purl.org/vocab/vann/usageNote> """Accounting documents, might include:
+<ul>
+<li>- Financial statements (incl. the list of participating interests, subsidiary undertakings and associated undertakings, their registered office address and proportion of capital held), audit reports.</li> 
+<li>- Non-financial statements, management reports and other statements or reports.</li>
+<li>- Annual financial reports.</li>
+</ul>"""@en;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g/contactPage> a owl:ObjectProperty;
+  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range foaf:Document .
+
+<http://data.europa.eu/m8g/email> a owl:DatatypeProperty;
+  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range rdfs:Literal .
+
+<http://data.europa.eu/m8g/registrationDate> a owl:DatatypeProperty;
+  rdfs:domain <http://www.w3.org/ns/legal#LegalEntity>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range xsd:date .
+
+<http://data.europa.eu/m8g/telephone> a owl:DatatypeProperty;
+  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range rdfs:Literal .
+
+<http://data.europa.eu/m8g/contactPoint> a rdf:Property;
+  rdfs:label "contact point"@en .
+
+<http://data.europa.eu/m8g/hasAccountingDocument> a rdf:Property;
+  rdfs:label "has accounting document"@en .
+
+<http://data.europa.eu/m8g/identifies> a rdf:Property;
+  rdfs:label "identifies"@en .
+
+dc:alternative a rdf:Property;
+  rdfs:label "alternative name"@en .
+
+<http://www.w3.org/ns/legal#companyActivity> a rdf:Property;
+  rdfs:label "legal entity activity"@en .
+
+<http://www.w3.org/ns/legal#companyStatus> a rdf:Property;
+  rdfs:label "legal entity status"@en .
+
+<http://www.w3.org/ns/legal#companyType> a rdf:Property;
+  rdfs:label "legal form type"@en .
+
+<http://www.w3.org/ns/legal#legalIdentifier> a rdf:Property;
+  rdfs:label "legal identifier"@en .
+
+<http://www.w3.org/ns/legal#legalName> a rdf:Property;
+  rdfs:label "legal name"@en .
+
+<http://data.europa.eu/m8g/ContactPoint> a owl:Class;
+  <http://purl.org/vocab/vann/usageNote> "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g> a owl:Ontology;
+  rdfs:label "core-business"@en,
+    "core-business"@nl;
+  dc:contributor [
+    a foaf:Person;
+    foaf:firstName "Seth";
+    foaf:lastName "van Hooland";
+    schemas:affiliation [foaf:name "European Commission"]
+  ];
+  dc:issued "TODO";
+  dc:license "https://creativecommons.org/licenses/by/4.0/",
+    <https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic>;
+  dc:mediator [
+    foaf:homepage <https://semic.eu>;
+    foaf:name "Semantic Interoperability Community (SEMIC)"
+  ];
+  rdfs:seeAlso <http://www.w3.org/ns/legal#LegalEntity>,
+    <http://www.w3.org/ns/legal#legalName>,
+    <http://www.w3.org/ns/legal#legalIdentifier>,
+    <http://www.w3.org/ns/legal#companyType>,
+    <http://www.w3.org/ns/legal#companyStatus>,
+    <http://www.w3.org/ns/legal#companyActivity>,
+    dc:alternative,
+    <http://data.europa.eu/m8g/identifies>,
+    <http://data.europa.eu/m8g/hasAccountingDocument>,
+    <http://data.europa.eu/m8g/contactPoint>;
+  <http://www.w3.org/2001/02pd/rec54#editor> [
+    a foaf:Person;
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen";
+    schemas:affiliation [foaf:name "TenForce"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Emidio";
+    foaf:lastName "Stani";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Dimitri";
+    foaf:lastName "Schepers";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Pavlina";
+    foaf:lastName "Fragkou";
+    schemas:affiliation [foaf:name "European Commission"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Michiel";
+    foaf:lastName "De Keyzer";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Alexandre";
+    foaf:lastName "Beaufays";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Florian";
+    foaf:lastName "Barthelemy";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ];
+  foaf:maker [
+    a foaf:Person;
+    foaf:firstName "Core Vocabularies Working Group"
+  ] .
