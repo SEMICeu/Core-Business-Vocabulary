@@ -401,6 +401,21 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/16a2ae1bd10ecd1b71a5d7733636716b16dec57b",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20form%20type",
+          "sh:description": {
+            "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration."
+          },
+          "sh:name": {
+            "en": "legal form type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal#companyType",
+          "vl:message": {
+            "en": "The expected value for legal form type is a rdfs:Resource (URI or blank node)"
+          }
+        },
+        {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/35a0c5bc0ce5ab144bd063c0f462c983de54579b",
           "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20identifier",
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
@@ -548,6 +563,21 @@
           "sh:path": "http://data.europa.eu/m8g/contactPoint",
           "vl:message": {
             "en": "The range of contact point must be of type <http://data.europa.eu/m8g/ContactPoint>."
+          }
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntityShape/888031c72afb09e066acb8fcd23afb4db1e22f13",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#LegalEntity%3Alegal%20form%20type",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration."
+          },
+          "sh:name": {
+            "en": "legal form type"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#companyType",
+          "vl:message": {
+            "en": "The range of legal form type must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
           }
         },
         {
@@ -1257,6 +1287,21 @@
           }
         },
         {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/322371a77364a50f049d46180f6192532eea26dc",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Atype",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "A classification assigned to an Agent."
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:path": "http://purl.org/dc/terms/type",
+          "vl:message": {
+            "en": "The range of type must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
+          }
+        },
+        {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-business#AgentShape/3fd45972245296a986ad73d13d316ec9d1e5533f",
           "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-business#Agent%3Amember%20of",
           "sh:description": {
@@ -1280,10 +1325,10 @@
           "sh:name": {
             "en": "type"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/type",
           "vl:message": {
-            "en": "The expected value for type is a Literal"
+            "en": "The expected value for type is a rdfs:Resource (URI or blank node)"
           }
         },
         {
