@@ -19,24 +19,16 @@
   rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g/contactPage> a owl:ObjectProperty;
-  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range foaf:Document .
+  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g/email> a owl:DatatypeProperty;
-  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range rdfs:Literal .
+  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g/registrationDate> a owl:DatatypeProperty;
-  rdfs:domain <http://www.w3.org/ns/legal#LegalEntity>;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range xsd:date .
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>; .
 
 <http://data.europa.eu/m8g/telephone> a owl:DatatypeProperty;
-  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range rdfs:Literal .
+  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g/contactPoint> a rdf:Property;
   rdfs:label "contact point"@en .
