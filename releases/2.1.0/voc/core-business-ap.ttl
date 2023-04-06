@@ -16,19 +16,32 @@
 <li>- Non-financial statements, management reports and other statements or reports.</li>
 <li>- Annual financial reports.</li>
 </ul>"""@en;
+  rdfs:comment "Financial and non-financial information as a result of an activity of an organisation."@en;
   rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g/contactPage> a owl:ObjectProperty;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+  rdfs:comment "A web page that could be used to reach out the Contact Point."@en;
+  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range foaf:Document .
 
 <http://data.europa.eu/m8g/email> a owl:DatatypeProperty;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+  rdfs:comment "An electronic address through which the Contact Point can be contacted."@en;
+  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range rdfs:Literal .
 
 <http://data.europa.eu/m8g/registrationDate> a owl:DatatypeProperty;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>; .
+  rdfs:comment "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."@en;
+  rdfs:domain <http://www.w3.org/ns/legal#LegalEntity>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range xsd:date .
 
 <http://data.europa.eu/m8g/telephone> a owl:DatatypeProperty;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+  rdfs:comment "A telephone number through which the Contact Point can be contacted."@en;
+  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range rdfs:Literal .
 
 <http://data.europa.eu/m8g/contactPoint> a rdf:Property;
   rdfs:label "contact point"@en .
@@ -59,6 +72,7 @@ dc:alternative a rdf:Property;
 
 <http://data.europa.eu/m8g/ContactPoint> a owl:Class;
   <http://purl.org/vocab/vann/usageNote> "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en;
+  rdfs:comment "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with."@en;
   rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g> a owl:Ontology;
