@@ -11,4 +11,4 @@ This specification was produced by the Core Vocabularies Working Group (Business
 
 Any problems encountered, or suggestions for new functionalities can be submitted as issues on the Core Business Vocabulary repository on GitHub. A short guideline for submitting issues can be found at https://github.com/SEMICeu/Core-Business-Vocabulary/wiki.
 
-Copyright © 2023 European Union. All material in this repository is published under the licence CC-BY 4.0, unless explicitly otherwise mentioned. Any problems encountered, or suggestions for new functionalities can be submitted as issues on the ADMS repository on GitHub.
+Copyright © 2023 European Union. All material in this repository is published under the licence CC-BY 4.0, unless explicitly otherwise mentioned. Any problems encountered, or suggestions for new functionalities can be submitted as issues on the CBV repository on GitHub.
