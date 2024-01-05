@@ -16,6 +16,6 @@ The table below gives an overview of the classes (and their definitions) within 
 **D** stands for changes in data types
 
 ### Terms
-| Nr | Core Business Vocabulary v2.0.0 | Core Business Vocabulary v2.1.0 | Rationale                                | GitHub/Change                                                                                                                              |
+| Nr | Core Business Vocabulary v2.1.0 | Core Business Vocabulary v2.2.0 | Rationale                                | GitHub/Change                                                                                                                              |
 | -- | ------------------------------- | ------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | P1 | \-                              | LegalFormType                   | Add property to include more types of LegalEntity. As input the code list of GLEIF can be used which can be appended upon request with national legal entities. | [#26](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/26), [#24](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/24) |
