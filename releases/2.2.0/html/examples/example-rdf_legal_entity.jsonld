@@ -1,0 +1,89 @@
+{
+  "@context": [
+  "https://semiceu.github.io/uri.semic.eu-generated/Core-Business-Vocabulary/releases/2.2.0/context/core-business-ap.jsonld",
+  {
+    "adms": "http://www.w3.org/ns/adms#",
+    "cv": "http://data.europa.eu/m8g/",
+    "ex": "http://example.com/",
+    "legal": "http://www.w3.org/ns/legal#",
+    "legal-form": "http://data.europa.eu/ih3/legal-form/",
+    "locn": "http://www.w3.org/ns/locn#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }],
+  "@graph": [
+    {
+      "@id": "ex:a",
+      "@type": "LegalEntity",
+      "cv:contactPoint": {
+        "@id": "ex:contact"
+      },
+      "cv:hasAccountingDocument": {
+        "@id": "https://consult.cbso.nbb.be/api/external/broker/public/deposits/pdf/cc971deb-e4e6-11ed-aeda-4b1195f209e0"
+      },
+      "cv:registeredAddress": {
+        "@id": "ex:address"
+      },
+      "cv:registrationDate": {
+        "@type": "xsd:date",
+        "@value": "1952-09-27"
+      },
+      "legal:companyActivity": {
+        "@id": "http://data.europa.eu/ux2/nace2.1/9499"
+      },
+      "legal:companyType": {
+        "@id": "legal-form:gl-c-3d9a96e91d2af17bc2d4ca176bb53938"
+      },
+      "legal:legalIdentifier": {
+        "@id": "ex:id"
+      },
+      "legal:legalName": [
+        {
+          "@language": "fr",
+          "@value": "Comité belge pour l'UNICEF"
+        },
+        {
+          "@language": "nl",
+          "@value": "Belgisch Comite voor UNICEF"
+        }
+      ]
+    },
+    {
+      "@id": "ex:address",
+      "@type": "Address",
+      "locn:adminUnitL1": {
+        "@language": "fr",
+        "@value": "Belgique"
+      },
+      "locn:adminUnitL2": {
+        "@language": "fr",
+        "@value": "Région de Bruxelles-Capitale"
+      },
+      "locn:fullAddress": {
+        "@language": "fr",
+        "@value": "Rue Picard 7/306, 1000 Bruxelles, Belgique"
+      },
+      "locn:locatorDesignator": "7/306",
+      "locn:postCode": "1000",
+      "locn:postName": {
+        "@language": "fr",
+        "@value": "Bruxelles"
+      },
+      "locn:thoroughfare": {
+        "@language": "fr",
+        "@value": "Rue Picard"
+      }
+    },
+    {
+      "@id": "ex:contact",
+      "@type": "ContactPoint",
+      "cv:email": "info@unicef.be",
+      "cv:telephone": "+32 2 230 59 70"
+    },
+    {
+      "@id": "ex:id",
+      "@type": "Identifier",
+      "skos:notation": "0407.562.029"
+    }
+  ]
+}

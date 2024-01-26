@@ -1,0 +1,3804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+
+
+
+<head>
+    
+	
+    <meta charset="utf-8" />
+    <title>Core Business Vocabulary</title>
+    <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+    <script class="remove">
+    // All config options at https://respec.org/docs/
+
+	var myeditors = [
+	
+	
+	
+	
+	    
+	    
+		
+		   {
+		    name: "Florian Barthelemy",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Jitse De Cock",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Emiel Dhondt",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Pavlina Fragkou",
+		      
+		      
+		    company: "European Commission",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Arthur Schiltz",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Anastasia Sofou",
+		      
+		      
+		    company: "Trasys International",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Emidio Stani",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Bert Van Nuffelen",
+		      
+		      
+		      
+		    }
+		
+		
+             
+        
+	
+		]
+
+	var myauthors = [
+	
+	
+	    
+	    
+		
+		   {
+		    name: "Core Vocabularies Working Group ",
+		      
+		      
+		      
+		    }
+		
+		
+             
+        
+	
+	
+	
+		]
+		
+	function quickreference() {
+		$('#table-quickoverview').DataTable();
+	};
+	var shaclfilepath = "./shacl/core-business-ap-SHACL.ttl" ;
+
+   
+
+    var respecConfig = {
+      postProcess: [quickreference],
+      edDraftURI: "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0",
+      latestVersion: "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.1.0/",
+      specStatus: "LD",
+      publishDate: "2024-01-31",
+      editors: myeditors,
+      authors: myauthors,
+      github: "SEMICeu/Core-Business-Vocabulary",
+      shortName: "Core Business Vocabulary",
+      xref: "web-platform",
+      doJsonLd: true,
+      logos: [{
+        src: "https://semiceu.github.io/CPOV/releases/2.1.0/html/semic-icon.png",
+        url: "https://semic.eu",
+        alt: "SEMIC",
+        width: 154,
+        height: 140,
+        id: "semic-logo",
+      },],
+      generatedSubtitle: "",
+      additionalCopyrightHolders: "",
+      localBiblio: {
+        "DXWG": {
+          "href" : "https://www.w3.org/2017/dxwg/wiki/Main_Page",
+          "title" : "Dataset Exchange Working Group",
+          "publisher" : "W3C"
+          },
+        "ISA":{
+           "href":"https://ec.europa.eu/isa/",
+           "title":"Interoperability Solutions for European Public Administrations (ISA)",
+           "publisher":"European Commission"
+          },
+        "ISA2":{
+          "href":"https://ec.europa.eu/isa2/",
+          "title":"Interoperability solutions for public administrations, businesses and citizens (ISA²)",
+          "publisher":"European Commission"
+        },
+        "SEMIC":{
+          "href":"https://joinup.ec.europa.eu/",
+          "title":"JoinUp welcomes Interoperable Europe",
+          "publisher":"European Commission"
+         },
+        "DEU" : {
+          "href":"https://data.europa.eu",
+          "title":"The official portal for European data",
+          "publisher":"European Commission"
+        },
+		"HVD" : {
+		  "href":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0138",
+		  "title":"Implementing Regulation for High Value Datasets",
+		  "publisher":"European Union"
+		},
+		"DCAT-AP-HVD" : {
+		  "href":"https://semiceu.github.io/uri.semic.eu-generated/DCAT-AP/releases/2.2.0-hvd/",
+		  "title":"Usage Guidelines of DCAT-AP for High-Value Datasets",
+		  "publisher":"European Commission"
+		},
+                "PSI" : {
+                  "href": "https://eur-lex.europa.eu/eli/dir/2019/1024/oj",
+                  "title" :  "Directive on open data and the re-use of public sector information (recast)",
+                  "publisher" : "European Union"
+                }
+      }
+    };
+
+
+
+    </script>
+    <style>
+      .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+      max-width: 100%;
+      margin: auto;
+      height: auto;
+      }
+    </style>
+     
+    <p class="copyright">
+        Copyright © 2024
+    </p>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#7ED956" />
+</head>
+<body>
+    
+
+    <!-- Start page content -->
+
+
+
+
+<section id="abstract">
+    <h2>Abstract</h2>
+The Core Business Vocabulary is a simplified, reusable and extensible data model that provides a minimum set of classes and properties for
+legal entities, that is, trading bodies that are formally registered with the relevant authority and that appear in
+business registers.
+
+
+<section id="specintro">
+    <h2>
+        Introduction
+    </h2>
+    
+	The Core Business Vocabulary provides a minimum set of classes and properties for legal entities, that is, trading bodies that are formally registered with the relevant authority and that appear in business registers.
+</p>
+
+</section>
+
+
+
+<!--  should support https://www.w3.org/2021/Process-20211102/, mostly like https://www.w3.org/2021/Process-20211102/#maturity-levels -->
+<section id="specstatus">
+    <h2>Status</h2>
+        <p>
+            This Core Vocabulary has the status SEMIC Candidate Recommendation published at 2024-01-31.
+        </p>
+        <p>
+            Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/blob/master/releases/2.2.0/Changelog.md">Changelog</a>.
+        </p>
+</section>
+
+
+
+
+<section id="speclicence">
+    <h2>
+        License
+    </h2>
+    
+        <p>
+	<!--
+            <span rel="dct:type"
+                  property="dct:title"
+                  href="http://purl.org/dc/dcmitype/Text"
+                  xmlns:dct="http://purl.org/dc/terms/">
+		  This specification </span> of <a rel="cc:attributionURL" property="cc:attributionName" href="ORGANISATION" xmlns:cc="http://creativecommons.org/ns#">ORGANISATION </a> 
+	          is published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">"CC0"</a>.
+	-->
+             Copyright © 2024 European Union. All material in this repository is published under the license CC-BY 4.0, unless explicitly otherwise mentioned.
+        </p>
+    
+</section>
+
+
+
+<section id="conformance" class="informative">
+</section>
+
+
+
+
+<section id="specterminology">
+    <h2>
+        Terminology
+    </h2>
+        <p>
+            A Core Vocabulary (CV) is a basic, reusable and extensible data specification that captures the fundamental characteristics of an entity in a context-neutral fashion. Its main objective is to provide terms to be reused in the broadest possible context.
+            More information can be found on the <a href="https://semiceu.github.io/style-guide/1.0.0/terminological-clarifications.html#sec:what-is-a-cv-specification">SEMIC Style Guide</a>.
+        </p>
+        
+This specification uses the following prefixes to shorten the URIs for readibility.
+
+        <table id="table-namespaces" class="simple">
+            <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
+            <tbody>
+            <tr><td><code>cv</code></td><td><code>http://data.europa.eu/m8g/</code></td></tr>     
+            <tr><td><code>dct</code></td><td><code>http://purl.org/dc/terms/</code></td></tr>
+            <tr><td><code>foaf</code></td><td><code>http://xmlns.com/foaf/0.1/</code></td></tr>
+            <tr><td><code>legal</code></td><td><code>http://www.w3.org/ns/legal#</code></td></tr>
+            <tr><td><code>locn</code></td><td><code>http://www.w3.org/ns/locn#</code></td></tr>
+            <tr><td><code>org</code></td><td><code>http://www.w3.org/ns/org#</code></td></tr>
+            <tr><td><code>owl</code></td><td><code>http://www.w3.org/2002/07/owl#</code></td></tr>
+            <tr><td><code>rdf</code></td><td><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></td></tr>
+            <tr><td><code>rdfs</code></td><td><code>http://www.w3.org/2000/01/rdf-schema#</code></td></tr>
+            <tr><td><code>skos</code></td><td><code>http://www.w3.org/2004/02/skos/core#</code></td></tr>
+            <tr><td><code>xsd</code></td><td><code>http://www.w3.org/2001/XMLSchema#</code></td></tr>
+            </tbody>
+        </table>
+
+
+</section>
+
+
+
+<section id="specoverview">
+    <h2>Overview</h2>
+    
+    
+    <div id="overview">
+                
+                        <p>
+                            This document describes the usage of the following main entities for a correct usage of the Core Vocabulary:
+                            <br />
+                            |
+			      <a href="#AccountingDocument">Accounting Document</a> |
+			      <a href="#Address">Address</a> |
+			      <a href="#ContactPoint">Contact Point</a> |
+			      <a href="#Identifier">Identifier</a> |
+			      <a href="#LegalEntity">Legal Entity</a> |
+                        </p>
+                        <p>
+                            The main entities are supported by:
+                            <br />
+                            |
+			      <a href="#Agent">Agent</a> |
+			      <a href="#Document">Document</a> |
+			      <a href="#FormalOrganization">Formal Organization</a> |
+			      <a href="#Organization">Organization</a> |
+                        </p>
+                
+                
+                        <p>
+                            And supported by these datatypes:
+                            <br />
+                            | <a href="#Code">Code</a> | <a href="#Date">Date</a> | <a href="#Literal">Literal</a> | <a href="#Text">Text</a> | <a href="#URI">URI</a> |
+                        </p>
+                
+    </div>
+    <div>
+        <a href="https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/html/overview.jpg"
+           target="_blank">
+            <img src="https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/html/overview.jpg"/>
+        </a>
+    </div>
+</section>
+
+
+<section>
+
+
+    
+
+<h2>
+   Main Entities
+</h2>
+The main entities are those that form the core of the Core Vocabulary.
+
+
+
+   
+        <section>
+            <h3 id="AccountingDocument">
+                <a href="http://data.europa.eu/m8g/AccountingDocument"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/m8g/AccountingDocument"
+                   data-placement="right">Accounting Document</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20AccountingDocument&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    Financial and non-financial information as a result of an activity of an organisation.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        Accounting documents, might include:
+<ul>
+<li> Financial statements (incl. the list of participating interests, subsidiary undertakings and associated undertakings, their registered office address and proportion of capital held), audit reports.</li> 
+<li> Non-financial statements, management reports and other statements or reports.</li>
+<li> Annual financial reports.</li>
+</ul>
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="Address">
+                <a href="http://www.w3.org/ns/locn#Address"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/ns/locn#Address"
+                   data-placement="right">Address</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Address&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A spatial object that in a human-readable way identifies a fixed location.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        An "address representation" as conceptually defined by the <a href="https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353">INSPIRE Address Representation data type</a>: "Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.".
+<br/><br/>
+The representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href="https://www.iso.org/standard/61710.html">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.
+<br/><br/>
+This specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of properties, we add two further properties:
+<br/><br/>
+- full address (the complete address as a formatted string)<br/>
+- addressID (a unique identifier for the address).
+<br/><br/>
+The first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href="https://www.w3.org/TR/vcard-rdf/#d4e953">vCard's label property</a>.
+<br/><br/>
+The addressID is part of the <a href="https://knowledge-base.inspire.ec.europa.eu/index_en">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href="https://www.w3.org/TR/vcard-rdf">vCard</a> or <a href="https://www.oasis-open.org/committees/ciq/ciq.html#6">OASIS xAL.</a>
+<br/><br/>
+This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabulary/">Core Location Vocabulary</a>
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Address.addressarea">address area</a>
+                            , <a href="#Address.addressID">address ID</a>
+                            , <a href="#Address.administrativeunitlevel1">administrative unit level 1</a>
+                            , <a href="#Address.administrativeunitlevel2">administrative unit level 2</a>
+                            , <a href="#Address.fulladdress">full address</a>
+                            , <a href="#Address.locatordesignator">locator designator</a>
+                            , <a href="#Address.locatorname">locator name</a>
+                            , <a href="#Address.postcode">post code</a>
+                            , <a href="#Address.postname">post name</a>
+                            , <a href="#Address.postofficebox">post office box</a>
+                            , <a href="#Address.thoroughfare">thoroughfare</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Address.addressarea"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#addressArea"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20address area%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.addressarea" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#addressArea"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#addressArea"
+                                           data-placement="right">
+                                        address area</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name of a geographic area that groups Addresses.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    This would typically be part of a city, a neighbourhood or village, e.g. Montmartre. Address area is not an administrative unit.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.addressID"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#addressId"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20address ID%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.addressID" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#addressId"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#addressId"
+                                           data-placement="right">
+                                        address ID</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A globally unique identifier for each instance of an Address.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. A number of EU countries have already implemented an ID (a UUID) in their Address Register/gazetteer, among them Denmark. OASIS xAL also includes an address identifier. It is the address Identifier that allows an address to be represented in a format other than INSPIRE whilst remaining conformant to the Core Vocabulary.
+<br/><br/>
+The <a href="https://knowledge-base.inspire.ec.europa.eu/index_en">INSPIRE</a> method of representing addresses is very detailed, designed primarily for use in databases of addresses. Whilst data that is published in full conformance with the INSPIRE data structure can be made available using the<a href="https://semiceu.github.io/Core-Location-Vocabulary/">Core Location Vocabulary</a> the reverse is not true since the Core Vocabulary allows much greater flexibility.
+<br/><br/>
+Many datasets that include address data as one piece of information about something else are likely to have that data in simpler formats. These might be tailored to the specific need of the dataset, follow a national norm, or make use of a standard like vCard.
+<br/><br/>
+To provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with INSPIRE Address Guidelines (which EU Member States are obliged to use), the  Core Location Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID.
+
+
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.administrativeunitlevel1"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#adminUnitL1"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20administrative unit level 1%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.administrativeunitlevel1" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#adminUnitL1"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#adminUnitL1"
+                                           data-placement="right">
+                                        administrative unit level 1</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name of the uppermost level of the address, almost always a country.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Best practice is to use the <a href="https://www.iso.org/standard/72482.html">ISO 3166-1 code</a> but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'France' or 'FRA' consistently throughout the dataset and avoid mixing the two. The <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country controlled vocabulary</a> from the Publications Office can be reused for this.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.administrativeunitlevel2"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#adminUnitL2"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20administrative unit level 2%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.administrativeunitlevel2" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#adminUnitL2"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#adminUnitL2"
+                                           data-placement="right">
+                                        administrative unit level 2</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Values could be a region or province, more granular than level 1.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.fulladdress"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#fullAddress"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20full address%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.fulladdress" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#fullAddress"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#fullAddress"
+                                           data-placement="right">
+                                        full address</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The complete address written as a string.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Use of this property is recommended as it will not suffer any misunderstandings that might arise through the breaking up of an address into its component parts. This property is analogous to vCard's label property but with two important differences: (1) formatting is not assumed so that, unlike vCard label, it may not be suitable to print this on an address label, (2) vCard's label property has a domain of vCard Address; the fullAddress property has no such restriction. An example of a full address is "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France".
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.locatordesignator"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#locatorDesignator"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20locator designator%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.locatordesignator" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#locatorDesignator"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#locatorDesignator"
+                                           data-placement="right">
+                                        locator designator</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A number or sequence of characters that uniquely identifies the locator within the relevant scope.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    In simpler terms, this is the building number, apartment number, etc. For an address such as "Flat 3, 17 Bridge Street", the locator is "flat 3, 17".
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.locatorname"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#locatorName"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20locator name%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.locatorname" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#locatorName"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#locatorName"
+                                           data-placement="right">
+                                        locator name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.
+<br/><br/>
+The key difference between a locator designator and a locator name is that the latter is a proper name and is unlikely to include digits. For example, "Shumann, Berlaymont" is a meeting room within the European Commission headquarters for which locator name is more appropriate than locator.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.postcode"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#postCode"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20post code%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.postcode" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#postCode"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#postCode"
+                                           data-placement="right">
+                                        post code</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example "75000".
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.postname"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#postName"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20post name%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.postname" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#postName"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#postName"
+                                           data-placement="right">
+                                        post name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Usually a city, for example "Paris".
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.postofficebox"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#poBox"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20post office box%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.postofficebox" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#poBox"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#poBox"
+                                           data-placement="right">
+                                        post office box</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A location designator for a postal delivery point at a post office, usually a number.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    INSPIRE's name for this is "postalDeliveryIdentifier" for which it uses the locator designator property with a type attribute of that name. This vocabulary separates out the Post Office Box for greater independence of technology. An example post office box number is "9383".
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.thoroughfare"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#thoroughfare"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20thoroughfare%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Address.thoroughfare" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#thoroughfare"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#thoroughfare"
+                                           data-placement="right">
+                                        thoroughfare</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name of a passage or way through from one location to another.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, "Avenue des Champs-Élysées".
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="ContactPoint">
+                <a href="http://data.europa.eu/m8g/ContactPoint"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/m8g/ContactPoint"
+                   data-placement="right">Contact Point</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20ContactPoint&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's <a href="http://schema.org/ContactPoint"> ContactPoint </a> class  that has additional properties that some implementations may find useful.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#ContactPoint.contactpage">contact page</a>
+                            , <a href="#ContactPoint.hasemail">has email</a>
+                            , <a href="#ContactPoint.hastelephone">has telephone</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="ContactPoint.contactpage"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/contactPage"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20contact page%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23ContactPoint.contactpage" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/contactPage"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/contactPage"
+                                           data-placement="right">
+                                        contact page</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Document" data-placement="right">Document</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A web page that could be used to reach out the Contact Point.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="ContactPoint.hasemail"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/email"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has email%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23ContactPoint.hasemail" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/email"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/email"
+                                           data-placement="right">
+                                        has email</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    An electronic address through which the Contact Point can be contacted.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="ContactPoint.hastelephone"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/telephone"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has telephone%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23ContactPoint.hastelephone" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/telephone"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/telephone"
+                                           data-placement="right">
+                                        has telephone</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A telephone number through which the Contact Point can be contacted.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="Identifier">
+                <a href="http://www.w3.org/ns/adms#Identifier"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/ns/adms#Identifier"
+                   data-placement="right">Identifier</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Identifier&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A structured reference that identifies an entity.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        The Identifier class is based on the <a href="https://www.gs1.org/standards/edi/gs1-un-cefact-xml/2012">UN/CEFACT</a> class of the same name and is defined under the ADMS namespace.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Identifier.dateofissue">date of issue</a>
+                            , <a href="#Identifier.identifies">identifies</a>
+                            , <a href="#Identifier.notation">notation</a>
+                            , <a href="#Identifier.schemaagency">schema agency</a>
+                            , <a href="#Identifier.schemename">scheme name</a>
+                            , <a href="#Identifier.schemeURI">scheme URI</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Identifier.dateofissue"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/issued"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20date of issue%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Identifier.dateofissue" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/issued"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/issued"
+                                           data-placement="right">
+                                        date of issue</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Date" data-placement="right">Date</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The date on which the Identifier was assigned.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.identifies"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/identifies"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20identifies%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Identifier.identifies" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/identifies"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/identifies"
+                                           data-placement="right">
+                                        identifies</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#LegalEntity" data-placement="right">Legal Entity</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The entity that is referenced by the Identifier.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.notation"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/2004/02/skos/core#notation"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20notation%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Identifier.notation" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/2004/02/skos/core#notation"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2004/02/skos/core#notation"
+                                           data-placement="right">
+                                        notation</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A string of characters to uniquely identify a concept.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.schemaagency"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/adms#schemeAgency"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20schema agency%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Identifier.schemaagency" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/adms#schemeAgency"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/adms#schemeAgency"
+                                           data-placement="right">
+                                        schema agency</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name of the agency that issued the identifier.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.schemename"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/2000/01/rdf-schema#label"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20scheme name%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Identifier.schemename" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/2000/01/rdf-schema#label"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2000/01/rdf-schema#label"
+                                           data-placement="right">
+                                        scheme name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Name of the scheme used to construct the identifier.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.schemeURI"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/conformsTo"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20scheme URI%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Identifier.schemeURI" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/conformsTo"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/conformsTo"
+                                           data-placement="right">
+                                        scheme URI</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#URI" data-placement="right">URI</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    URI of the scheme used to construct the identifier.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="LegalEntity">
+                <a href="http://www.w3.org/ns/legal#LegalEntity"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/ns/legal#LegalEntity"
+                   data-placement="right">Legal Entity</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20LegalEntity&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A self-employed person, company, or organization that has legal rights and obligations.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        A Legal Entity able to transact business, typically registered with a body able to confer legal status such as a national business register. It is able to trade, is legally liable for its actions, accounts, tax affairs etc. This makes Legal Entities distinct from the concept of organisations or groups. Many organisations exist that are not Legal Entities, yet to the outside world they have staff, hierarchies, locations etc. Other organisations exist that are an umbrella for several Legal Entities (universities are often good examples of this). This vocabulary is concerned solely with registered Legal Entities and does not attempt to cover all possible trading bodies.
+                    </dd>
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#FormalOrganization">Formal Organization</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#LegalEntity.alternativename">alternative name</a>
+                            , <a href="#LegalEntity.contactpoint">contact point</a>
+                            , <a href="#LegalEntity.hasaccountingdocument">has accounting document</a>
+                            , <a href="#LegalEntity.identifier">identifier</a>
+                            , <a href="#LegalEntity.legalentityactivity">legal entity activity</a>
+                            , <a href="#LegalEntity.legalentitystatus">legal entity status</a>
+                            , <a href="#LegalEntity.legalformtype">legal form type</a>
+                            , <a href="#LegalEntity.legalidentifier">legal identifier</a>
+                            , <a href="#LegalEntity.legalname">legal name</a>
+                            , <a href="#LegalEntity.registeredaddress">registered address</a>
+                            , <a href="#LegalEntity.registrationdate">registration date</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="LegalEntity.alternativename"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/alternative"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20alternative name%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.alternativename" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/alternative"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/alternative"
+                                           data-placement="right">
+                                        alternative name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Any name by which a Legal Entity is known, other than their legal name.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Some jurisdictions recognise concepts such as a trading name or alternative forms of a legal entity's name. The alternative name property can be used to record such names but should not be used to record translations of the primary legal name. Where more than one name exists and where they have equal standing but are expressed in different languages, identify the language used in each of the multiple names.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.contactpoint"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/contactPoint"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20contact point%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.contactpoint" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/contactPoint"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/contactPoint"
+                                           data-placement="right">
+                                        contact point</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#ContactPoint" data-placement="right">Contact Point</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The main contact information of the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.hasaccountingdocument"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/hasAccountingDocument"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has accounting document%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.hasaccountingdocument" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/hasAccountingDocument"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/hasAccountingDocument"
+                                           data-placement="right">
+                                        has accounting document</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#AccountingDocument" data-placement="right">Accounting Document</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The accounting document provided by an organisation.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.identifier"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/adms#identifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20identifier%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.identifier" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/adms#identifier"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/adms#identifier"
+                                           data-placement="right">
+                                        identifier</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Identifier" data-placement="right">Identifier</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalentityactivity"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal#companyActivity"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal entity activity%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.legalentityactivity" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal#companyActivity"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal#companyActivity"
+                                           data-placement="right">
+                                        legal entity activity</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The area of work in which the Legal Entity is engaged.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href="https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href="https://resources.companieshouse.gov.uk/sic/">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2">NACE</a>.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalentitystatus"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal#companyStatus"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal entity status%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.legalentitystatus" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal#companyStatus"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal#companyStatus"
+                                           data-placement="right">
+                                        legal entity status</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Information about the viability of the current position of the legal entity.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalformtype"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal#companyType"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal form type%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.legalformtype" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal#companyType"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal#companyType"
+                                           data-placement="right">
+                                        legal form type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The classification of the Legal Entity as a member of a particular group in the context of legal registration.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    To indicate the legal form type of a Legal Entity the <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href="https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list">GLEIF</a> can be used.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalidentifier"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal#legalIdentifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal identifier%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.legalidentifier" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal#legalIdentifier"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal#legalIdentifier"
+                                           data-placement="right">
+                                        legal identifier</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Identifier" data-placement="right">Identifier</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The unambiguous structured reference assigned to the Legal Entity by the legal authority that registered it.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Legal Entity must have a unique identification number, allowing it to be clearly identified in communication across business registers.
+
+The details of the registration are provided as properties of the Identifier class. The Core vocabulary sets no restriction on the type of legal identifier. In many countries, the business register's identifier is the relevant data point.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalname"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal#legalName"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal name%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.legalname" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal#legalName"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal#legalName"
+                                           data-placement="right">
+                                        legal name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name under which the Legal Entity is legally registered.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    The legal name is different from the alternative (trade) name which is a pseudonym used by companies that do not operate under their registered company name.
+A business might have more than one legal name, particularly in countries with more than one official language. In such cases, and where the encoding technology allows, the language of the string should be identified.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.registeredaddress"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/registeredAddress"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20registered address%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.registeredaddress" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/registeredAddress"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/registeredAddress"
+                                           data-placement="right">
+                                        registered address</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Address" data-placement="right">Address</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The address at which the Legal Entity is legally registered.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.registrationdate"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/registrationDate"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20registration date%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23LegalEntity.registrationdate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/registrationDate"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/registrationDate"
+                                           data-placement="right">
+                                        registration date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Date" data-placement="right">Date</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
+</section>
+
+<section>
+<h2>
+   Supportive Entities
+</h2>
+The supportive entities are supporting the main entities in the Core Vocabulary. 
+They are included in the Core Vocabulary because they form the range of properties.
+
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="Agent">
+                <a href="http://xmlns.com/foaf/0.1/Agent"
+                   data-toggle="tooltip"
+                   data-content="http://xmlns.com/foaf/0.1/Agent"
+                   data-placement="right">Agent</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Agent&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    Entity that is able to carry out action.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        In compliance with the description from <a href="http://xmlns.com/foaf/spec/">FOAF</a>, an Agent is considered as any entity that is able to carry out actions. The Agent class acts as a generic element which can be further specified by implementers for their usages, for example by defining the Person class from <a href="https://github.com/SEMICeu/Core-Person-Vocabulary">the Core Person Vocabulary</a> or Organization from <a href="https://www.w3.org/TR/vocab-org/">W3C's Organization Ontology</a> as a subclasses of Agent. This Person or Organization can then issue a certain Requirement or be concerned by an Evidence provided.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Agent.headof">head of</a>
+                            , <a href="#Agent.memberof">member of</a>
+                            , <a href="#Agent.name">name</a>
+                            , <a href="#Agent.type">type</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Agent.headof"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/org#headOf"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20head of%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Agent.headof" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/org#headOf"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/org#headOf"
+                                           data-placement="right">
+                                        head of</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Organization" data-placement="right">Organization</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates that a person (or other agent) is the leader or formal head of the Organization.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Agent.memberof"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/org#memberOf"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20member of%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Agent.memberof" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/org#memberOf"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/org#memberOf"
+                                           data-placement="right">
+                                        member of</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Organization" data-placement="right">Organization</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Note that the choice of property name is not meant to limit the property to only formal membership arrangements, it is also intended to cover related concepts such as affiliation or other involvement in the organization. Extensions can specialize this relationship to indicate particular roles within the organization or more nuanced relationships to the organization.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Agent.name"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20name%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Agent.name" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/title"
+                                           data-placement="right">
+                                        name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The noun given to the Agent.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Agent.type"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/type"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20type%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Agent.type" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/type"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/type"
+                                           data-placement="right">
+                                        type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A classification assigned to an Agent.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="Document">
+                <a href="http://xmlns.com/foaf/0.1/Document"
+                   data-toggle="tooltip"
+                   data-content="http://xmlns.com/foaf/0.1/Document"
+                   data-placement="right">Document</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Document&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A self-contained collection of information in a readable format.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        In alignment with <a href="http://xmlns.com/foaf/spec/">FOAF</a>, there is no distinction between physical and electronic documents, or between copies of a work and the abstraction those copies embody.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="FormalOrganization">
+                <a href="http://www.w3.org/ns/org#FormalOrganization"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/ns/org#FormalOrganization"
+                   data-placement="right">Formal Organization</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20FormalOrganization&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        Examples include a corporation, charity, government or church.
+                    </dd>
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#Organization">Organization</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="Organization">
+                <a href="http://www.w3.org/ns/org#Organization"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/ns/org#Organization"
+                   data-placement="right">Organization</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Organization&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#Agent">Agent</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Organization.hasmember">has member</a>
+                            , <a href="#Organization.hassuborganization">has sub organization</a>
+                            , <a href="#Organization.suborganizationof">sub organization of</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Organization.hasmember"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/org#hasMember"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has member%20in%20Organization&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Organization.hasmember" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/org#hasMember"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/org#hasMember"
+                                           data-placement="right">
+                                        has member</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Agent" data-placement="right">Agent</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates an agent (person or other organization) who is a member of the subject Organization.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Organization.hassuborganization"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/org#hasSubOrganization"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has sub organization%20in%20Organization&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Organization.hassuborganization" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/org#hasSubOrganization"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/org#hasSubOrganization"
+                                           data-placement="right">
+                                        has sub organization</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Organization" data-placement="right">Organization</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an organization which is a sub-part or child of this organization.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Organization.suborganizationof"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/org#subOrganizationOf"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20sub organization of%20in%20Organization&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0%23Organization.suborganizationof" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/org#subOrganizationOf"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/org#subOrganizationOf"
+                                           data-placement="right">
+                                        sub organization of</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Organization" data-placement="right">Organization</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+</section>
+
+    <section>
+        <h2>
+            Datatypes
+        </h2>
+
+	The following datatypes are used within this specification.
+
+	<table class="data-table simple" id="table-mandatory-classes">
+	    <thead>
+		<tr class="data-table__header">
+		    <th class="data-table__header-title--sortable">
+		    </th>
+		    <th class="data-table__header-title--sortable data-table__header-title--sortable-active">
+			Class
+		    </th>
+		    <th class="data-table__header-title--sortable">
+			Definition
+		    </th>
+		</tr>
+	    </thead>
+	    <tbody class="supertype">
+            
+		<tr><td>
+                   <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Code&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="Code">
+                        <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/2004/02/skos/core#Concept"
+                           data-placement="right">Code</a>
+                    </div>
+                
+		</td><td>
+                    An idea or notion; a unit of thought.
+		</td></tr>
+		<tr><td>
+                   <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Date&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="Date">
+                        <a href="http://www.w3.org/2001/XMLSchema#date"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/2001/XMLSchema#date"
+                           data-placement="right">Date</a>
+                    </div>
+                
+		</td><td>
+                    Date represents top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day, up to but not including the beginning moment of the next day).  For non-timezoned values, the top-open intervals disjointly cover the non-timezoned timeline, one per day.  For timezoned values, the intervals begin at every minute and therefore overlap.
+		</td></tr>
+		<tr><td>
+                   <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Literal&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="Literal">
+                        <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/2000/01/rdf-schema#Literal"
+                           data-placement="right">Literal</a>
+                    </div>
+                
+		</td><td>
+                    The class of literal values, eg. textual strings and integers.
+		</td></tr>
+		<tr><td>
+                   <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Text&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="Text">
+                        <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                           data-placement="right">Text</a>
+                    </div>
+                
+		</td><td>
+                    The text data type is a combination of a string and a language identifier.
+		</td></tr>
+		<tr><td>
+                   <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Uri&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="URI">
+                        <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/2001/XMLSchema#anyURI"
+                           data-placement="right">URI</a>
+                    </div>
+                
+		</td><td>
+                    anyURI represents an Internationalized Resource Identifier Reference (IRI).  An anyURI value can be absolute or relative, and may have an optional fragment identifier (i.e., it may be an IRI Reference).
+		</td></tr>
+            </tbody>
+	</table>
+
+
+</section>
+
+<!--
+<section class="informative">
+    <h2 aria-level="1" role="heading" id="h2_sotd">
+        JSON-LD context
+    </h2>
+    <div class="region region--no-space-top" id="jsonld">
+         (non normative)
+        
+            <p>
+                A reusable JSON-LD context definition for this Core Vocabulary is retrievable at: <a href="/Core-Business-Vocabulary/releases/2.2.0/context/core-business-ap.jsonld"
+    target="_blank">/Core-Business-Vocabulary/releases/2.2.0/context/core-business-ap.jsonld</a>
+            </p>
+        
+    </div>
+</section>
+<section class="informative">
+    <h2 aria-level="1" role="heading" id="h2_sotd">
+        SHACL template
+    </h2>
+    <div class="region region--no-space-top" id="shacl">
+         (non normative)
+        
+            <p>
+                A reusable SHACL template for this Core Vocabulary is retrievable at: <a href="/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl"
+    target="_blank">/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl</a>
+            </p>
+        
+    </div>
+</section>
+-->
+
+<section class="informative">
+    <h2> Examples </h2>
+        
+<div class="h3 examples" id="example-rdf_legal_entity">Example Legal Entity</div>
+
+</section>
+
+
+
+
+<section class="informative">
+	<h2>Usage Guidelines</h2>
+    <section class="informative">
+  <h2>Support for implementation</h2>
+
+The following section provides support for implementing the Core Business Vocabulary.
+<p/>
+
+<h3>JSON-LD context file</h3>
+
+One common technical question is the format in which the data is being exchanged. 
+For conformance with the Core Business Vocabulary, it is not mandatory that this happens in a RDF serialisation, but the exhanged format SHOULD be unambiguously be transformable into RDF.
+For the format JSON, a popular format to exchange data between systems, SEMIC provides a <a href="./context/core-business-ap.jsonld">JSON-LD context file</a>. 
+JSON-LD is a W3C Recommendation [[[json-ld11]]] that provided a standard approach to interpret JSON structures as RDF.
+The provided JSON-LD context file can be used by implementers.
+This JSON-LD context is not normative, i.e. other JSON-LD contexts are allowed.
+<p/>
+The JSON-LD context file downloadable <a href="./context/core-business-ap.jsonld">here</a>.
+<p/>
+
+<h3>Validation</h3>
+
+To verify if the data is (technically) conformant to the Core Business Vocabulary, the exchanged data can be validated using the provided SHACL shapes. 
+SHACL is a W3C Recommendation to express constraints on a RDF knowledge graph. 
+<p/>
+To support the check whether or not a catalogue satisfies the expressed constraints in this Core Vocabulary, the constraints in this specification are expressed using SHACL [[shacl]].
+Each constraint in this specification that could be converted into a SHACL expression has been included.
+As such this collection of SHACL expressions that can be used to build a validation check for data. 
+<p/>
+It is up to the implementers to define the validation they expect.
+Each implementation happens within a context, and that context is beyond the SHACL expressions here.
+<p/>
+The shapes can be found <a href="./shacl/core-business-ap-SHACL.ttl">here</a>.
+
+<!--
+<h3>Mapping</h3>
+A mapping towards Schema.org can be found <a href="https://github.com/SEMICeu/Semantic-Mappings/tree/main/Core%20Location">here</a>
+<p/>
+-->
+
+</section>
+    <section class="informative">
+<h2>Governance</h2>
+
+<h3>Versioning governance</h3>
+All specifications produced in SEMIC will follow the versioning rule described by the SEMIC Style Guide rule 
+<a href="https://semiceu.github.io/style-guide/1.0.0/gc-publication-conventions.html#sec:pc-r3">PC-R3</a>.
+In case a SEMIC asset is deprecated the asset will remain available through its PURI.
+<p/>
+The serialisation will have:
+<ul>
+<li>a dct:isReplacedBy referencing the new assets used instead and</li>
+<li> an adms:status  indicating its deprecated <a href="http://publications.europa.eu/resource/authority/concept-status/DEPRECATED">status</a>.</li>
+</ul>
+<p/>
+
+<h3>Governance requirements for re-used assets</h3>
+In order to adhere to the SEMIC Style Guide rule <a href="https://semiceu.github.io/style-guide/1.0.0/gc-general-conventions.html#sec:gc-r2">GC-R2</a>
+ a specification should have quality and governance standards for the assets that are being reused.
+<p/>
+In order for an asset to be considered for reuse within a SEMIC specification it can be requested by a community member or it requires to adhere to the following requirements:
+<ul>
+<li> The asset is part of a recommendation by a major standards body or an EU institution.</li>
+<li> The asset is actively being maintained.</li>
+</ul>
+<p/>
+
+After being taken into consideration the asset will be validated in three steps:
+<ul>
+<li> Syntax validation will be performed on the relevant artefacts.</li>
+<li> Constraint validation will be performed on the relevant artefacts.</li>
+<li> The PURI will be validated.</li>
+</ul>
+Once considered and validated an asset can be adopted if it is approved by the community.
+<p/>
+
+<h3>Lexicalisation rules</h3>
+
+In order to adhere to the SEMIC Style Guide rule <a href="https://semiceu.github.io/style-guide/1.0.0/gc-semantic-conventions.html#sec:sc-r3">SC-R3</a> a specification requires formal lexicalisation rules.
+The Style Guide proposes two options either by using RDFS or SKOS lexicalisation.
+<p/>
+SEMIC uses and will use the RDFS lexicalisation for all of its specifications. More specifically:
+<ul>
+<li> rdfs:label is used to provide a human-readable version of a resource's name.</li>
+<li> The usage of certain resource can be clarified in vann:usageNote.</li>
+</ul>
+
+</section>
+</section>
+ 
+
+
+<section class="informative">
+	<h2>Mappings</h2>
+    A mapping towards Schema.org can be found <a href="https://github.com/SEMICeu/Semantic-Mappings/tree/main/Core%20Business">here</a>
+</section>
+ 
+
+
+
+<section id="quick-reference" class="appendix">
+
+<h2>Quick Reference of Classes and Properties</h2>
+
+This section provides a condensed tabular overview of the mentioned classes and properties in this specification.
+The properties are indicated as <it>mandatory, recommended, optional</it> and <it>deprecated</it>. These terms have the following meaning.
+<ul>
+<li>Mandatory property: a receiver MUST be able to process the information for that property; a sender MUST provide the information for that property.</li>
+<li>Recommended property: a receiver MUST be able to process the information for that property; a sender SHOULD provide the information for that property if it is available.</li>
+<li>Optional property: a receiver MUST be able to process the information for that property; a sender MAY provide the information for that property but is not obliged to do so.</li>
+<li>Deprecated property: a receiver SHOULD be able to process information about instances of that property; a sender SHOULD NOT provide the information about instances of that property.</li>
+</ul>
+
+<table id="table-quickoverview" class="simple" style="width:100%; table-layout: fixed; word-wrap:break-word;">
+	<thead>
+		<tr><th>Class</th><th>Class IRI</th><th>Property Type</type><th>Property</th><th>Property IRI</th></tr>
+	</thead>
+	<tbody>
+		
+				
+					<tr>
+						<td><a href="#AccountingDocument">Accounting Document</a></td>
+						<td><div class="shorten">http://data.europa.eu/m8g/AccountingDocument</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.addressarea">address area </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#addressArea</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.addressID">address ID </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#addressId</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.administrativeunitlevel1">administrative unit level 1 </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#adminUnitL1</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.administrativeunitlevel2">administrative unit level 2 </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#adminUnitL2</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.fulladdress">full address </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#fullAddress</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.locatordesignator">locator designator </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#locatorDesignator</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.locatorname">locator name </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#locatorName</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.postcode">post code </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#postCode</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.postname">post name </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#postName</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.postofficebox">post office box </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#poBox</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.thoroughfare">thoroughfare </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#thoroughfare</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Agent">Agent</a></td>
+								<td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+								<td></td>
+								<td><a href="#Agent.headof">head of </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#headOf</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Agent">Agent</a></td>
+								<td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+								<td></td>
+								<td><a href="#Agent.memberof">member of </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#memberOf</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Agent">Agent</a></td>
+								<td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+								<td></td>
+								<td><a href="#Agent.name">name </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Agent">Agent</a></td>
+								<td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+								<td></td>
+								<td><a href="#Agent.type">type </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/type</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#ContactPoint">Contact Point</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></td>
+								<td></td>
+								<td><a href="#ContactPoint.contactpage">contact page </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/contactPage</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#ContactPoint">Contact Point</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></td>
+								<td></td>
+								<td><a href="#ContactPoint.hasemail">has email </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/email</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#ContactPoint">Contact Point</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></td>
+								<td></td>
+								<td><a href="#ContactPoint.hastelephone">has telephone </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/telephone</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					<tr>
+						<td><a href="#Document">Document</a></td>
+						<td><div class="shorten">http://xmlns.com/foaf/0.1/Document</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				
+			</tr>
+		
+				
+					<tr>
+						<td><a href="#FormalOrganization">Formal Organization</a></td>
+						<td><div class="shorten">http://www.w3.org/ns/org#FormalOrganization</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.dateofissue">date of issue </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/issued</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.identifies">identifies </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/identifies</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.notation">notation </a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#notation</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.schemaagency">schema agency </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#schemeAgency</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.schemename">scheme name </a></td>
+								<td><div class="shorten">http://www.w3.org/2000/01/rdf-schema#label</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.schemeURI">scheme URI </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/conformsTo</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.alternativename">alternative name </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/alternative</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.contactpoint">contact point </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/contactPoint</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.hasaccountingdocument">has accounting document </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/hasAccountingDocument</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.identifier">identifier </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#identifier</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalentityactivity">legal entity activity </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#companyActivity</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalentitystatus">legal entity status </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#companyStatus</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalformtype">legal form type </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#companyType</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalidentifier">legal identifier </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#legalIdentifier</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalname">legal name </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#legalName</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.registeredaddress">registered address </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/registeredAddress</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.registrationdate">registration date </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/registrationDate</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Organization">Organization</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#Organization</div></td>
+								<td></td>
+								<td><a href="#Organization.hasmember">has member </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#hasMember</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Organization">Organization</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#Organization</div></td>
+								<td></td>
+								<td><a href="#Organization.hassuborganization">has sub organization </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#hasSubOrganization</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Organization">Organization</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#Organization</div></td>
+								<td></td>
+								<td><a href="#Organization.suborganizationof">sub organization of </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#subOrganizationOf</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+	<tbody>
+</table>
+
+
+   
+   
+
+
+<!-- This must be at the end of the template, to ensure that the iterator properly works -->
+    <script defer>
+
+
+	    var prefixes = [ 
+{'pref':'adms:', 'ns': 'http://www.w3.org/ns/adms#'},
+{'pref':'dcat:', 'ns': 'http://www.w3.org/ns/dcat#'},
+{'pref':'dcatap:', 'ns': 'http://data.europa.eu/r5r/'},
+{'pref':'dct:', 'ns': 'http://purl.org/dc/terms/'},
+{'pref':'dctype:', 'ns': 'http://purl.org/dc/dcmitype/'},
+{'pref':'cpsv:', 'ns': 'http://purl.org/vocab/cpsv#'},
+{'pref':'foaf:', 'ns': 'http://xmlns.com/foaf/0.1/'},
+{'pref':'locn:', 'ns': 'http://www.w3.org/ns/locn#'},
+{'pref':'odrl:', 'ns': 'http://www.w3.org/ns/odrl/2/'},
+{'pref':'owl:', 'ns': 'http://www.w3.org/2002/07/owl#'},
+{'pref':'prov:', 'ns': 'http://www.w3.org/ns/prov#'},
+{'pref':'rdf:', 'ns': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'},
+{'pref':'rdfs:', 'ns': 'http://www.w3.org/2000/01/rdf-schema#'},
+{'pref':'skos:', 'ns': 'http://www.w3.org/2004/02/skos/core#'},
+{'pref':'spdx:', 'ns': 'http://spdx.org/rdf/terms#'},
+{'pref':'time:', 'ns': 'http://www.w3.org/2006/time#'},
+{'pref':'vcard:', 'ns': 'http://www.w3.org/2006/vcard/ns#'},
+{'pref':'eli:', 'ns' : 'http://data.europa.eu/eli/ontology#'},
+{'pref':'xsd:', 'ns': 'http://www.w3.org/2001/XMLSchema#'},
+{'pref':'ad:', 'ns': 'http://inspire.ec.europa.eu/ont/ad#'},
+{'pref':'cv:', 'ns': 'http://data.europa.eu/m8g/'},
+{'pref':'geo:', 'ns': 'http://www.opengis.net/ont/geosparql#'},
+{'pref':'schema:', 'ns': 'https://schema.org/'},
+{'pref':'org:', 'ns': 'http://www.w3.org/ns/org#'},
+{'pref':'person:', 'ns': 'http://www.w3.org/ns/person#'},
+{'pref':'legal:', 'ns': 'http://www.w3.org/ns/legal#'},
+{'pref':'atu:', 'ns': 'http://data.europa.eu/88u/dataset/'},
+{'pref':'xhv:', 'ns': 'http://www.w3.org/1999/xhtml/vocab#'},
+
+
+				];
+
+	    function shorturl (url) {
+				var short = url;
+				for (e in prefixes) {
+				   var elem = prefixes[e];
+				   if (short.startsWith(elem.ns)) {
+  					short = elem.pref + short.slice(elem.ns.length);
+					}
+				};
+				return short;
+			};
+
+	    var shorten = document.getElementsByClassName("shorten");
+	    for (k=0;k < shorten.length ; k++){
+			var selem = shorten[k];	
+	                selem.innerHTML = shorturl(selem.innerHTML.trim());
+			}
+    </script>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
+	<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"> 
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
+    <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
+    <!--    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script> -->
+    <script src="./html/example.js" ></script>
+	<script type="text/javascript">
+		function elementInView(elem){
+				goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
+				goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
+				if (goesIn && !goesOut)
+					return 1;
+				else
+					return 0;
+			};
+
+		$(window).scroll(function(){
+			$('.CodeMirror').each(function(){
+				if (elementInView($(this))){
+					$(this).each(function(i, el){
+						el.CodeMirror.refresh();
+					});
+				}
+			});
+			
+		});
+	</script>
+	<style>
+		.CodeMirror {
+		  border: 1px solid #eee;
+		  height: auto;
+		}
+		.buttonsample {
+		cursor: pointer;
+		margin-top: 10px;
+		margin-left: 10px;
+		font-weight: 700;
+		border:0 outset buttonface;
+		background: #F5F6F8;
+		background-image: linear-gradient(to bottom,#F5F6F8,#DBDCDE);
+		border-radius:4px;
+		box-shadow:0 1px 3px #666;
+		font-family: Arial;
+		color: grey;
+		font-size: 14px;
+		padding: 10px 5px;
+		text-decoration: none;
+		float: right
+	}
+	.buttonsample:hover {color:#2a70d3}
+	.tabsstyle {
+		padding: 10px;
+		overflow: hidden;
+	}
+	li.ui-tabs-tab > a:hover {
+		background-color:dodgerblue;
+		color:white;
+	}
+  </style>
+
+    	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+</html>

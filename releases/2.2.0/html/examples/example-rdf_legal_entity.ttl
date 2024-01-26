@@ -1,0 +1,35 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix ex: <http://example.com/> .
+@prefix legal: <http://www.w3.org/ns/legal#> .
+@prefix legal-form: <http://data.europa.eu/ih3/legal-form/> .
+@prefix locn: <http://w3.org/ns/locn#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:a a legal:LegalEntity ;
+  cv:contactPoint ex:contact ;
+  cv:hasAccountingDocument <https://consult.cbso.nbb.be/api/external/broker/public/deposits/pdf/cc971deb-e4e6-11ed-aeda-4b1195f209e0> ;
+  legal:companyActivity <http://data.europa.eu/ux2/nace2.1/9499> ;
+  legal:companyType legal-form:gl-c-3d9a96e91d2af17bc2d4ca176bb53938 ;
+  legal:legalIdentifier ex:id ;
+  legal:legalName "Comité belge pour l'UNICEF"@fr ;
+  legal:legalName "Belgisch Comite voor UNICEF"@nl ;
+  cv:registeredAddress ex:address ;
+  cv:registrationDate "1952-09-27"^^xsd:date .
+
+ex:id a adms:Identifier ;
+  skos:notation "0407.562.029" .
+
+ex:address a locn:Address ;
+  locn:adminUnitL1 "Belgique"@fr ;
+  locn:adminUnitL2 "Région de Bruxelles-Capitale"@fr ;
+  locn:fullAddress "Rue Picard 7/306, 1000 Bruxelles, Belgique"@fr ;
+  locn:locatorDesignator "7/306" ;
+  locn:postCode "1000" ;
+  locn:postName "Bruxelles"@fr ;
+  locn:thoroughfare "Rue Picard"@fr .
+
+ex:contact a cv:ContactPoint ;
+  cv:telephone "+32 2 230 59 70" ;
+  cv:email "info@unicef.be" .
