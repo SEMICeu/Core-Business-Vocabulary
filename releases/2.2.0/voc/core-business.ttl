@@ -4,18 +4,19 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schemas: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://data.europa.eu/m8g/AccountingDocument> a owl:Class;
   rdfs:label "Accounting Document"@en;
-  <http://purl.org/vocab/vann/usageNote> """Accounting documents, might include:
+  rdfs:comment "Financial and non-financial information as a result of an activity of an organisation."@en;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  skos:scopeNote """Accounting documents, might include:
 <ul>
 <li> Financial statements (incl. the list of participating interests, subsidiary undertakings and associated undertakings, their registered office address and proportion of capital held), audit reports.</li> 
 <li> Non-financial statements, management reports and other statements or reports.</li>
 <li> Annual financial reports.</li>
-</ul>"""@en;
-  rdfs:comment "Financial and non-financial information as a result of an activity of an organisation."@en;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+</ul>"""@en .
 
 <http://data.europa.eu/m8g/contactPage> a owl:ObjectProperty;
   rdfs:label "contact page"@en;
@@ -47,9 +48,9 @@
 
 <http://data.europa.eu/m8g/ContactPoint> a owl:Class;
   rdfs:label "Contact Point"@en;
-  <http://purl.org/vocab/vann/usageNote> "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's <a href=\"http://schema.org/ContactPoint\"> ContactPoint </a> class  that has additional properties that some implementations may find useful."@en;
   rdfs:comment "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with."@en;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  skos:scopeNote "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's <a href=\"http://schema.org/ContactPoint\"> ContactPoint </a> class  that has additional properties that some implementations may find useful."@en .
 
 <http://data.europa.eu/m8g> a owl:Ontology;
   rdfs:label "core-business"@en,

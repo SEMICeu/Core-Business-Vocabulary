@@ -115,36 +115,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/0c404fa56c64463c15f65878d02efa16eec065b0",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPoint.hasemail",
-          "sh:description": {
-            "en": "An electronic address through which the Contact Point can be contacted."
-          },
-          "sh:name": {
-            "en": "has email"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/m8g/email",
-          "vl:message": {
-            "en": "The expected value for has email is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/8547f9fea103d51b54d608cf10f98b003fde7378",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPoint.hastelephone",
-          "sh:description": {
-            "en": "A telephone number through which the Contact Point can be contacted."
-          },
-          "sh:name": {
-            "en": "has telephone"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/m8g/telephone",
-          "vl:message": {
-            "en": "The expected value for has telephone is a Literal"
-          }
-        },
-        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPoint.contactpage",
           "sh:class": "http://xmlns.com/foaf/0.1/Document",
@@ -154,25 +124,7 @@
           "sh:name": {
             "en": "contact page"
           },
-          "sh:path": "http://data.europa.eu/m8g/contactPage",
-          "vl:message": {
-            "en": "The range of contact page must be of type <http://xmlns.com/foaf/0.1/Document>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/a736c4b01ea7557518c0c146f3e311947ce00ccc",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPoint.contactpage",
-          "sh:description": {
-            "en": "A web page that could be used to reach out the Contact Point."
-          },
-          "sh:name": {
-            "en": "contact page"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/contactPage",
-          "vl:message": {
-            "en": "The expected value for contact page is a rdfs:Resource (URI or blank node)"
-          }
+          "sh:path": "http://data.europa.eu/m8g/contactPage"
         }
       ],
       "sh:targetClass": "http://data.europa.eu/m8g/ContactPoint"
@@ -218,36 +170,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/02979d67c706a6886ef581ec3af63f1c67325a24",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.identifies",
-          "sh:description": {
-            "en": "The entity that is referenced by the Identifier."
-          },
-          "sh:name": {
-            "en": "identifies"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/identifies",
-          "vl:message": {
-            "en": "The expected value for identifies is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.notation",
-          "sh:description": {
-            "en": "A string of characters to uniquely identify a concept."
-          },
-          "sh:name": {
-            "en": "notation"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
-          "vl:message": {
-            "en": "The expected value for notation is a Literal"
-          }
-        },
-        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemeURI",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -257,10 +179,7 @@
           "sh:name": {
             "en": "scheme URI"
           },
-          "sh:path": "http://purl.org/dc/terms/conformsTo",
-          "vl:message": {
-            "en": "The range of scheme URI must be of type <http://www.w3.org/2001/XMLSchema#anyURI>."
-          }
+          "sh:path": "http://purl.org/dc/terms/conformsTo"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9",
@@ -272,25 +191,7 @@
           "sh:name": {
             "en": "scheme name"
           },
-          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
-          "vl:message": {
-            "en": "The range of scheme name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/886a37c0a64d5093fa1e6f0352c72d6c9999de5f",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.dateofissue",
-          "sh:description": {
-            "en": "The date on which the Identifier was assigned."
-          },
-          "sh:name": {
-            "en": "date of issue"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://purl.org/dc/terms/issued",
-          "vl:message": {
-            "en": "The expected value for date of issue is a Literal"
-          }
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43",
@@ -302,25 +203,7 @@
           "sh:name": {
             "en": "date of issue"
           },
-          "sh:path": "http://purl.org/dc/terms/issued",
-          "vl:message": {
-            "en": "The range of date of issue must be of type <http://www.w3.org/2001/XMLSchema#date>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/b66ff3c38dc89b4412b1715099a98c00ae8118c9",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemename",
-          "sh:description": {
-            "en": "Name of the scheme used to construct the identifier."
-          },
-          "sh:name": {
-            "en": "scheme name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
-          "vl:message": {
-            "en": "The expected value for scheme name is a Literal"
-          }
+          "sh:path": "http://purl.org/dc/terms/issued"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf",
@@ -332,55 +215,7 @@
           "sh:name": {
             "en": "identifies"
           },
-          "sh:path": "http://data.europa.eu/m8g/identifies",
-          "vl:message": {
-            "en": "The range of identifies must be of type <http://www.w3.org/ns/legal#LegalEntity>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/cc40d454ac926043491df929ab05a361896b0021",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemeURI",
-          "sh:description": {
-            "en": "URI of the scheme used to construct the identifier."
-          },
-          "sh:name": {
-            "en": "scheme URI"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://purl.org/dc/terms/conformsTo",
-          "vl:message": {
-            "en": "The expected value for scheme URI is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/ce99d905817e35ff5ebdf871e45b1e25e2e85188",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemename",
-          "sh:description": {
-            "en": "Name of the scheme used to construct the identifier."
-          },
-          "sh:name": {
-            "en": "scheme name"
-          },
-          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for scheme name"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/e17cae15cd3a2db8b6c9aeef586141ff8b261cab",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemaagency",
-          "sh:description": {
-            "en": "The name of the agency that issued the identifier."
-          },
-          "sh:name": {
-            "en": "schema agency"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/adms#schemeAgency",
-          "vl:message": {
-            "en": "The expected value for schema agency is a Literal"
-          }
+          "sh:path": "http://data.europa.eu/m8g/identifies"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
@@ -391,21 +226,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/16a2ae1bd10ecd1b71a5d7733636716b16dec57b",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalformtype",
-          "sh:description": {
-            "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration."
-          },
-          "sh:name": {
-            "en": "legal form type"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/legal#companyType",
-          "vl:message": {
-            "en": "The expected value for legal form type is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/35a0c5bc0ce5ab144bd063c0f462c983de54579b",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalidentifier",
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
@@ -415,85 +235,7 @@
           "sh:name": {
             "en": "legal identifier"
           },
-          "sh:path": "http://www.w3.org/ns/legal#legalIdentifier",
-          "vl:message": {
-            "en": "The range of legal identifier must be of type <http://www.w3.org/ns/adms#Identifier>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/434f52bb8676f1a00f73aac6c7689aa7b812f4fa",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.hasaccountingdocument",
-          "sh:description": {
-            "en": "The accounting document provided by an organisation."
-          },
-          "sh:name": {
-            "en": "has accounting document"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/hasAccountingDocument",
-          "vl:message": {
-            "en": "The expected value for has accounting document is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/45b15ba29c98ac584fc8a034f731f0f0183997ad",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.alternativename",
-          "sh:description": {
-            "en": "Any name by which a Legal Entity is known, other than their legal name."
-          },
-          "sh:name": {
-            "en": "alternative name"
-          },
-          "sh:path": "http://purl.org/dc/terms/alternative",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for alternative name"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/48fd2b59954e54cc1eccd6d9ad700094a9348522",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.registeredaddress",
-          "sh:description": {
-            "en": "The address at which the Legal Entity is legally registered."
-          },
-          "sh:name": {
-            "en": "registered address"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/registeredAddress",
-          "vl:message": {
-            "en": "The expected value for registered address is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/4dd03ad6c360519b06f690850d3c58cc69369d1f",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalidentifier",
-          "sh:description": {
-            "en": "The unambiguous structured reference assigned to the Legal Entity by the legal authority that registered it."
-          },
-          "sh:name": {
-            "en": "legal identifier"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/legal#legalIdentifier",
-          "vl:message": {
-            "en": "The expected value for legal identifier is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/5de7dd3454af7271c3bf268f0cf8723b4a9667ec",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalname",
-          "sh:description": {
-            "en": "The name under which the Legal Entity is legally registered."
-          },
-          "sh:name": {
-            "en": "legal name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/legal#legalName",
-          "vl:message": {
-            "en": "The expected value for legal name is a Literal"
-          }
+          "sh:path": "http://www.w3.org/ns/legal#legalIdentifier"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/67e99f01ae88b60e2e57fe2797aea1894ac1d63c",
@@ -505,25 +247,7 @@
           "sh:name": {
             "en": "registration date"
           },
-          "sh:path": "http://data.europa.eu/m8g/registrationDate",
-          "vl:message": {
-            "en": "The range of registration date must be of type <http://www.w3.org/2001/XMLSchema#date>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/6b95f7afa0acb115254af4469b3de83d9414e899",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalentityactivity",
-          "sh:description": {
-            "en": "The area of work in which the Legal Entity is engaged."
-          },
-          "sh:name": {
-            "en": "legal entity activity"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/legal#companyActivity",
-          "vl:message": {
-            "en": "The expected value for legal entity activity is a rdfs:Resource (URI or blank node)"
-          }
+          "sh:path": "http://data.europa.eu/m8g/registrationDate"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/718ae9bbdedff1ecd80c1da376fb9ece011dd216",
@@ -535,10 +259,7 @@
           "sh:name": {
             "en": "legal entity status"
           },
-          "sh:path": "http://www.w3.org/ns/legal#companyStatus",
-          "vl:message": {
-            "en": "The range of legal entity status must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
-          }
+          "sh:path": "http://www.w3.org/ns/legal#companyStatus"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
@@ -550,10 +271,7 @@
           "sh:name": {
             "en": "contact point"
           },
-          "sh:path": "http://data.europa.eu/m8g/contactPoint",
-          "vl:message": {
-            "en": "The range of contact point must be of type <http://data.europa.eu/m8g/ContactPoint>."
-          }
+          "sh:path": "http://data.europa.eu/m8g/contactPoint"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/888031c72afb09e066acb8fcd23afb4db1e22f13",
@@ -565,10 +283,7 @@
           "sh:name": {
             "en": "legal form type"
           },
-          "sh:path": "http://www.w3.org/ns/legal#companyType",
-          "vl:message": {
-            "en": "The range of legal form type must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
-          }
+          "sh:path": "http://www.w3.org/ns/legal#companyType"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/88c7bac3bf428d0c0abcd15cc9806d565ab6e8b4",
@@ -580,10 +295,7 @@
           "sh:name": {
             "en": "legal name"
           },
-          "sh:path": "http://www.w3.org/ns/legal#legalName",
-          "vl:message": {
-            "en": "The range of legal name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+          "sh:path": "http://www.w3.org/ns/legal#legalName"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/8a3a5192f0c9731ae0fb58d760e00cc2c338c8a9",
@@ -595,55 +307,7 @@
           "sh:name": {
             "en": "legal entity activity"
           },
-          "sh:path": "http://www.w3.org/ns/legal#companyActivity",
-          "vl:message": {
-            "en": "The range of legal entity activity must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/9adf9f5890592909cf3e67021ae7ab4f895a7745",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.contactpoint",
-          "sh:description": {
-            "en": "The main contact information of the resource."
-          },
-          "sh:name": {
-            "en": "contact point"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/contactPoint",
-          "vl:message": {
-            "en": "The expected value for contact point is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/aab7e8ce8d8a6014be2c882e224b34488a2b6274",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.registrationdate",
-          "sh:description": {
-            "en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."
-          },
-          "sh:name": {
-            "en": "registration date"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/m8g/registrationDate",
-          "vl:message": {
-            "en": "The expected value for registration date is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.identifier",
-          "sh:description": {
-            "en": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status."
-          },
-          "sh:name": {
-            "en": "identifier"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/adms#identifier",
-          "vl:message": {
-            "en": "The expected value for identifier is a rdfs:Resource (URI or blank node)"
-          }
+          "sh:path": "http://www.w3.org/ns/legal#companyActivity"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/af46641918ae164394ce82dcf9d46838a8c9a31d",
@@ -655,40 +319,7 @@
           "sh:name": {
             "en": "has accounting document"
           },
-          "sh:path": "http://data.europa.eu/m8g/hasAccountingDocument",
-          "vl:message": {
-            "en": "The range of has accounting document must be of type <http://data.europa.eu/m8g/AccountingDocument>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/b690ef515b6791ab0c0cec778dc753dd45e21324",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalname",
-          "sh:description": {
-            "en": "The name under which the Legal Entity is legally registered."
-          },
-          "sh:name": {
-            "en": "legal name"
-          },
-          "sh:path": "http://www.w3.org/ns/legal#legalName",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for legal name"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.alternativename",
-          "sh:description": {
-            "en": "Any name by which a Legal Entity is known, other than their legal name."
-          },
-          "sh:name": {
-            "en": "alternative name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://purl.org/dc/terms/alternative",
-          "vl:message": {
-            "en": "The expected value for alternative name is a Literal"
-          }
+          "sh:path": "http://data.europa.eu/m8g/hasAccountingDocument"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/cf9602ea5422d929eccf1b7ba9f66046b2fce096",
@@ -700,10 +331,7 @@
           "sh:name": {
             "en": "registered address"
           },
-          "sh:path": "http://data.europa.eu/m8g/registeredAddress",
-          "vl:message": {
-            "en": "The range of registered address must be of type <http://www.w3.org/ns/locn#Address>."
-          }
+          "sh:path": "http://data.europa.eu/m8g/registeredAddress"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
@@ -715,25 +343,7 @@
           "sh:name": {
             "en": "identifier"
           },
-          "sh:path": "http://www.w3.org/ns/adms#identifier",
-          "vl:message": {
-            "en": "The range of identifier must be of type <http://www.w3.org/ns/adms#Identifier>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/e397ea40389111be56f8ee88be0d4571f77cd3fc",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalentitystatus",
-          "sh:description": {
-            "en": "Information about the viability of the current position of the legal entity."
-          },
-          "sh:name": {
-            "en": "legal entity status"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/legal#companyStatus",
-          "vl:message": {
-            "en": "The expected value for legal entity status is a rdfs:Resource (URI or blank node)"
-          }
+          "sh:path": "http://www.w3.org/ns/adms#identifier"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd",
@@ -745,10 +355,7 @@
           "sh:name": {
             "en": "alternative name"
           },
-          "sh:path": "http://purl.org/dc/terms/alternative",
-          "vl:message": {
-            "en": "The range of alternative name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+          "sh:path": "http://purl.org/dc/terms/alternative"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/legal#LegalEntity"
@@ -759,36 +366,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/006de06965023999963c4307153479c8629991d9",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.locatorname",
-          "sh:description": {
-            "en": "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."
-          },
-          "sh:name": {
-            "en": "locator name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#locatorName",
-          "vl:message": {
-            "en": "The expected value for locator name is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/03690748629ed1c685fc6a365780375be09bce76",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel1",
-          "sh:description": {
-            "en": "The name of the uppermost level of the address, almost always a country."
-          },
-          "sh:name": {
-            "en": "administrative unit level 1"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for administrative unit level 1"
-          }
-        },
-        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.thoroughfare",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -798,25 +375,7 @@
           "sh:name": {
             "en": "thoroughfare"
           },
-          "sh:path": "http://www.w3.org/ns/locn#thoroughfare",
-          "vl:message": {
-            "en": "The range of thoroughfare must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel2",
-          "sh:description": {
-            "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
-          },
-          "sh:name": {
-            "en": "administrative unit level 2"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#adminUnitL2",
-          "vl:message": {
-            "en": "The expected value for administrative unit level 2 is a Literal"
-          }
+          "sh:path": "http://www.w3.org/ns/locn#thoroughfare"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce",
@@ -828,25 +387,7 @@
           "sh:name": {
             "en": "administrative unit level 1"
           },
-          "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
-          "vl:message": {
-            "en": "The range of administrative unit level 1 must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/3a0fcecd9e5f4e8deb4d102b9d072a4b067b773e",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.fulladdress",
-          "sh:description": {
-            "en": "The complete address written as a string."
-          },
-          "sh:name": {
-            "en": "full address"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#fullAddress",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for full address"
-          }
+          "sh:path": "http://www.w3.org/ns/locn#adminUnitL1"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e",
@@ -858,25 +399,7 @@
           "sh:name": {
             "en": "address area"
           },
-          "sh:path": "http://www.w3.org/ns/locn#addressArea",
-          "vl:message": {
-            "en": "The range of address area must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.locatorname",
-          "sh:description": {
-            "en": "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."
-          },
-          "sh:name": {
-            "en": "locator name"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#locatorName",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for locator name"
-          }
+          "sh:path": "http://www.w3.org/ns/locn#addressArea"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5",
@@ -888,40 +411,7 @@
           "sh:name": {
             "en": "administrative unit level 2"
           },
-          "sh:path": "http://www.w3.org/ns/locn#adminUnitL2",
-          "vl:message": {
-            "en": "The range of administrative unit level 2 must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/8b4c4bdd61e921f78483a3141338773693d4b2ef",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.addressID",
-          "sh:description": {
-            "en": "A globally unique identifier for each instance of an Address."
-          },
-          "sh:name": {
-            "en": "address ID"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#addressId",
-          "vl:message": {
-            "en": "The expected value for address ID is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9097b947404def8604330ec2fc5a0bd405128b35",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.locatordesignator",
-          "sh:description": {
-            "en": "A number or sequence of characters that uniquely identifies the locator within the relevant scope."
-          },
-          "sh:name": {
-            "en": "locator designator"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#locatorDesignator",
-          "vl:message": {
-            "en": "The expected value for locator designator is a Literal"
-          }
+          "sh:path": "http://www.w3.org/ns/locn#adminUnitL2"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79",
@@ -933,145 +423,7 @@
           "sh:name": {
             "en": "post name"
           },
-          "sh:path": "http://www.w3.org/ns/locn#postName",
-          "vl:message": {
-            "en": "The range of post name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9aaaf1750887d905949d78ac718f18c02809a28e",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel1",
-          "sh:description": {
-            "en": "The name of the uppermost level of the address, almost always a country."
-          },
-          "sh:name": {
-            "en": "administrative unit level 1"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
-          "vl:message": {
-            "en": "The expected value for administrative unit level 1 is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9c278b09ca17b0ef710224829c0354dc4c2f9a40",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postofficebox",
-          "sh:description": {
-            "en": "A location designator for a postal delivery point at a post office, usually a number."
-          },
-          "sh:name": {
-            "en": "post office box"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#poBox",
-          "vl:message": {
-            "en": "The expected value for post office box is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9c2d6af39a55e5e6a76f6b852bbcbada029c21af",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.fulladdress",
-          "sh:description": {
-            "en": "The complete address written as a string."
-          },
-          "sh:name": {
-            "en": "full address"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#fullAddress",
-          "vl:message": {
-            "en": "The expected value for full address is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/a9a46434014b93624ab68c9a56a5bc66a38da9a4",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postname",
-          "sh:description": {
-            "en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
-          },
-          "sh:name": {
-            "en": "post name"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#postName",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for post name"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/aa9622c05f497ef1b06496716742dd5cbfc6f0c9",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.thoroughfare",
-          "sh:description": {
-            "en": "The name of a passage or way through from one location to another."
-          },
-          "sh:name": {
-            "en": "thoroughfare"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#thoroughfare",
-          "vl:message": {
-            "en": "The expected value for thoroughfare is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/ac2d62a08fd924f88a79f0e70cda9fca4d484fd2",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.thoroughfare",
-          "sh:description": {
-            "en": "The name of a passage or way through from one location to another."
-          },
-          "sh:name": {
-            "en": "thoroughfare"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#thoroughfare",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for thoroughfare"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel2",
-          "sh:description": {
-            "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
-          },
-          "sh:name": {
-            "en": "administrative unit level 2"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#adminUnitL2",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for administrative unit level 2"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/b35e8c8ed2d85ea47f163d53cafca733ecb29389",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.addressarea",
-          "sh:description": {
-            "en": "The name of a geographic area that groups Addresses."
-          },
-          "sh:name": {
-            "en": "address area"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#addressArea",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for address area"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postcode",
-          "sh:description": {
-            "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
-          },
-          "sh:name": {
-            "en": "post code"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#postCode",
-          "vl:message": {
-            "en": "The expected value for post code is a Literal"
-          }
+          "sh:path": "http://www.w3.org/ns/locn#postName"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391",
@@ -1083,10 +435,7 @@
           "sh:name": {
             "en": "locator name"
           },
-          "sh:path": "http://www.w3.org/ns/locn#locatorName",
-          "vl:message": {
-            "en": "The range of locator name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+          "sh:path": "http://www.w3.org/ns/locn#locatorName"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7",
@@ -1098,40 +447,7 @@
           "sh:name": {
             "en": "full address"
           },
-          "sh:path": "http://www.w3.org/ns/locn#fullAddress",
-          "vl:message": {
-            "en": "The range of full address must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.addressarea",
-          "sh:description": {
-            "en": "The name of a geographic area that groups Addresses."
-          },
-          "sh:name": {
-            "en": "address area"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#addressArea",
-          "vl:message": {
-            "en": "The expected value for address area is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postname",
-          "sh:description": {
-            "en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
-          },
-          "sh:name": {
-            "en": "post name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/ns/locn#postName",
-          "vl:message": {
-            "en": "The expected value for post name is a Literal"
-          }
+          "sh:path": "http://www.w3.org/ns/locn#fullAddress"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/locn#Address"
@@ -1158,10 +474,7 @@
           "sh:name": {
             "en": "has member"
           },
-          "sh:path": "http://www.w3.org/ns/org#hasMember",
-          "vl:message": {
-            "en": "The range of has member must be of type <http://xmlns.com/foaf/0.1/Agent>."
-          }
+          "sh:path": "http://www.w3.org/ns/org#hasMember"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/678afe5ba59824ab6bd10b0acd13799900fa2bf3",
@@ -1173,40 +486,7 @@
           "sh:name": {
             "en": "sub organization of"
           },
-          "sh:path": "http://www.w3.org/ns/org#subOrganizationOf",
-          "vl:message": {
-            "en": "The range of sub organization of must be of type <http://www.w3.org/ns/org#Organization>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/92c74470235a279a2d61934b4fefb7b590a20196",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.hassuborganization",
-          "sh:description": {
-            "en": "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an organization which is a sub-part or child of this organization."
-          },
-          "sh:name": {
-            "en": "has sub organization"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/org#hasSubOrganization",
-          "vl:message": {
-            "en": "The expected value for has sub organization is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/9a3fb2f7985ffdaf5c668c29a107a7e8ac02f1ce",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.suborganizationof",
-          "sh:description": {
-            "en": "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization."
-          },
-          "sh:name": {
-            "en": "sub organization of"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/org#subOrganizationOf",
-          "vl:message": {
-            "en": "The expected value for sub organization of is a rdfs:Resource (URI or blank node)"
-          }
+          "sh:path": "http://www.w3.org/ns/org#subOrganizationOf"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/bbecfa203e6e90f7af31994066ab46b0a8172e2a",
@@ -1218,25 +498,7 @@
           "sh:name": {
             "en": "has sub organization"
           },
-          "sh:path": "http://www.w3.org/ns/org#hasSubOrganization",
-          "vl:message": {
-            "en": "The range of has sub organization must be of type <http://www.w3.org/ns/org#Organization>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/fa88865dff8487890f122fd7257ebca0d81ff275",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.hasmember",
-          "sh:description": {
-            "en": "Indicates an agent (person or other organization) who is a member of the subject Organization."
-          },
-          "sh:name": {
-            "en": "has member"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/org#hasMember",
-          "vl:message": {
-            "en": "The expected value for has member is a rdfs:Resource (URI or blank node)"
-          }
+          "sh:path": "http://www.w3.org/ns/org#hasSubOrganization"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/org#Organization"
@@ -1256,10 +518,7 @@
           "sh:name": {
             "en": "head of"
           },
-          "sh:path": "http://www.w3.org/ns/org#headOf",
-          "vl:message": {
-            "en": "The range of head of must be of type <http://www.w3.org/ns/org#Organization>."
-          }
+          "sh:path": "http://www.w3.org/ns/org#headOf"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
@@ -1271,10 +530,7 @@
           "sh:name": {
             "en": "name"
           },
-          "sh:path": "http://purl.org/dc/terms/title",
-          "vl:message": {
-            "en": "The range of name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+          "sh:path": "http://purl.org/dc/terms/title"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/322371a77364a50f049d46180f6192532eea26dc",
@@ -1286,85 +542,7 @@
           "sh:name": {
             "en": "type"
           },
-          "sh:path": "http://purl.org/dc/terms/type",
-          "vl:message": {
-            "en": "The range of type must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/3fd45972245296a986ad73d13d316ec9d1e5533f",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.memberof",
-          "sh:description": {
-            "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played."
-          },
-          "sh:name": {
-            "en": "member of"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/org#memberOf",
-          "vl:message": {
-            "en": "The expected value for member of is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.type",
-          "sh:description": {
-            "en": "A classification assigned to an Agent."
-          },
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/type",
-          "vl:message": {
-            "en": "The expected value for type is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/803b12f15a761ac251e073bd57d79d58d35c7186",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.headof",
-          "sh:description": {
-            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
-          },
-          "sh:name": {
-            "en": "head of"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/org#headOf",
-          "vl:message": {
-            "en": "The expected value for head of is a rdfs:Resource (URI or blank node)"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.name",
-          "sh:description": {
-            "en": "The noun given to the Agent."
-          },
-          "sh:name": {
-            "en": "name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://purl.org/dc/terms/title",
-          "vl:message": {
-            "en": "The expected value for name is a Literal"
-          }
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.name",
-          "sh:description": {
-            "en": "The noun given to the Agent."
-          },
-          "sh:name": {
-            "en": "name"
-          },
-          "sh:path": "http://purl.org/dc/terms/title",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "en": "Only 1 value for each language is allowed for name"
-          }
+          "sh:path": "http://purl.org/dc/terms/type"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/f6a439dacfd0da602e5b64f14f007fe9ab33a467",
@@ -1376,10 +554,7 @@
           "sh:name": {
             "en": "member of"
           },
-          "sh:path": "http://www.w3.org/ns/org#memberOf",
-          "vl:message": {
-            "en": "The range of member of must be of type <http://www.w3.org/ns/org#Organization>."
-          }
+          "sh:path": "http://www.w3.org/ns/org#memberOf"
         }
       ],
       "sh:targetClass": "http://xmlns.com/foaf/0.1/Agent"

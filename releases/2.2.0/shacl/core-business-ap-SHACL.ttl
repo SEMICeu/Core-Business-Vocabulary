@@ -28,218 +28,62 @@
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/006de06965023999963c4307153479c8629991d9>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/03690748629ed1c685fc6a365780375be09bce76>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b>,
+  shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/3a0fcecd9e5f4e8deb4d102b9d072a4b067b773e>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/8b4c4bdd61e921f78483a3141338773693d4b2ef>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9097b947404def8604330ec2fc5a0bd405128b35>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9aaaf1750887d905949d78ac718f18c02809a28e>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9c278b09ca17b0ef710224829c0354dc4c2f9a40>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9c2d6af39a55e5e6a76f6b852bbcbada029c21af>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/a9a46434014b93624ab68c9a56a5bc66a38da9a4>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/aa9622c05f497ef1b06496716742dd5cbfc6f0c9>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/ac2d62a08fd924f88a79f0e70cda9fca4d484fd2>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/b35e8c8ed2d85ea47f163d53cafca733ecb29389>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa>;
+    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7>;
   shacl:targetClass <http://www.w3.org/ns/locn#Address> .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/006de06965023999963c4307153479c8629991d9> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.locatorname";
-  shacl:description "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
-  shacl:name "locator name"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#locatorName>;
-  <https://purl.eu/ns/shacl#message> "The expected value for locator name is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/03690748629ed1c685fc6a365780375be09bce76> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel1";
-  shacl:description "The name of the uppermost level of the address, almost always a country."@en;
-  shacl:name "administrative unit level 1"@en;
-  shacl:path <http://www.w3.org/ns/locn#adminUnitL1>;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for administrative unit level 1"@en .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.thoroughfare";
   shacl:datatype rdf:langString;
   shacl:description "The name of a passage or way through from one location to another."@en;
   shacl:name "thoroughfare"@en;
-  shacl:path <http://www.w3.org/ns/locn#thoroughfare>;
-  <https://purl.eu/ns/shacl#message> "The range of thoroughfare must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel2";
-  shacl:description "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
-  shacl:name "administrative unit level 2"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#adminUnitL2>;
-  <https://purl.eu/ns/shacl#message> "The expected value for administrative unit level 2 is a Literal"@en .
+  shacl:path <http://www.w3.org/ns/locn#thoroughfare> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel1";
   shacl:datatype rdf:langString;
   shacl:description "The name of the uppermost level of the address, almost always a country."@en;
   shacl:name "administrative unit level 1"@en;
-  shacl:path <http://www.w3.org/ns/locn#adminUnitL1>;
-  <https://purl.eu/ns/shacl#message> "The range of administrative unit level 1 must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/3a0fcecd9e5f4e8deb4d102b9d072a4b067b773e> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.fulladdress";
-  shacl:description "The complete address written as a string."@en;
-  shacl:name "full address"@en;
-  shacl:path <http://www.w3.org/ns/locn#fullAddress>;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for full address"@en .
+  shacl:path <http://www.w3.org/ns/locn#adminUnitL1> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.addressarea";
   shacl:datatype rdf:langString;
   shacl:description "The name of a geographic area that groups Addresses."@en;
   shacl:name "address area"@en;
-  shacl:path <http://www.w3.org/ns/locn#addressArea>;
-  <https://purl.eu/ns/shacl#message> "The range of address area must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.locatorname";
-  shacl:description "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
-  shacl:name "locator name"@en;
-  shacl:path <http://www.w3.org/ns/locn#locatorName>;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for locator name"@en .
+  shacl:path <http://www.w3.org/ns/locn#addressArea> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel2";
   shacl:datatype rdf:langString;
   shacl:description "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
   shacl:name "administrative unit level 2"@en;
-  shacl:path <http://www.w3.org/ns/locn#adminUnitL2>;
-  <https://purl.eu/ns/shacl#message> "The range of administrative unit level 2 must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/8b4c4bdd61e921f78483a3141338773693d4b2ef> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.addressID";
-  shacl:description "A globally unique identifier for each instance of an Address."@en;
-  shacl:name "address ID"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#addressId>;
-  <https://purl.eu/ns/shacl#message> "The expected value for address ID is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9097b947404def8604330ec2fc5a0bd405128b35> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.locatordesignator";
-  shacl:description "A number or sequence of characters that uniquely identifies the locator within the relevant scope."@en;
-  shacl:name "locator designator"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#locatorDesignator>;
-  <https://purl.eu/ns/shacl#message> "The expected value for locator designator is a Literal"@en .
+  shacl:path <http://www.w3.org/ns/locn#adminUnitL2> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postname";
   shacl:datatype rdf:langString;
   shacl:description "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
   shacl:name "post name"@en;
-  shacl:path <http://www.w3.org/ns/locn#postName>;
-  <https://purl.eu/ns/shacl#message> "The range of post name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9aaaf1750887d905949d78ac718f18c02809a28e> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel1";
-  shacl:description "The name of the uppermost level of the address, almost always a country."@en;
-  shacl:name "administrative unit level 1"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#adminUnitL1>;
-  <https://purl.eu/ns/shacl#message> "The expected value for administrative unit level 1 is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9c278b09ca17b0ef710224829c0354dc4c2f9a40> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postofficebox";
-  shacl:description "A location designator for a postal delivery point at a post office, usually a number."@en;
-  shacl:name "post office box"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#poBox>;
-  <https://purl.eu/ns/shacl#message> "The expected value for post office box is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/9c2d6af39a55e5e6a76f6b852bbcbada029c21af> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.fulladdress";
-  shacl:description "The complete address written as a string."@en;
-  shacl:name "full address"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#fullAddress>;
-  <https://purl.eu/ns/shacl#message> "The expected value for full address is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/a9a46434014b93624ab68c9a56a5bc66a38da9a4> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postname";
-  shacl:description "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
-  shacl:name "post name"@en;
-  shacl:path <http://www.w3.org/ns/locn#postName>;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for post name"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/aa9622c05f497ef1b06496716742dd5cbfc6f0c9> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.thoroughfare";
-  shacl:description "The name of a passage or way through from one location to another."@en;
-  shacl:name "thoroughfare"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#thoroughfare>;
-  <https://purl.eu/ns/shacl#message> "The expected value for thoroughfare is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/ac2d62a08fd924f88a79f0e70cda9fca4d484fd2> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.thoroughfare";
-  shacl:description "The name of a passage or way through from one location to another."@en;
-  shacl:name "thoroughfare"@en;
-  shacl:path <http://www.w3.org/ns/locn#thoroughfare>;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for thoroughfare"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel2";
-  shacl:description "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
-  shacl:name "administrative unit level 2"@en;
-  shacl:path <http://www.w3.org/ns/locn#adminUnitL2>;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for administrative unit level 2"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/b35e8c8ed2d85ea47f163d53cafca733ecb29389> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.addressarea";
-  shacl:description "The name of a geographic area that groups Addresses."@en;
-  shacl:name "address area"@en;
-  shacl:path <http://www.w3.org/ns/locn#addressArea>;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for address area"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postcode";
-  shacl:description "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
-  shacl:name "post code"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#postCode>;
-  <https://purl.eu/ns/shacl#message> "The expected value for post code is a Literal"@en .
+  shacl:path <http://www.w3.org/ns/locn#postName> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.locatorname";
   shacl:datatype rdf:langString;
   shacl:description "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
   shacl:name "locator name"@en;
-  shacl:path <http://www.w3.org/ns/locn#locatorName>;
-  <https://purl.eu/ns/shacl#message> "The range of locator name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
+  shacl:path <http://www.w3.org/ns/locn#locatorName> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.fulladdress";
   shacl:datatype rdf:langString;
   shacl:description "The complete address written as a string."@en;
   shacl:name "full address"@en;
-  shacl:path <http://www.w3.org/ns/locn#fullAddress>;
-  <https://purl.eu/ns/shacl#message> "The range of full address must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.addressarea";
-  shacl:description "The name of a geographic area that groups Addresses."@en;
-  shacl:name "address area"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#addressArea>;
-  <https://purl.eu/ns/shacl#message> "The expected value for address area is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postname";
-  shacl:description "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
-  shacl:name "post name"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/locn#postName>;
-  <https://purl.eu/ns/shacl#message> "The expected value for post name is a Literal"@en .
+  shacl:path <http://www.w3.org/ns/locn#fullAddress> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/20e72c692090ea97cd328f03c7904cac5e165bc2>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/322371a77364a50f049d46180f6192532eea26dc>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/3fd45972245296a986ad73d13d316ec9d1e5533f>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/803b12f15a761ac251e073bd57d79d58d35c7186>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/f6a439dacfd0da602e5b64f14f007fe9ab33a467>;
   shacl:targetClass foaf:Agent .
 
@@ -247,64 +91,25 @@
   shacl:class org:Organization;
   shacl:description "Indicates that a person (or other agent) is the leader or formal head of the Organization."@en;
   shacl:name "head of"@en;
-  shacl:path org:headOf;
-  <https://purl.eu/ns/shacl#message> "The range of head of must be of type <http://www.w3.org/ns/org#Organization>."@en .
+  shacl:path org:headOf .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.name";
   shacl:datatype rdf:langString;
   shacl:description "The noun given to the Agent."@en;
   shacl:name "name"@en;
-  shacl:path dc:title;
-  <https://purl.eu/ns/shacl#message> "The range of name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
+  shacl:path dc:title .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.type";
   shacl:class skos:Concept;
   shacl:description "A classification assigned to an Agent."@en;
   shacl:name "type"@en;
-  shacl:path dc:type;
-  <https://purl.eu/ns/shacl#message> "The range of type must be of type <http://www.w3.org/2004/02/skos/core#Concept>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/3fd45972245296a986ad73d13d316ec9d1e5533f> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.memberof";
-  shacl:description "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played."@en;
-  shacl:name "member of"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path org:memberOf;
-  <https://purl.eu/ns/shacl#message> "The expected value for member of is a rdfs:Resource (URI or blank node)"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.type";
-  shacl:description "A classification assigned to an Agent."@en;
-  shacl:name "type"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path dc:type;
-  <https://purl.eu/ns/shacl#message> "The expected value for type is a rdfs:Resource (URI or blank node)"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/803b12f15a761ac251e073bd57d79d58d35c7186> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.headof";
-  shacl:description "Indicates that a person (or other agent) is the leader or formal head of the Organization."@en;
-  shacl:name "head of"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path org:headOf;
-  <https://purl.eu/ns/shacl#message> "The expected value for head of is a rdfs:Resource (URI or blank node)"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.name";
-  shacl:description "The noun given to the Agent."@en;
-  shacl:name "name"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path dc:title;
-  <https://purl.eu/ns/shacl#message> "The expected value for name is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.name";
-  shacl:description "The noun given to the Agent."@en;
-  shacl:name "name"@en;
-  shacl:path dc:title;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for name"@en .
+  shacl:path dc:type .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/f6a439dacfd0da602e5b64f14f007fe9ab33a467> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.memberof";
   shacl:class org:Organization;
   shacl:description "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played."@en;
   shacl:name "member of"@en;
-  shacl:path org:memberOf;
-  <https://purl.eu/ns/shacl#message> "The range of member of must be of type <http://www.w3.org/ns/org#Organization>."@en .
+  shacl:path org:memberOf .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#CodeShape> a shacl:NodeShape;
   shacl:closed false;
@@ -312,39 +117,14 @@
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/0c404fa56c64463c15f65878d02efa16eec065b0>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/8547f9fea103d51b54d608cf10f98b003fde7378>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/a736c4b01ea7557518c0c146f3e311947ce00ccc>;
+  shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0>;
   shacl:targetClass <http://data.europa.eu/m8g/ContactPoint> .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/0c404fa56c64463c15f65878d02efa16eec065b0> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPoint.hasemail";
-  shacl:description "An electronic address through which the Contact Point can be contacted."@en;
-  shacl:name "has email"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://data.europa.eu/m8g/email>;
-  <https://purl.eu/ns/shacl#message> "The expected value for has email is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/8547f9fea103d51b54d608cf10f98b003fde7378> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPoint.hastelephone";
-  shacl:description "A telephone number through which the Contact Point can be contacted."@en;
-  shacl:name "has telephone"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://data.europa.eu/m8g/telephone>;
-  <https://purl.eu/ns/shacl#message> "The expected value for has telephone is a Literal"@en .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPoint.contactpage";
   shacl:class foaf:Document;
   shacl:description "A web page that could be used to reach out the Contact Point."@en;
   shacl:name "contact page"@en;
-  shacl:path <http://data.europa.eu/m8g/contactPage>;
-  <https://purl.eu/ns/shacl#message> "The range of contact page must be of type <http://xmlns.com/foaf/0.1/Document>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/a736c4b01ea7557518c0c146f3e311947ce00ccc> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPoint.contactpage";
-  shacl:description "A web page that could be used to reach out the Contact Point."@en;
-  shacl:name "contact page"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/contactPage>;
-  <https://purl.eu/ns/shacl#message> "The expected value for contact page is a rdfs:Resource (URI or blank node)"@en .
+  shacl:path <http://data.europa.eu/m8g/contactPage> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#DateShape> a shacl:NodeShape;
   shacl:closed false;
@@ -360,291 +140,116 @@
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/02979d67c706a6886ef581ec3af63f1c67325a24>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745>,
+  shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/886a37c0a64d5093fa1e6f0352c72d6c9999de5f>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/b66ff3c38dc89b4412b1715099a98c00ae8118c9>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/cc40d454ac926043491df929ab05a361896b0021>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/ce99d905817e35ff5ebdf871e45b1e25e2e85188>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/e17cae15cd3a2db8b6c9aeef586141ff8b261cab>;
+    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf>;
   shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/02979d67c706a6886ef581ec3af63f1c67325a24> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.identifies";
-  shacl:description "The entity that is referenced by the Identifier."@en;
-  shacl:name "identifies"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/identifies>;
-  <https://purl.eu/ns/shacl#message> "The expected value for identifies is a rdfs:Resource (URI or blank node)"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.notation";
-  shacl:description "A string of characters to uniquely identify a concept."@en;
-  shacl:name "notation"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path skos:notation;
-  <https://purl.eu/ns/shacl#message> "The expected value for notation is a Literal"@en .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemeURI";
   shacl:datatype xsd:anyURI;
   shacl:description "URI of the scheme used to construct the identifier."@en;
   shacl:name "scheme URI"@en;
-  shacl:path dc:conformsTo;
-  <https://purl.eu/ns/shacl#message> "The range of scheme URI must be of type <http://www.w3.org/2001/XMLSchema#anyURI>."@en .
+  shacl:path dc:conformsTo .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemename";
   shacl:datatype rdf:langString;
   shacl:description "Name of the scheme used to construct the identifier."@en;
   shacl:name "scheme name"@en;
-  shacl:path rdfs:label;
-  <https://purl.eu/ns/shacl#message> "The range of scheme name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/886a37c0a64d5093fa1e6f0352c72d6c9999de5f> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.dateofissue";
-  shacl:description "The date on which the Identifier was assigned."@en;
-  shacl:name "date of issue"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path dc:issued;
-  <https://purl.eu/ns/shacl#message> "The expected value for date of issue is a Literal"@en .
+  shacl:path rdfs:label .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.dateofissue";
   shacl:datatype xsd:date;
   shacl:description "The date on which the Identifier was assigned."@en;
   shacl:name "date of issue"@en;
-  shacl:path dc:issued;
-  <https://purl.eu/ns/shacl#message> "The range of date of issue must be of type <http://www.w3.org/2001/XMLSchema#date>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/b66ff3c38dc89b4412b1715099a98c00ae8118c9> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemename";
-  shacl:description "Name of the scheme used to construct the identifier."@en;
-  shacl:name "scheme name"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path rdfs:label;
-  <https://purl.eu/ns/shacl#message> "The expected value for scheme name is a Literal"@en .
+  shacl:path dc:issued .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.identifies";
   shacl:class <http://www.w3.org/ns/legal#LegalEntity>;
   shacl:description "The entity that is referenced by the Identifier."@en;
   shacl:name "identifies"@en;
-  shacl:path <http://data.europa.eu/m8g/identifies>;
-  <https://purl.eu/ns/shacl#message> "The range of identifies must be of type <http://www.w3.org/ns/legal#LegalEntity>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/cc40d454ac926043491df929ab05a361896b0021> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemeURI";
-  shacl:description "URI of the scheme used to construct the identifier."@en;
-  shacl:name "scheme URI"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path dc:conformsTo;
-  <https://purl.eu/ns/shacl#message> "The expected value for scheme URI is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/ce99d905817e35ff5ebdf871e45b1e25e2e85188> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemename";
-  shacl:description "Name of the scheme used to construct the identifier."@en;
-  shacl:name "scheme name"@en;
-  shacl:path rdfs:label;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for scheme name"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/e17cae15cd3a2db8b6c9aeef586141ff8b261cab> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemaagency";
-  shacl:description "The name of the agency that issued the identifier."@en;
-  shacl:name "schema agency"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/adms#schemeAgency>;
-  <https://purl.eu/ns/shacl#message> "The expected value for schema agency is a Literal"@en .
+  shacl:path <http://data.europa.eu/m8g/identifies> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/16a2ae1bd10ecd1b71a5d7733636716b16dec57b>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/35a0c5bc0ce5ab144bd063c0f462c983de54579b>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/434f52bb8676f1a00f73aac6c7689aa7b812f4fa>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/45b15ba29c98ac584fc8a034f731f0f0183997ad>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/48fd2b59954e54cc1eccd6d9ad700094a9348522>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/4dd03ad6c360519b06f690850d3c58cc69369d1f>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/5de7dd3454af7271c3bf268f0cf8723b4a9667ec>,
+  shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/35a0c5bc0ce5ab144bd063c0f462c983de54579b>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/67e99f01ae88b60e2e57fe2797aea1894ac1d63c>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/6b95f7afa0acb115254af4469b3de83d9414e899>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/718ae9bbdedff1ecd80c1da376fb9ece011dd216>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/888031c72afb09e066acb8fcd23afb4db1e22f13>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/88c7bac3bf428d0c0abcd15cc9806d565ab6e8b4>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/8a3a5192f0c9731ae0fb58d760e00cc2c338c8a9>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/9adf9f5890592909cf3e67021ae7ab4f895a7745>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/aab7e8ce8d8a6014be2c882e224b34488a2b6274>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/aadbd67a77a624f073be2076627fb9dc883cbe48>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/af46641918ae164394ce82dcf9d46838a8c9a31d>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/b690ef515b6791ab0c0cec778dc753dd45e21324>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/cf9602ea5422d929eccf1b7ba9f66046b2fce096>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/e2017f72421063cd9ff494011ec78f35f9632a4a>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/e397ea40389111be56f8ee88be0d4571f77cd3fc>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd>;
   shacl:targetClass <http://www.w3.org/ns/legal#LegalEntity> .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/16a2ae1bd10ecd1b71a5d7733636716b16dec57b> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalformtype";
-  shacl:description "The classification of the Legal Entity as a member of a particular group in the context of legal registration."@en;
-  shacl:name "legal form type"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://www.w3.org/ns/legal#companyType>;
-  <https://purl.eu/ns/shacl#message> "The expected value for legal form type is a rdfs:Resource (URI or blank node)"@en .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/35a0c5bc0ce5ab144bd063c0f462c983de54579b> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalidentifier";
   shacl:class <http://www.w3.org/ns/adms#Identifier>;
   shacl:description "The unambiguous structured reference assigned to the Legal Entity by the legal authority that registered it."@en;
   shacl:name "legal identifier"@en;
-  shacl:path <http://www.w3.org/ns/legal#legalIdentifier>;
-  <https://purl.eu/ns/shacl#message> "The range of legal identifier must be of type <http://www.w3.org/ns/adms#Identifier>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/434f52bb8676f1a00f73aac6c7689aa7b812f4fa> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.hasaccountingdocument";
-  shacl:description "The accounting document provided by an organisation."@en;
-  shacl:name "has accounting document"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/hasAccountingDocument>;
-  <https://purl.eu/ns/shacl#message> "The expected value for has accounting document is a rdfs:Resource (URI or blank node)"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/45b15ba29c98ac584fc8a034f731f0f0183997ad> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.alternativename";
-  shacl:description "Any name by which a Legal Entity is known, other than their legal name."@en;
-  shacl:name "alternative name"@en;
-  shacl:path dc:alternative;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for alternative name"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/48fd2b59954e54cc1eccd6d9ad700094a9348522> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.registeredaddress";
-  shacl:description "The address at which the Legal Entity is legally registered."@en;
-  shacl:name "registered address"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/registeredAddress>;
-  <https://purl.eu/ns/shacl#message> "The expected value for registered address is a rdfs:Resource (URI or blank node)"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/4dd03ad6c360519b06f690850d3c58cc69369d1f> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalidentifier";
-  shacl:description "The unambiguous structured reference assigned to the Legal Entity by the legal authority that registered it."@en;
-  shacl:name "legal identifier"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://www.w3.org/ns/legal#legalIdentifier>;
-  <https://purl.eu/ns/shacl#message> "The expected value for legal identifier is a rdfs:Resource (URI or blank node)"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/5de7dd3454af7271c3bf268f0cf8723b4a9667ec> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalname";
-  shacl:description "The name under which the Legal Entity is legally registered."@en;
-  shacl:name "legal name"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://www.w3.org/ns/legal#legalName>;
-  <https://purl.eu/ns/shacl#message> "The expected value for legal name is a Literal"@en .
+  shacl:path <http://www.w3.org/ns/legal#legalIdentifier> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/67e99f01ae88b60e2e57fe2797aea1894ac1d63c> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.registrationdate";
   shacl:datatype xsd:date;
   shacl:description "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."@en;
   shacl:name "registration date"@en;
-  shacl:path <http://data.europa.eu/m8g/registrationDate>;
-  <https://purl.eu/ns/shacl#message> "The range of registration date must be of type <http://www.w3.org/2001/XMLSchema#date>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/6b95f7afa0acb115254af4469b3de83d9414e899> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalentityactivity";
-  shacl:description "The area of work in which the Legal Entity is engaged."@en;
-  shacl:name "legal entity activity"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://www.w3.org/ns/legal#companyActivity>;
-  <https://purl.eu/ns/shacl#message> "The expected value for legal entity activity is a rdfs:Resource (URI or blank node)"@en .
+  shacl:path <http://data.europa.eu/m8g/registrationDate> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/718ae9bbdedff1ecd80c1da376fb9ece011dd216> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalentitystatus";
   shacl:class skos:Concept;
   shacl:description "Information about the viability of the current position of the legal entity."@en;
   shacl:name "legal entity status"@en;
-  shacl:path <http://www.w3.org/ns/legal#companyStatus>;
-  <https://purl.eu/ns/shacl#message> "The range of legal entity status must be of type <http://www.w3.org/2004/02/skos/core#Concept>."@en .
+  shacl:path <http://www.w3.org/ns/legal#companyStatus> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.contactpoint";
   shacl:class <http://data.europa.eu/m8g/ContactPoint>;
   shacl:description "The main contact information of the resource."@en;
   shacl:name "contact point"@en;
-  shacl:path <http://data.europa.eu/m8g/contactPoint>;
-  <https://purl.eu/ns/shacl#message> "The range of contact point must be of type <http://data.europa.eu/m8g/ContactPoint>."@en .
+  shacl:path <http://data.europa.eu/m8g/contactPoint> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/888031c72afb09e066acb8fcd23afb4db1e22f13> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalformtype";
   shacl:class skos:Concept;
   shacl:description "The classification of the Legal Entity as a member of a particular group in the context of legal registration."@en;
   shacl:name "legal form type"@en;
-  shacl:path <http://www.w3.org/ns/legal#companyType>;
-  <https://purl.eu/ns/shacl#message> "The range of legal form type must be of type <http://www.w3.org/2004/02/skos/core#Concept>."@en .
+  shacl:path <http://www.w3.org/ns/legal#companyType> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/88c7bac3bf428d0c0abcd15cc9806d565ab6e8b4> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalname";
   shacl:datatype rdf:langString;
   shacl:description "The name under which the Legal Entity is legally registered."@en;
   shacl:name "legal name"@en;
-  shacl:path <http://www.w3.org/ns/legal#legalName>;
-  <https://purl.eu/ns/shacl#message> "The range of legal name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
+  shacl:path <http://www.w3.org/ns/legal#legalName> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/8a3a5192f0c9731ae0fb58d760e00cc2c338c8a9> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalentityactivity";
   shacl:class skos:Concept;
   shacl:description "The area of work in which the Legal Entity is engaged."@en;
   shacl:name "legal entity activity"@en;
-  shacl:path <http://www.w3.org/ns/legal#companyActivity>;
-  <https://purl.eu/ns/shacl#message> "The range of legal entity activity must be of type <http://www.w3.org/2004/02/skos/core#Concept>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/9adf9f5890592909cf3e67021ae7ab4f895a7745> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.contactpoint";
-  shacl:description "The main contact information of the resource."@en;
-  shacl:name "contact point"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/contactPoint>;
-  <https://purl.eu/ns/shacl#message> "The expected value for contact point is a rdfs:Resource (URI or blank node)"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/aab7e8ce8d8a6014be2c882e224b34488a2b6274> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.registrationdate";
-  shacl:description "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."@en;
-  shacl:name "registration date"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://data.europa.eu/m8g/registrationDate>;
-  <https://purl.eu/ns/shacl#message> "The expected value for registration date is a Literal"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/aadbd67a77a624f073be2076627fb9dc883cbe48> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.identifier";
-  shacl:description "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status."@en;
-  shacl:name "identifier"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://www.w3.org/ns/adms#identifier>;
-  <https://purl.eu/ns/shacl#message> "The expected value for identifier is a rdfs:Resource (URI or blank node)"@en .
+  shacl:path <http://www.w3.org/ns/legal#companyActivity> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/af46641918ae164394ce82dcf9d46838a8c9a31d> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.hasaccountingdocument";
   shacl:class <http://data.europa.eu/m8g/AccountingDocument>;
   shacl:description "The accounting document provided by an organisation."@en;
   shacl:name "has accounting document"@en;
-  shacl:path <http://data.europa.eu/m8g/hasAccountingDocument>;
-  <https://purl.eu/ns/shacl#message> "The range of has accounting document must be of type <http://data.europa.eu/m8g/AccountingDocument>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/b690ef515b6791ab0c0cec778dc753dd45e21324> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalname";
-  shacl:description "The name under which the Legal Entity is legally registered."@en;
-  shacl:name "legal name"@en;
-  shacl:path <http://www.w3.org/ns/legal#legalName>;
-  shacl:uniqueLang true;
-  <https://purl.eu/ns/shacl#message> "Only 1 value for each language is allowed for legal name"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.alternativename";
-  shacl:description "Any name by which a Legal Entity is known, other than their legal name."@en;
-  shacl:name "alternative name"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path dc:alternative;
-  <https://purl.eu/ns/shacl#message> "The expected value for alternative name is a Literal"@en .
+  shacl:path <http://data.europa.eu/m8g/hasAccountingDocument> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/cf9602ea5422d929eccf1b7ba9f66046b2fce096> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.registeredaddress";
   shacl:class <http://www.w3.org/ns/locn#Address>;
   shacl:description "The address at which the Legal Entity is legally registered."@en;
   shacl:name "registered address"@en;
-  shacl:path <http://data.europa.eu/m8g/registeredAddress>;
-  <https://purl.eu/ns/shacl#message> "The range of registered address must be of type <http://www.w3.org/ns/locn#Address>."@en .
+  shacl:path <http://data.europa.eu/m8g/registeredAddress> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/e2017f72421063cd9ff494011ec78f35f9632a4a> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.identifier";
   shacl:class <http://www.w3.org/ns/adms#Identifier>;
   shacl:description "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status."@en;
   shacl:name "identifier"@en;
-  shacl:path <http://www.w3.org/ns/adms#identifier>;
-  <https://purl.eu/ns/shacl#message> "The range of identifier must be of type <http://www.w3.org/ns/adms#Identifier>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/e397ea40389111be56f8ee88be0d4571f77cd3fc> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalentitystatus";
-  shacl:description "Information about the viability of the current position of the legal entity."@en;
-  shacl:name "legal entity status"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://www.w3.org/ns/legal#companyStatus>;
-  <https://purl.eu/ns/shacl#message> "The expected value for legal entity status is a rdfs:Resource (URI or blank node)"@en .
+  shacl:path <http://www.w3.org/ns/adms#identifier> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.alternativename";
   shacl:datatype rdf:langString;
   shacl:description "Any name by which a Legal Entity is known, other than their legal name."@en;
   shacl:name "alternative name"@en;
-  shacl:path dc:alternative;
-  <https://purl.eu/ns/shacl#message> "The range of alternative name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
+  shacl:path dc:alternative .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LiteralShape> a shacl:NodeShape;
   shacl:closed false;
@@ -654,53 +259,26 @@
   shacl:closed false;
   shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/09939b0ad16b044cbce79d53c6c97efcc6ad682d>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/678afe5ba59824ab6bd10b0acd13799900fa2bf3>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/92c74470235a279a2d61934b4fefb7b590a20196>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/9a3fb2f7985ffdaf5c668c29a107a7e8ac02f1ce>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/bbecfa203e6e90f7af31994066ab46b0a8172e2a>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/fa88865dff8487890f122fd7257ebca0d81ff275>;
+    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/bbecfa203e6e90f7af31994066ab46b0a8172e2a>;
   shacl:targetClass org:Organization .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/09939b0ad16b044cbce79d53c6c97efcc6ad682d> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.hasmember";
   shacl:class foaf:Agent;
   shacl:description "Indicates an agent (person or other organization) who is a member of the subject Organization."@en;
   shacl:name "has member"@en;
-  shacl:path org:hasMember;
-  <https://purl.eu/ns/shacl#message> "The range of has member must be of type <http://xmlns.com/foaf/0.1/Agent>."@en .
+  shacl:path org:hasMember .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/678afe5ba59824ab6bd10b0acd13799900fa2bf3> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.suborganizationof";
   shacl:class org:Organization;
   shacl:description "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization."@en;
   shacl:name "sub organization of"@en;
-  shacl:path org:subOrganizationOf;
-  <https://purl.eu/ns/shacl#message> "The range of sub organization of must be of type <http://www.w3.org/ns/org#Organization>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/92c74470235a279a2d61934b4fefb7b590a20196> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.hassuborganization";
-  shacl:description "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an organization which is a sub-part or child of this organization."@en;
-  shacl:name "has sub organization"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path org:hasSubOrganization;
-  <https://purl.eu/ns/shacl#message> "The expected value for has sub organization is a rdfs:Resource (URI or blank node)"@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/9a3fb2f7985ffdaf5c668c29a107a7e8ac02f1ce> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.suborganizationof";
-  shacl:description "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization."@en;
-  shacl:name "sub organization of"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path org:subOrganizationOf;
-  <https://purl.eu/ns/shacl#message> "The expected value for sub organization of is a rdfs:Resource (URI or blank node)"@en .
+  shacl:path org:subOrganizationOf .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/bbecfa203e6e90f7af31994066ab46b0a8172e2a> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.hassuborganization";
   shacl:class org:Organization;
   shacl:description "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an organization which is a sub-part or child of this organization."@en;
   shacl:name "has sub organization"@en;
-  shacl:path org:hasSubOrganization;
-  <https://purl.eu/ns/shacl#message> "The range of has sub organization must be of type <http://www.w3.org/ns/org#Organization>."@en .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/fa88865dff8487890f122fd7257ebca0d81ff275> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.hasmember";
-  shacl:description "Indicates an agent (person or other organization) who is a member of the subject Organization."@en;
-  shacl:name "has member"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path org:hasMember;
-  <https://purl.eu/ns/shacl#message> "The expected value for has member is a rdfs:Resource (URI or blank node)"@en .
+  shacl:path org:hasSubOrganization .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#TextShape> a shacl:NodeShape;
   shacl:closed false;
