@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@vocab": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0",
+    "@vocab": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl",
     "qb": "http://purl.org/linked-data/cube#",
     "qb:codeList": {
       "@id": "qb:codeList",
@@ -100,22 +100,22 @@
       "@id": "vl:message"
     }
   },
-  "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0",
+  "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl",
   "shapes": [
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AccountingDocumentShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AccountingDocumentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://data.europa.eu/m8g/AccountingDocument"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#ContactPointShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#ContactPoint.contactpage",
           "sh:class": "http://xmlns.com/foaf/0.1/Document",
           "sh:description": {
@@ -130,47 +130,47 @@
       "sh:targetClass": "http://data.europa.eu/m8g/ContactPoint"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#TextShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#TextShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LiteralShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LiteralShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#URIShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#URIShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#DateShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#DateShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2001/XMLSchema#date"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#CodeShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#CodeShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#IdentifierShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemeURI",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
           "sh:description": {
@@ -182,7 +182,7 @@
           "sh:path": "http://purl.org/dc/terms/conformsTo"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.schemename",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -194,7 +194,7 @@
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#label"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.dateofissue",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
           "sh:description": {
@@ -206,7 +206,7 @@
           "sh:path": "http://purl.org/dc/terms/issued"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Identifier.identifies",
           "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
           "sh:description": {
@@ -221,12 +221,12 @@
       "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/35a0c5bc0ce5ab144bd063c0f462c983de54579b",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/35a0c5bc0ce5ab144bd063c0f462c983de54579b",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalidentifier",
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:description": {
@@ -238,7 +238,7 @@
           "sh:path": "http://www.w3.org/ns/legal#legalIdentifier"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/67e99f01ae88b60e2e57fe2797aea1894ac1d63c",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/67e99f01ae88b60e2e57fe2797aea1894ac1d63c",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.registrationdate",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
           "sh:description": {
@@ -250,7 +250,7 @@
           "sh:path": "http://data.europa.eu/m8g/registrationDate"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/718ae9bbdedff1ecd80c1da376fb9ece011dd216",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/718ae9bbdedff1ecd80c1da376fb9ece011dd216",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalentitystatus",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
@@ -262,7 +262,7 @@
           "sh:path": "http://www.w3.org/ns/legal#companyStatus"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.contactpoint",
           "sh:class": "http://data.europa.eu/m8g/ContactPoint",
           "sh:description": {
@@ -274,7 +274,7 @@
           "sh:path": "http://data.europa.eu/m8g/contactPoint"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/888031c72afb09e066acb8fcd23afb4db1e22f13",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/888031c72afb09e066acb8fcd23afb4db1e22f13",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalformtype",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
@@ -286,7 +286,7 @@
           "sh:path": "http://www.w3.org/ns/legal#companyType"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/88c7bac3bf428d0c0abcd15cc9806d565ab6e8b4",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/88c7bac3bf428d0c0abcd15cc9806d565ab6e8b4",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -298,7 +298,7 @@
           "sh:path": "http://www.w3.org/ns/legal#legalName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/8a3a5192f0c9731ae0fb58d760e00cc2c338c8a9",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/8a3a5192f0c9731ae0fb58d760e00cc2c338c8a9",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.legalentityactivity",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
@@ -310,7 +310,7 @@
           "sh:path": "http://www.w3.org/ns/legal#companyActivity"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/af46641918ae164394ce82dcf9d46838a8c9a31d",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/af46641918ae164394ce82dcf9d46838a8c9a31d",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.hasaccountingdocument",
           "sh:class": "http://data.europa.eu/m8g/AccountingDocument",
           "sh:description": {
@@ -322,7 +322,7 @@
           "sh:path": "http://data.europa.eu/m8g/hasAccountingDocument"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/cf9602ea5422d929eccf1b7ba9f66046b2fce096",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/cf9602ea5422d929eccf1b7ba9f66046b2fce096",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.registeredaddress",
           "sh:class": "http://www.w3.org/ns/locn#Address",
           "sh:description": {
@@ -334,7 +334,7 @@
           "sh:path": "http://data.europa.eu/m8g/registeredAddress"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.identifier",
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:description": {
@@ -346,7 +346,7 @@
           "sh:path": "http://www.w3.org/ns/adms#identifier"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntityShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#LegalEntityShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#LegalEntity.alternativename",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -361,12 +361,12 @@
       "sh:targetClass": "http://www.w3.org/ns/legal#LegalEntity"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AddressShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.thoroughfare",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -378,7 +378,7 @@
           "sh:path": "http://www.w3.org/ns/locn#thoroughfare"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel1",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -390,7 +390,7 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.addressarea",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -402,7 +402,7 @@
           "sh:path": "http://www.w3.org/ns/locn#addressArea"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.administrativeunitlevel2",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -414,7 +414,7 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL2"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.postname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -426,7 +426,7 @@
           "sh:path": "http://www.w3.org/ns/locn#postName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.locatorname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -438,7 +438,7 @@
           "sh:path": "http://www.w3.org/ns/locn#locatorName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Address.fulladdress",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -453,19 +453,19 @@
       "sh:targetClass": "http://www.w3.org/ns/locn#Address"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#FormalOrganizationShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#FormalOrganizationShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/ns/org#FormalOrganization"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#OrganizationShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/09939b0ad16b044cbce79d53c6c97efcc6ad682d",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#OrganizationShape/09939b0ad16b044cbce79d53c6c97efcc6ad682d",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.hasmember",
           "sh:class": "http://xmlns.com/foaf/0.1/Agent",
           "sh:description": {
@@ -477,7 +477,7 @@
           "sh:path": "http://www.w3.org/ns/org#hasMember"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/678afe5ba59824ab6bd10b0acd13799900fa2bf3",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#OrganizationShape/678afe5ba59824ab6bd10b0acd13799900fa2bf3",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.suborganizationof",
           "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:description": {
@@ -489,7 +489,7 @@
           "sh:path": "http://www.w3.org/ns/org#subOrganizationOf"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#OrganizationShape/bbecfa203e6e90f7af31994066ab46b0a8172e2a",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#OrganizationShape/bbecfa203e6e90f7af31994066ab46b0a8172e2a",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Organization.hassuborganization",
           "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:description": {
@@ -504,12 +504,12 @@
       "sh:targetClass": "http://www.w3.org/ns/org#Organization"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AgentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/20e72c692090ea97cd328f03c7904cac5e165bc2",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AgentShape/20e72c692090ea97cd328f03c7904cac5e165bc2",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.headof",
           "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:description": {
@@ -521,7 +521,7 @@
           "sh:path": "http://www.w3.org/ns/org#headOf"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.name",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -533,7 +533,7 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/322371a77364a50f049d46180f6192532eea26dc",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AgentShape/322371a77364a50f049d46180f6192532eea26dc",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.type",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
@@ -545,7 +545,7 @@
           "sh:path": "http://purl.org/dc/terms/type"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#AgentShape/f6a439dacfd0da602e5b64f14f007fe9ab33a467",
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#AgentShape/f6a439dacfd0da602e5b64f14f007fe9ab33a467",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#Agent.memberof",
           "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:description": {
@@ -560,7 +560,7 @@
       "sh:targetClass": "http://xmlns.com/foaf/0.1/Agent"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0#DocumentShape",
+      "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/shacl/core-business-ap-SHACL.ttl#DocumentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],

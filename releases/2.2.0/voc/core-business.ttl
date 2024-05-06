@@ -55,7 +55,7 @@
 <http://data.europa.eu/m8g> a owl:Ontology;
   rdfs:label "core-business"@en,
     "core-business"@nl;
-  dc:issued "2024-01-31";
+  dc:issued "2024-05-06";
   dc:license <https://creativecommons.org/licenses/by/4.0/>;
   dc:mediator [
     foaf:homepage <https://semic.eu>;
