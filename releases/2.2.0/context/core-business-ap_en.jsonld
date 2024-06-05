@@ -109,7 +109,7 @@
     },
     "Identifier.schemaAgency": {
       "@container": "@set",
-      "@id": "http://www.w3.org/ns/adms#schemeAgency"
+      "@id": "http://www.w3.org/ns/adms#schemaAgency"
     },
     "Identifier.schemeName": {
       "@container": "@set",
