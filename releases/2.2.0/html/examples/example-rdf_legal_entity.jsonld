@@ -87,7 +87,8 @@
       "@type": "Identifier",
       "skos:notation": "0407.562.029",
       "dct:conformsTo": {
-        "@id": "https://economie.fgov.be/fr/themes/entreprises/banque-carrefour-des/actualites/structure-du-numero"
+        "@type": "xsd:anyURI",
+        "@value": "https://economie.fgov.be/fr/themes/entreprises/banque-carrefour-des/actualites/structure-du-numero"
       },
       "rdfs:label": {
         "@language": "fr",

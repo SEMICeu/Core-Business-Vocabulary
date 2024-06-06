@@ -22,7 +22,7 @@ ex:a a legal:LegalEntity ;
 
 ex:id a adms:Identifier ;
   skos:notation "0407.562.029" ;
-  dct:conformsTo <https://economie.fgov.be/fr/themes/entreprises/banque-carrefour-des/actualites/structure-du-numero> ;
+  dct:conformsTo "https://economie.fgov.be/fr/themes/entreprises/banque-carrefour-des/actualites/structure-du-numero"^^xsd:anyURI ;
   adms:schemaAgency "Banque-Carrefour des Entreprises (BCE)" ;
   rdfs:label "numéro d’entreprise"@fr .
 
