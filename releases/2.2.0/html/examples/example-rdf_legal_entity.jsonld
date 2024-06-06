@@ -4,10 +4,12 @@
   {
     "adms": "http://www.w3.org/ns/adms#",
     "cv": "http://data.europa.eu/m8g/",
+    "dct": "http://purl.org/dc/terms/",
     "ex": "http://example.com/",
     "legal": "http://www.w3.org/ns/legal#",
     "legal-form": "http://data.europa.eu/ih3/legal-form/",
     "locn": "http://www.w3.org/ns/locn#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }],
@@ -83,7 +85,15 @@
     {
       "@id": "ex:id",
       "@type": "Identifier",
-      "skos:notation": "0407.562.029"
+      "skos:notation": "0407.562.029",
+      "dct:conformsTo": {
+        "@id": "https://economie.fgov.be/fr/themes/entreprises/banque-carrefour-des/actualites/structure-du-numero"
+      },
+      "rdfs:label": {
+        "@language": "fr",
+        "@value": "numéro d’entreprise"
+      },
+      "adms:schemaAgency": "Banque-Carrefour des Entreprises (BCE)"
     }
   ]
 }

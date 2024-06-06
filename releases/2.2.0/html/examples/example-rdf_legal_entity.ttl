@@ -1,9 +1,11 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix cv: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix ex: <http://example.com/> .
 @prefix legal: <http://www.w3.org/ns/legal#> .
 @prefix legal-form: <http://data.europa.eu/ih3/legal-form/> .
 @prefix locn: <http://w3.org/ns/locn#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -19,7 +21,10 @@ ex:a a legal:LegalEntity ;
   cv:registrationDate "1952-09-27"^^xsd:date .
 
 ex:id a adms:Identifier ;
-  skos:notation "0407.562.029" .
+  skos:notation "0407.562.029" ;
+  dct:conformsTo <https://economie.fgov.be/fr/themes/entreprises/banque-carrefour-des/actualites/structure-du-numero> ;
+  adms:schemaAgency "Banque-Carrefour des Entreprises (BCE)" ;
+  rdfs:label "numéro d’entreprise"@fr .
 
 ex:address a locn:Address ;
   locn:adminUnitL1 "Belgique"@fr ;
