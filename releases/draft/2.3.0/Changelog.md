@@ -5,7 +5,7 @@
 
 This document describes the (major) changes to [the current version 2.2.0](https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0) of the Core Business Vocabulary for which a new version is being proposed ([version 2.3.0](https://semiceu.github.io/uri.semic.eu-generated/Core-Business-Vocabulary/releases/draft/2.3.0/)). The list of changes results in the new version to be considered as a minor release.
 
-## Detailed changes from v2.2.0 to v2.X.X
+## Detailed changes from v2.2.0 to v2.3.0
 The table below gives an overview of the classes (and their definitions) within both data models. Classes that are related are juxta-positioned.
 
 **C** stands for changes in classes
@@ -16,7 +16,7 @@ The table below gives an overview of the classes (and their definitions) within 
 
 **D** stands for changes in data types
 
-| Nr | CBV v2.2.0 | CBV v2.X.X | Rationale | GitHub / Change |
+| Nr | CBV v2.2.0 | CBV v2.3.0 | Rationale | GitHub / Change |
 | -- | ------------ | ------------ | --------- | --------------- |
 | C1  | - |cv:LegalStatus | Introduction LegalStatus class to facilitate reporting conform to HVD regulations | [#45](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/45) |
 | P1  | - | cv:legalEntityStatus & cv:legalStatusDate | Introduction legalEntityStatus and legalStatusDate properties to provide the legal status of the entity on a given date|[#45](https://github.com/SEMICeu/Core-Business-Vocabulary/issues/45) |
