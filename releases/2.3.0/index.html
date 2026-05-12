@@ -139,7 +139,7 @@
 	function quickreference() {
 		$('#table-quickoverview').DataTable();
     };
-	var shaclfilepath = "shacl/core-business-ap-draft-SHACL.ttl" ;
+	var shaclfilepath = "shacl/core-business-ap-SHACL.ttl" ;
 	var folder = "./html/examples/";
 	var model = "any" ;
 	var version_list = [
@@ -148,16 +148,16 @@
 		"description": "Core Vocabularies"
 		},
 	] ;
-	var linkinfo = "https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0" + "#validation" ;
+	var linkinfo = "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0" + "#validation" ;
 
    
 
     var respecConfig = {
       postProcess: [quickreference],
-      edDraftURI: "https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0",
-      latestVersion: "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/",
+      edDraftURI: "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0",
+      latestVersion: "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0/",
       specStatus: "LD",
-      publishDate: "2026-02-11",
+      publishDate: "2026-05-12",
       editors: myeditors,
       authors: myauthors,
       github: "SEMICeu/Core-Business-Vocabulary",
@@ -286,10 +286,10 @@ business registers.
 <section id="specstatus">
     <h2>Status</h2>
         <p>
-            This Core Vocabulary has the status SEMIC Recommendation published at 2026-02-11.
+            This Core Vocabulary has the status SEMIC Recommendation published at 2026-05-12.
         </p>
         <p>
-            Information about the process and the decisions involved in the creation of this specification can be found at the <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/blob/master/releases/2.2.1/Changelog.md">Changelog</a>.
+            Information about the process and the decisions involved in the creation of this specification can be found at the <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/blob/master/releases/2.3.0/Changelog.md">Changelog</a>.
         </p>
 </section>
 
@@ -310,7 +310,7 @@ business registers.
 		  This specification </span> of <a rel="cc:attributionURL" property="cc:attributionName" href="ORGANISATION" xmlns:cc="http://creativecommons.org/ns#">ORGANISATION </a> 
 	          is published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">"CC0"</a>.
 	-->
-             Copyright © 2024 European Union. All material in this repository is published under the license CC-BY 4.0, unless explicitly otherwise mentioned.
+             Copyright © 2026 European Union. All material in this repository is published under the license CC-BY 4.0, unless explicitly otherwise mentioned.
         </p>
     
 </section>
@@ -338,7 +338,8 @@ This specification uses the following prefixes to shorten the URIs for readabili
         <table id="table-namespaces" class="simple">
             <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
             <tbody>
-            <tr><td><code>adms</code></td><td><code>http://www.w3.org/ns/adms#</code></td></tr> 
+            <tr><td><code>adms</code></td><td><code>http://www.w3.org/ns/adms#</code></td></tr>
+            <tr><td><code>a4g</code></td><td><code>http://data.europa.eu/a4g/ontology#</code></td></tr>  
             <tr><td><code>cv</code></td><td><code>http://data.europa.eu/m8g/</code></td></tr>     
             <tr><td><code>dct</code></td><td><code>http://purl.org/dc/terms/</code></td></tr>
             <tr><td><code>foaf</code></td><td><code>http://xmlns.com/foaf/0.1/</code></td></tr>
@@ -397,9 +398,9 @@ This specification uses the following prefixes to shorten the URIs for readabili
                 
     </div>
     <div>
-        <a href="https://semiceu.github.io/Core-Business-Vocabulary/releases/draft/2.3.0/html/overview.jpg"
+        <a href="https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0/html/overview.jpg"
            target="_blank">
-            <img src="https://semiceu.github.io/Core-Business-Vocabulary/releases/draft/2.3.0/html/overview.jpg"/>
+            <img src="https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0/html/overview.jpg"/>
         </a>
     </div>
 </section>
@@ -524,10 +525,11 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                         <dd>
                             For this entity the following properties are defined: <a href="#Address.addressarea">address area</a>
                             , <a href="#Address.addressID">address ID</a>
-                            , <a href="#Address.AdministrativeUnit">Administrative Unit</a>
+                            , <a href="#Address.administrativeunit">administrative unit</a>
                             , <a href="#Address.administrativeunitlevel1">administrative unit level 1</a>
                             , <a href="#Address.administrativeunitlevel2">administrative unit level 2</a>
                             , <a href="#Address.fulladdress">full address</a>
+                            , <a href="#Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit">http://data.europa.eu/m8g/adminUnit</a>
                             , <a href="#Address.locatordesignator">locator designator</a>
                             , <a href="#Address.locatorname">locator name</a>
                             , <a href="#Address.postcode">post code</a>
@@ -578,7 +580,7 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                                 resource="http://www.w3.org/ns/locn#addressArea"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20address area%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.addressarea" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20address area%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.addressarea" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -621,7 +623,7 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                                 resource="http://www.w3.org/ns/locn#addressId"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20address ID%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.addressID" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20address ID%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.addressID" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -667,22 +669,22 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                 </td>
                             </tr>
                         
-                            <tr id="Address.AdministrativeUnit"
+                            <tr id="Address.administrativeunit"
                                 typeof="rdf:Property"
-                                resource="http://data.europa.eu/m8g/AdminUnit"
+                                resource="http://data.europa.eu/m8g/adminUnit"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Administrative Unit%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.AdministrativeUnit" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20administrative unit%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.administrativeunit" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data.europa.eu/m8g/AdminUnit"
+                                        <a href="http://data.europa.eu/m8g/adminUnit"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/AdminUnit"
+                                           data-content="http://data.europa.eu/m8g/adminUnit"
                                            data-placement="right">
-                                        Administrative Unit</a>
+                                        administrative unit</a>
                                 </td>
                                 <td>
                                     
@@ -715,7 +717,7 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                 resource="http://www.w3.org/ns/locn#adminUnitL1"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20administrative unit level 1%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.administrativeunitlevel1" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20administrative unit level 1%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.administrativeunitlevel1" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -758,7 +760,7 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                 resource="http://www.w3.org/ns/locn#adminUnitL2"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20administrative unit level 2%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.administrativeunitlevel2" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20administrative unit level 2%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.administrativeunitlevel2" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -801,7 +803,7 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                 resource="http://www.w3.org/ns/locn#fullAddress"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20full address%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.fulladdress" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20full address%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.fulladdress" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -839,12 +841,55 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                 </td>
                             </tr>
                         
+                            <tr id="Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit"
+                                typeof="rdf:Property"
+                                resource="http://data.europa.eu/m8g/adminUnit"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20http://data.europa.eu/m8g/adminUnit%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/adminUnit"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/adminUnit"
+                                           data-placement="right">
+                                        http://data.europa.eu/m8g/adminUnit</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#AdministrativeUnit" data-placement="right">Administrative Unit</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="Address.locatordesignator"
                                 typeof="rdf:Property"
                                 resource="http://www.w3.org/ns/locn#locatorDesignator"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20locator designator%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.locatordesignator" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20locator designator%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.locatordesignator" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -887,7 +932,7 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                 resource="http://www.w3.org/ns/locn#locatorName"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20locator name%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.locatorname" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20locator name%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.locatorname" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -932,7 +977,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/ns/locn#postCode"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20post code%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.postcode" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20post code%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.postcode" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -975,7 +1020,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/ns/locn#postName"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20post name%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.postname" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20post name%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.postname" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1018,7 +1063,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/ns/locn#poBox"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20post office box%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.postofficebox" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20post office box%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.postofficebox" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1061,7 +1106,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/ns/locn#thoroughfare"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20thoroughfare%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Address.thoroughfare" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20thoroughfare%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.thoroughfare" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1194,7 +1239,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/code"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20code%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23AdministrativeUnit.code" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20code%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23AdministrativeUnit.code" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1237,7 +1282,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/level"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20level%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23AdministrativeUnit.level" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20level%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23AdministrativeUnit.level" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1280,7 +1325,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/2000/01/rdf-schema#label"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20name%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23AdministrativeUnit.name" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20name%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23AdministrativeUnit.name" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1415,7 +1460,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/contactPage"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20contact page%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23ContactPoint.contactpage" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20contact page%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23ContactPoint.contactpage" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1458,7 +1503,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/email"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has email%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23ContactPoint.hasemail" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has email%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23ContactPoint.hasemail" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1501,7 +1546,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/telephone"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has telephone%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23ContactPoint.hastelephone" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has telephone%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23ContactPoint.hastelephone" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1640,7 +1685,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://purl.org/dc/terms/issued"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20date issued%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Identifier.dateissued" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20date issued%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Identifier.dateissued" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1683,7 +1728,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/identifies"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20identifies%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Identifier.identifies" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20identifies%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Identifier.identifies" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1726,7 +1771,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/2004/02/skos/core#notation"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20notation%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Identifier.notation" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20notation%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Identifier.notation" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1769,7 +1814,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://purl.org/dc/terms/conformsTo"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20schema%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Identifier.schema" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20schema%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Identifier.schema" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1812,7 +1857,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/ns/adms#schemeAgency"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20schema agency%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Identifier.schemaagency" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20schema agency%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Identifier.schemaagency" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1838,7 +1883,7 @@ The key difference between a locator designator and a locator name is that the l
                                     The name of the agency that issued the identifier.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal..
+                                    use dct:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal..
                                 </td>
 				<!--
                                 <td>
@@ -1963,7 +2008,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://purl.org/dc/terms/alternative"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20alternative name%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.alternativename" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20alternative name%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.alternativename" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2006,7 +2051,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/contactPoint"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20contact point%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.contactpoint" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20contact point%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.contactpoint" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2049,7 +2094,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/hasAccountingDocument"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has accounting document%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.hasaccountingdocument" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has accounting document%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.hasaccountingdocument" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2092,7 +2137,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/hasLegalStatus"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has legal status%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.haslegalstatus" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has legal status%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.haslegalstatus" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2135,7 +2180,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://data.europa.eu/m8g/hasPowerOfAttorney"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has power of attorney%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.haspowerofattorney" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has power of attorney%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.haspowerofattorney" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2178,7 +2223,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/ns/adms#identifier"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20identifier%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.identifier" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20identifier%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.identifier" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2221,7 +2266,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/ns/legal#companyActivity"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal entity activity%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.legalentityactivity" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal entity activity%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.legalentityactivity" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2264,7 +2309,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/ns/legal#companyType"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal form type%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.legalformtype" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal form type%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.legalformtype" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2307,7 +2352,7 @@ The key difference between a locator designator and a locator name is that the l
                                 resource="http://www.w3.org/ns/legal#legalIdentifier"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal identifier%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.legalidentifier" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal identifier%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.legalidentifier" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2352,7 +2397,7 @@ The details of the registration are provided as properties of the Identifier cla
                                 resource="http://www.w3.org/ns/legal#legalName"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal name%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.legalname" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal name%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.legalname" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2396,7 +2441,7 @@ A business might have more than one legal name, particularly in countries with m
                                 resource="http://data.europa.eu/m8g/registeredAddress"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20registered address%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.registeredaddress" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20registered address%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.registeredaddress" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2439,7 +2484,7 @@ A business might have more than one legal name, particularly in countries with m
                                 resource="http://data.europa.eu/m8g/registrationDate"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20registration date%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalEntity.registrationdate" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20registration date%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalEntity.registrationdate" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2512,13 +2557,6 @@ A business might have more than one legal name, particularly in countries with m
                 </dd>
                 
                 
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        TBD
-                    </dd>
-                
                 
                     <dt>
                         Properties
@@ -2571,7 +2609,7 @@ A business might have more than one legal name, particularly in countries with m
                                 resource="http://www.w3.org/ns/legal#companyStatus"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal entity status%20in%20Legal Status&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalStatus.legalentitystatus" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal entity status%20in%20Legal Status&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalStatus.legalentitystatus" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2611,18 +2649,18 @@ A business might have more than one legal name, particularly in countries with m
                         
                             <tr id="LegalStatus.legalstatusdate"
                                 typeof="rdf:Property"
-                                resource="http://data.europa.eu/m8g/LegalStatusDate"
+                                resource="http://data.europa.eu/m8g/legalStatusDate"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal status date%20in%20Legal Status&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23LegalStatus.legalstatusdate" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20legal status date%20in%20Legal Status&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23LegalStatus.legalstatusdate" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data.europa.eu/m8g/LegalStatusDate"
+                                        <a href="http://data.europa.eu/m8g/legalStatusDate"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/LegalStatusDate"
+                                           data-content="http://data.europa.eu/m8g/legalStatusDate"
                                            data-placement="right">
                                         legal status date</a>
                                 </td>
@@ -2770,7 +2808,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://www.w3.org/ns/org#headOf"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20head of%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Agent.headof" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20head of%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Agent.headof" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2813,7 +2851,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://purl.org/dc/terms/creator"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20issued by%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Agent.issuedby" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20issued by%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Agent.issuedby" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2856,7 +2894,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://www.w3.org/ns/org#memberOf"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20member of%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Agent.memberof" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20member of%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Agent.memberof" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2899,7 +2937,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://purl.org/dc/terms/title"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20name%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Agent.name" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20name%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Agent.name" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2942,7 +2980,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://purl.org/dc/terms/type"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20type%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Agent.type" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20type%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Agent.type" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3177,7 +3215,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://purl.org/dc/terms/title"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20schema name%20in%20Identifier Schema&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23IdentifierSchema.schemaname" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20schema name%20in%20Identifier Schema&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23IdentifierSchema.schemaname" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3314,7 +3352,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://www.w3.org/ns/org#hasMember"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has member%20in%20Organization&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Organization.hasmember" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has member%20in%20Organization&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Organization.hasmember" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3357,7 +3395,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://www.w3.org/ns/org#hasSubOrganization"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has sub organization%20in%20Organization&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Organization.hassuborganization" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20has sub organization%20in%20Organization&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Organization.hassuborganization" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3400,7 +3438,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://www.w3.org/ns/org#subOrganizationOf"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20sub organization of%20in%20Organization&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23Organization.suborganizationof" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20sub organization of%20in%20Organization&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Organization.suborganizationof" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3527,7 +3565,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://data.europa.eu/m8g/authorises"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20authorises%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23PowerofAttorney.authorises" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20authorises%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23PowerofAttorney.authorises" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3570,7 +3608,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://data.europa.eu/m8g/role"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Role%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23PowerofAttorney.Role" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Role%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23PowerofAttorney.Role" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3613,7 +3651,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://data.europa.eu/m8g/scopeOfAttorney"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20scope of attorney%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23PowerofAttorney.scopeofattorney" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20scope of attorney%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23PowerofAttorney.scopeofattorney" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3656,7 +3694,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                 resource="http://purl.org/dc/terms/type"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20type%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/draft/2.3.0%23PowerofAttorney.type" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20type%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23PowerofAttorney.type" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3824,8 +3862,8 @@ They are included in the Core Vocabulary because they form the range of properti
          (non normative)
         
             <p>
-                A reusable JSON-LD context definition for this Core Vocabulary is retrievable at: <a href="/Core-Business-Vocabulary/draft/2.3.0/context/core-business-ap-draft.jsonld"
-    target="_blank">/Core-Business-Vocabulary/draft/2.3.0/context/core-business-ap-draft.jsonld</a>
+                A reusable JSON-LD context definition for this Core Vocabulary is retrievable at: <a href="/Core-Business-Vocabulary/releases/2.3.0/context/core-business-ap.jsonld"
+    target="_blank">/Core-Business-Vocabulary/releases/2.3.0/context/core-business-ap.jsonld</a>
             </p>
         
     </div>
@@ -3838,8 +3876,8 @@ They are included in the Core Vocabulary because they form the range of properti
          (non normative)
         
             <p>
-                A reusable SHACL template for this Core Vocabulary is retrievable at: <a href="/Core-Business-Vocabulary/draft/2.3.0/shacl/core-business-ap-draft-SHACL.ttl"
-    target="_blank">/Core-Business-Vocabulary/draft/2.3.0/shacl/core-business-ap-draft-SHACL.ttl</a>
+                A reusable SHACL template for this Core Vocabulary is retrievable at: <a href="/Core-Business-Vocabulary/releases/2.3.0/shacl/core-business-ap-SHACL.ttl"
+    target="_blank">/Core-Business-Vocabulary/releases/2.3.0/shacl/core-business-ap-SHACL.ttl</a>
             </p>
         
     </div>
@@ -3868,12 +3906,12 @@ The following section provides support for implementing the Core Business Vocabu
 
 One common technical question is the format in which the data is being exchanged. 
 For conformance with the Core Business Vocabulary, it is not mandatory that this happens in an RDF serialisation, but the exchanged format SHOULD be unambiguously transformable into RDF.
-For the format JSON, a popular format to exchange data between systems, SEMIC provides a <a href="./context/core-business-ap-draft.jsonld">JSON-LD context file</a>. 
+For the format JSON, a popular format to exchange data between systems, SEMIC provides a <a href="./context/core-business-ap.jsonld">JSON-LD context file</a>. 
 JSON-LD is a W3C Recommendation [[[json-ld11]]] that provided a standard approach to interpret JSON structures as RDF.
 The provided JSON-LD context file can be used by implementers.
 This JSON-LD context is not normative, i.e. other JSON-LD contexts are allowed.
 <p/>
-The JSON-LD context file is downloadable <a href="./context/core-business-ap-draft.jsonld">here</a>.
+The JSON-LD context file is downloadable <a href="./context/core-business-ap.jsonld">here</a>.
 <p/>
 
 <h3>Validation</h3>
@@ -3888,13 +3926,13 @@ As such this collection of SHACL expressions that can be used to build a validat
 It is up to the implementers to define the validation they expect.
 Each implementation happens within a context, and that context is beyond the SHACL expressions here.
 <p/>
-The shapes can be found <a href="./shacl/core-business-ap-draft-SHACL.ttl">here</a>.
+The shapes can be found <a href="./shacl/core-business-ap-SHACL.ttl">here</a>.
 
 <h3>RDF representation</h3>
-The RDF representation of the Core Business Vocabulary is available <a href="./voc/core-business-ap-draft.ttl">here</a>.
+The RDF representation of the Core Business Vocabulary is available <a href="./voc/core-business-ap.ttl">here</a>.
 
 <h3>UML representation</h3>
-The UML representation from which the Core Business Vocabulary has been build is available <a href="./uml">here</a>.
+The UML representation from which the Core Business Vocabulary has been build is available <a href="./uml/CoreVocabularies.EAP">here</a>.
 
 <!--
 <h3>Mapping</h3>
@@ -4017,6 +4055,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -4068,8 +4110,8 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Address">Address</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
 								<td></td>
-								<td><a href="#Address.AdministrativeUnit">Administrative Unit </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
+								<td><a href="#Address.administrativeunit">administrative unit </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/adminUnit</div></td>
 							</tr>
 						
 					
@@ -4100,6 +4142,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Address.fulladdress">full address </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#fullAddress</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit">http://data.europa.eu/m8g/adminUnit </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/adminUnit</div></td>
 							</tr>
 						
 					
@@ -4664,7 +4716,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://data.europa.eu/m8g/LegalStatus</div></td>
 								<td></td>
 								<td><a href="#LegalStatus.legalstatusdate">legal status date </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/LegalStatusDate</div></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/legalStatusDate</div></td>
 							</tr>
 						
 					
@@ -4798,6 +4850,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 	    var prefixes = [ 
 {'pref':'ad:', 'ns': 'http://inspire.ec.europa.eu/ont/ad#'},
 {'pref':'adms:', 'ns': 'http://www.w3.org/ns/adms#'},
+{'pref':'a4g:', 'ns': 'http://data.europa.eu/a4g/ontology#'},
 {'pref':'atu:', 'ns': 'http://data.europa.eu/88u/dataset/'},
 {'pref':'cav:', 'ns': 'http://data.europa.eu/2sa/cav#'},
 {'pref':'cpsv:', 'ns': 'http://purl.org/vocab/cpsv#'},
