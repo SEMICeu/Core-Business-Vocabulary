@@ -57,9 +57,7 @@
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/e7a338c887b80429b787dcd36542f80eca4139e7>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/f2902f698e24b503d7adf51581b603f1acbc23d9>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa>;
   shacl:targetClass <http://www.w3.org/ns/locn#Address> .
 
@@ -106,14 +104,16 @@
   shacl:path <http://www.w3.org/ns/locn#addressArea> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/5d7f103641a62a590c3c6d874d2a14987e054924> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit";
-  shacl:description "A detailed administrative unit organized in a hierarchy."@en;
+  shacl:description "A detailed administrative unit organized in a hierarchy."@en,
+    "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."@en;
   shacl:name "administrative unit"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data.europa.eu/m8g/adminUnit> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/60bff98f6076f0828e3b73d73fefc7b1eb56b93a> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit";
   shacl:class <http://data.europa.eu/m8g/AdminUnit>;
-  shacl:description "A detailed administrative unit organized in a hierarchy."@en;
+  shacl:description "A detailed administrative unit organized in a hierarchy."@en,
+    "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."@en;
   shacl:name "administrative unit"@en;
   shacl:path <http://data.europa.eu/m8g/adminUnit> .
 
@@ -213,23 +213,11 @@
   shacl:name "full address"@en;
   shacl:path <http://www.w3.org/ns/locn#fullAddress> .
 
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/e7a338c887b80429b787dcd36542f80eca4139e7> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit";
-  shacl:description "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."@en;
-  shacl:name "http://data.europa.eu/m8g/adminUnit"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/adminUnit> .
-
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.addressarea";
   shacl:description "The name of a geographic area that groups Addresses."@en;
   shacl:name "address area"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path <http://www.w3.org/ns/locn#addressArea> .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/f2902f698e24b503d7adf51581b603f1acbc23d9> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit";
-  shacl:class <http://data.europa.eu/m8g/AdminUnit>;
-  shacl:description "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."@en;
-  shacl:name "http://data.europa.eu/m8g/adminUnit"@en;
-  shacl:path <http://data.europa.eu/m8g/adminUnit> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.postname";
   shacl:description "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
@@ -777,11 +765,11 @@
   shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/322371a77364a50f049d46180f6192532eea26dc>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/4f381639bb6e021939f65b4f41409d1edaeade9b>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/82e3e70dd8f0d48d73af891090cecbc92bc2e216>,
+    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/9cd324618cd23d028a1afffd25e35fe98f54fa07>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/ad509cf634d007734447df83456e78a10881b43a>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/bd4f1cf98007898d10f8173aa59c7e14e3e9ed47>,
+    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/d2254b8259635ec986bc7c65b0227299193c6c16>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/d87189e72386e5cd949071a752fda4488e206276>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/e9a7b2b116c4f29c3a50c651aed8a926cbb4abfc>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/fd89bbf35524849d9900b9b2a91464b5c5e33483>;
   shacl:targetClass <http://data.europa.eu/a4g/ontology#PowerOfAttorney> .
 
@@ -803,17 +791,17 @@
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data.europa.eu/m8g/scopeOfAttorney> .
 
+<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.role";
+  shacl:description "The function of an Agent within a context."@en;
+  shacl:name "role"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/m8g/role> .
+
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/9cd324618cd23d028a1afffd25e35fe98f54fa07> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.scopeofattorney";
   shacl:datatype rdf:langString;
   shacl:description "The context in which the power of attorney can be applied."@en;
   shacl:name "scope of attorney"@en;
   shacl:path <http://data.europa.eu/m8g/scopeOfAttorney> .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/ad509cf634d007734447df83456e78a10881b43a> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.Role";
-  shacl:description "The function of an Agent within a context."@en;
-  shacl:name "Role"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/role> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/bd4f1cf98007898d10f8173aa59c7e14e3e9ed47> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.scopeofattorney";
   shacl:description "The context in which the power of attorney can be applied."@en;
@@ -821,17 +809,17 @@
   shacl:path <http://data.europa.eu/m8g/scopeOfAttorney>;
   shacl:uniqueLang true .
 
+<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/d2254b8259635ec986bc7c65b0227299193c6c16> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.role";
+  shacl:class skos:Concept;
+  shacl:description "The function of an Agent within a context."@en;
+  shacl:name "role"@en;
+  shacl:path <http://data.europa.eu/m8g/role> .
+
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/d87189e72386e5cd949071a752fda4488e206276> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.authorises";
   shacl:class foaf:Agent;
   shacl:description "The agent that the power of attorney gives the authority to act."@en;
   shacl:name "authorises"@en;
   shacl:path <http://data.europa.eu/m8g/authorises> .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/e9a7b2b116c4f29c3a50c651aed8a926cbb4abfc> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.Role";
-  shacl:class skos:Concept;
-  shacl:description "The function of an Agent within a context."@en;
-  shacl:name "Role"@en;
-  shacl:path <http://data.europa.eu/m8g/role> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/fd89bbf35524849d9900b9b2a91464b5c5e33483> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.authorises";
   shacl:description "The agent that the power of attorney gives the authority to act."@en;

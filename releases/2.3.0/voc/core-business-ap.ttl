@@ -69,7 +69,7 @@
   rdfs:range xsd:date .
 
 <http://data.europa.eu/m8g/role> a owl:ObjectProperty;
-  rdfs:label "Role"@en;
+  rdfs:label "role"@en;
   rdfs:comment "The function of an Agent within a context."@en;
   rdfs:domain <http://data.europa.eu/a4g/ontology#PowerOfAttorney>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;

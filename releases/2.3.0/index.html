@@ -526,10 +526,10 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                             For this entity the following properties are defined: <a href="#Address.addressarea">address area</a>
                             , <a href="#Address.addressID">address ID</a>
                             , <a href="#Address.administrativeunit">administrative unit</a>
+                            , <a href="#Address.administrativeunit">administrative unit</a>
                             , <a href="#Address.administrativeunitlevel1">administrative unit level 1</a>
                             , <a href="#Address.administrativeunitlevel2">administrative unit level 2</a>
                             , <a href="#Address.fulladdress">full address</a>
-                            , <a href="#Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit">http://data.europa.eu/m8g/adminUnit</a>
                             , <a href="#Address.locatordesignator">locator designator</a>
                             , <a href="#Address.locatorname">locator name</a>
                             , <a href="#Address.postcode">post code</a>
@@ -712,6 +712,49 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                 </td>
                             </tr>
                         
+                            <tr id="Address.administrativeunit"
+                                typeof="rdf:Property"
+                                resource="http://data.europa.eu/m8g/adminUnit"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20administrative unit%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.administrativeunit" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/adminUnit"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/adminUnit"
+                                           data-placement="right">
+                                        administrative unit</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#AdministrativeUnit" data-placement="right">Administrative Unit</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="Address.administrativeunitlevel1"
                                 typeof="rdf:Property"
                                 resource="http://www.w3.org/ns/locn#adminUnitL1"
@@ -830,49 +873,6 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                 </td>
                                 <td property="skos:scopeNote">
                                     Use of this property is recommended as it will not suffer any misunderstandings that might arise through the breaking up of an address into its component parts. This property is analogous to vCard's label property but with two important differences: (1) formatting is not assumed so that, unlike vCard label, it may not be suitable to print this on an address label, (2) vCard's label property has a domain of vCard Address; the fullAddress property has no such restriction. An example of a full address is "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France".
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit"
-                                typeof="rdf:Property"
-                                resource="http://data.europa.eu/m8g/adminUnit"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20http://data.europa.eu/m8g/adminUnit%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/m8g/adminUnit"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/adminUnit"
-                                           data-placement="right">
-                                        http://data.europa.eu/m8g/adminUnit</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#AdministrativeUnit" data-placement="right">Administrative Unit</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
                                 </td>
 				<!--
                                 <td>
@@ -3518,7 +3518,7 @@ They are included in the Core Vocabulary because they form the range of properti
                     
                         <dd>
                             For this entity the following properties are defined: <a href="#PowerofAttorney.authorises">authorises</a>
-                            , <a href="#PowerofAttorney.Role">Role</a>
+                            , <a href="#PowerofAttorney.role">role</a>
                             , <a href="#PowerofAttorney.scopeofattorney">scope of attorney</a>
                             , <a href="#PowerofAttorney.type">type</a>
                             .
@@ -3603,12 +3603,12 @@ They are included in the Core Vocabulary because they form the range of properti
                                 </td>
                             </tr>
                         
-                            <tr id="PowerofAttorney.Role"
+                            <tr id="PowerofAttorney.role"
                                 typeof="rdf:Property"
                                 resource="http://data.europa.eu/m8g/role"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20Role%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23PowerofAttorney.Role" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20role%20in%20Power of Attorney&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23PowerofAttorney.role" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3618,7 +3618,7 @@ They are included in the Core Vocabulary because they form the range of properti
                                            data-toggle="tooltip"
                                            data-content="http://data.europa.eu/m8g/role"
                                            data-placement="right">
-                                        Role</a>
+                                        role</a>
                                 </td>
                                 <td>
                                     
@@ -4120,6 +4120,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Address">Address</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
 								<td></td>
+								<td><a href="#Address.administrativeunit">administrative unit </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/adminUnit</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
 								<td><a href="#Address.administrativeunitlevel1">administrative unit level 1 </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#adminUnitL1</div></td>
 							</tr>
@@ -4142,16 +4152,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Address.fulladdress">full address </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#fullAddress</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Address">Address</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
-								<td></td>
-								<td><a href="#Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit">http://data.europa.eu/m8g/adminUnit </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/adminUnit</div></td>
 							</tr>
 						
 					
@@ -4807,7 +4807,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#PowerofAttorney">Power of Attorney</a></td>
 								<td><div class="shorten">http://data.europa.eu/a4g/ontology#PowerOfAttorney</div></td>
 								<td></td>
-								<td><a href="#PowerofAttorney.Role">Role </a></td>
+								<td><a href="#PowerofAttorney.role">role </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/role</div></td>
 							</tr>
 						

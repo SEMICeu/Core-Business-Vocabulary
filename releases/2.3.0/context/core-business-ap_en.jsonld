@@ -57,6 +57,11 @@
       "@id": "http://purl.org/dc/terms/alternative",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
+    "authorises": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/authorises",
+      "@type": "@id"
+    },
     "code": {
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/code",
@@ -187,11 +192,6 @@
     "notation": {
       "@container": "@set",
       "@id": "http://www.w3.org/2004/02/skos/core#notation"
-    },
-    "null": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/authorises",
-      "@type": "@id"
     },
     "poBox": {
       "@container": "@set",

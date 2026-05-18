@@ -355,6 +355,18 @@
           "sh:path": "http://data.europa.eu/m8g/scopeOfAttorney"
         },
         {
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.role",
+          "sh:description": {
+            "en": "The function of an Agent within a context."
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/role"
+        },
+        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/9cd324618cd23d028a1afffd25e35fe98f54fa07",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.scopeofattorney",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -365,18 +377,6 @@
             "en": "scope of attorney"
           },
           "sh:path": "http://data.europa.eu/m8g/scopeOfAttorney"
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/ad509cf634d007734447df83456e78a10881b43a",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.Role",
-          "sh:description": {
-            "en": "The function of an Agent within a context."
-          },
-          "sh:name": {
-            "en": "Role"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/role"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/bd4f1cf98007898d10f8173aa59c7e14e3e9ed47",
@@ -391,6 +391,18 @@
           "sh:uniqueLang": "true"
         },
         {
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/d2254b8259635ec986bc7c65b0227299193c6c16",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.role",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The function of an Agent within a context."
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:path": "http://data.europa.eu/m8g/role"
+        },
+        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/d87189e72386e5cd949071a752fda4488e206276",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.authorises",
           "sh:class": "http://xmlns.com/foaf/0.1/Agent",
@@ -401,18 +413,6 @@
             "en": "authorises"
           },
           "sh:path": "http://data.europa.eu/m8g/authorises"
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/e9a7b2b116c4f29c3a50c651aed8a926cbb4abfc",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerofAttorney.Role",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:description": {
-            "en": "The function of an Agent within a context."
-          },
-          "sh:name": {
-            "en": "Role"
-          },
-          "sh:path": "http://data.europa.eu/m8g/role"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#PowerOfAttorneyShape/fd89bbf35524849d9900b9b2a91464b5c5e33483",
@@ -1034,11 +1034,35 @@
           "sh:path": "http://data.europa.eu/m8g/adminUnit"
         },
         {
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/5d7f103641a62a590c3c6d874d2a14987e054924",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit",
+          "sh:description": {
+            "en": "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."
+          },
+          "sh:name": {
+            "en": "administrative unit"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/adminUnit"
+        },
+        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/60bff98f6076f0828e3b73d73fefc7b1eb56b93a",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit",
           "sh:class": "http://data.europa.eu/m8g/AdminUnit",
           "sh:description": {
             "en": "A detailed administrative unit organized in a hierarchy."
+          },
+          "sh:name": {
+            "en": "administrative unit"
+          },
+          "sh:path": "http://data.europa.eu/m8g/adminUnit"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/60bff98f6076f0828e3b73d73fefc7b1eb56b93a",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit",
+          "sh:class": "http://data.europa.eu/m8g/AdminUnit",
+          "sh:description": {
+            "en": "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."
           },
           "sh:name": {
             "en": "administrative unit"
@@ -1238,18 +1262,6 @@
           "sh:path": "http://www.w3.org/ns/locn#fullAddress"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/e7a338c887b80429b787dcd36542f80eca4139e7",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit",
-          "sh:description": {
-            "en": "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."
-          },
-          "sh:name": {
-            "en": "http://data.europa.eu/m8g/adminUnit"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/adminUnit"
-        },
-        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.addressarea",
           "sh:description": {
@@ -1260,18 +1272,6 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#addressArea"
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/f2902f698e24b503d7adf51581b603f1acbc23d9",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.http%3A%2F%2Fdata.europa.eu%2Fm8g%2FadminUnit",
-          "sh:class": "http://data.europa.eu/m8g/AdminUnit",
-          "sh:description": {
-            "en": "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."
-          },
-          "sh:name": {
-            "en": "http://data.europa.eu/m8g/adminUnit"
-          },
-          "sh:path": "http://data.europa.eu/m8g/adminUnit"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa",
