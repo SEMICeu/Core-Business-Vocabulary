@@ -6,15 +6,15 @@ The Core Business Vocabulary provides a minimum set of classes and properties fo
 
 **The current version of the Core Business Vocabulary is [2.3.0](https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0/).**
 
-This specification was produced by the Core Vocabularies Working Group (Business Task Force), following the Process and Methodology for Developing Core Vocabularies, https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/process-and-methodology-developing-core-vocabularies. It has been reviewed by representatives of the Member States of the European Union, PSI publishers, and by other interested parties. Publication of this Final Draft does not imply endorsement by the European Commission or its representatives. On 23 May 2012, the Member State representatives in the ISA Coordination Group have endorsed the Core Business vocabulary v1.00, acknowledging the work and promising to further disseminate it at national level. 
+This specification was produced by the Core Vocabularies Working Group (Business Task Force), following the [Process and Methodology for Developing Core Vocabularies](https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/document/process-and-methodology-developing-core-vocabularies). It has been reviewed by representatives of the Member States of the European Union, PSI publishers, and by other interested parties. Publication of this Final Draft does not imply endorsement by the European Commission or its representatives. On 23 May 2012, the Member State representatives in the ISA Coordination Group have endorsed the Core Business vocabulary v1.00, acknowledging the work and promising to further disseminate it at national level. 
 
-Any problems encountered, or suggestions for new functionalities can be submitted as issues on the Core Business Vocabulary repository on GitHub. A short guideline for submitting issues can be found at https://github.com/SEMICeu/Core-Business-Vocabulary/wiki.
+Any problems encountered, or suggestions for new functionalities can be submitted as issues on the Core Business Vocabulary repository on GitHub. A short guideline for submitting issues can be found at [here](https://github.com/SEMICeu/Core-Business-Vocabulary/wiki).
 
 ## Structure of the repository
 /releases: Core Business releases (1.00, 2.00 etc), each release might have different distributions.
 
 ## License
-Copyright © 2024 European Union. All material in this repository is published under the licence CC-BY 4.0, unless explicitly otherwise mentioned. Any problems encountered, or suggestions for new functionalities can be submitted as issues on the CBV repository on GitHub.
+Copyright © 2026 European Union. All material in this repository is published under the licence CC-BY 4.0, unless explicitly otherwise mentioned. Any problems encountered, or suggestions for new functionalities can be submitted as issues on the CBV repository on GitHub.
 
 ## Webinar Overview
 This section offers an overview of the webinars and events related to the Core Business Vocabulary.
@@ -32,20 +32,25 @@ The table below shows webinars and events related to **latest version of the Cor
 </tr>  
 <tr>  
 <td>  
-<p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/webinar-review-core-vocabularies-and-style-guide-blog-post">Webinar on review of Core Vocabularies and Style Guide Blog post</a></p>  
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/webinar-core-vocabularies-tuesday-2-december-1000am-1200pm-cet">Webinar on the Core Vocabularies</a></p>  
 </td>  
 <td>  
-<p>09/04/2024</p>  
+<p>02/12/2025</p>  
 </td>  
-</tr>  
 <tr>  
 <td>  
-<p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/webinar-review-core-vocabularies">Webinar on review of Core Vocabularies</a></p>  
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/webinar-core-vocabularies-0">Webinar on the Core Vocabularies</a></p>  
 </td>  
 <td>  
-<p>27/10/2023</p>  
+<p>17/06/2025</p>  
 </td>  
-</tr>  
+<tr>  
+<td>  
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/webinar-core-vocabularies">Webinar on the Core Vocabularies</a></p>  
+</td>  
+<td>  
+<p>25/02/2025</p>  
+</td>  
 </tbody>  
 </table>
 
@@ -60,6 +65,22 @@ The table below shows webinars and events related to **previous versions of the 
 </td>  
 <td>  
 <p><strong>Date</strong></p>  
+</td>  
+</tr>
+</tr>
+<tr>  
+<td>  
+<p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/webinar-review-core-vocabularies-and-style-guide-blog-post">Webinar on review of Core Vocabularies and Style Guide Blog post</a></p>  
+</td>  
+<td>  
+<p>09/04/2024</p>  
+</td>  
+<tr>  
+<td>  
+<p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/webinar-review-core-vocabularies">Webinar on review of Core Vocabularies</a></p>  
+</td>  
+<td>  
+<p>27/10/2023</p>  
 </td>  
 </tr>  
 <tr>  
