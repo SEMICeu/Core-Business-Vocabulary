@@ -104,16 +104,14 @@
   shacl:path <http://www.w3.org/ns/locn#addressArea> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/5d7f103641a62a590c3c6d874d2a14987e054924> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit";
-  shacl:description "A detailed administrative unit organized in a hierarchy."@en,
-    "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."@en;
+  shacl:description "The adminUnit relationship links an Address with the Administrative Unit class."@en;
   shacl:name "administrative unit"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data.europa.eu/m8g/adminUnit> .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/60bff98f6076f0828e3b73d73fefc7b1eb56b93a> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit";
   shacl:class <http://data.europa.eu/m8g/AdminUnit>;
-  shacl:description "A detailed administrative unit organized in a hierarchy."@en,
-    "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."@en;
+  shacl:description "The adminUnit relationship links an Address with the Administrative Unit class."@en;
   shacl:name "administrative unit"@en;
   shacl:path <http://data.europa.eu/m8g/adminUnit> .
 
@@ -282,10 +280,8 @@
   shacl:closed false;
   shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/20e72c692090ea97cd328f03c7904cac5e165bc2>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/2a651d971ab01625b0570bd938c92580ad8fea8b>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/322371a77364a50f049d46180f6192532eea26dc>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/3fd45972245296a986ad73d13d316ec9d1e5533f>,
-    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/484a62152227f981b9f1377e7b0d39f16f7b7433>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/803b12f15a761ac251e073bd57d79d58d35c7186>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c>,
@@ -305,12 +301,6 @@
   shacl:name "name"@en;
   shacl:path dc:title .
 
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/2a651d971ab01625b0570bd938c92580ad8fea8b> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Agent.issuedby";
-  shacl:description "Agent legally responsible for the Identifier."@en;
-  shacl:name "issued by"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path dc:creator .
-
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Agent.type";
   shacl:class skos:Concept;
   shacl:description "A classification assigned to an Agent."@en;
@@ -322,12 +312,6 @@
   shacl:name "member of"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path org:memberOf .
-
-<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/484a62152227f981b9f1377e7b0d39f16f7b7433> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Agent.issuedby";
-  shacl:class <http://www.w3.org/ns/adms#Identifier>;
-  shacl:description "Agent legally responsible for the Identifier."@en;
-  shacl:name "issued by"@en;
-  shacl:path dc:creator .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Agent.type";
   shacl:description "A classification assigned to an Agent."@en;
@@ -410,7 +394,9 @@
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/096325844c6299e4e8f8de07ccd7c480bb413148>,
+    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/158700eff342de3a72b62edaca175552a9c8fbf5>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/177b1655394ab349226e1530547bb130c911016d>,
+    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/32486e284c1eeb4feb4958f7e6609a7aa1aea13d>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/705b5343471cceaf51c2606a4538eba15caad2b1>;
   shacl:targetClass skos:ConceptScheme .
 
@@ -420,11 +406,25 @@
   shacl:nodeKind shacl:Literal;
   shacl:path dc:title .
 
+<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/158700eff342de3a72b62edaca175552a9c8fbf5> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchema.ownedBy";
+  shacl:description """The agent owning or managing rights over the identifier scheme.
+"""@en;
+  shacl:name "ownedBy"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path dc:rightsHolder .
+
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/177b1655394ab349226e1530547bb130c911016d> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchema.schemaname";
   shacl:description "Name of the schema used to construct the identifier."@en;
   shacl:name "schema name"@en;
   shacl:path dc:title;
   shacl:uniqueLang true .
+
+<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/32486e284c1eeb4feb4958f7e6609a7aa1aea13d> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchema.ownedBy";
+  shacl:class foaf:Agent;
+  shacl:description """The agent owning or managing rights over the identifier scheme.
+"""@en;
+  shacl:name "ownedBy"@en;
+  shacl:path dc:rightsHolder .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/705b5343471cceaf51c2606a4538eba15caad2b1> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchema.schemaname";
   shacl:datatype rdf:langString;
@@ -438,6 +438,8 @@
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/0e1d96677e25734334c96bd3026a08a89d3b5dc8>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/16a39520e446e5b794a01467eaeb5fe3e10ab704>,
+    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/2a651d971ab01625b0570bd938c92580ad8fea8b>,
+    <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/484a62152227f981b9f1377e7b0d39f16f7b7433>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/651087eb9e44542e65790dd9923a0400042fed58>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf>,
     <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/e17cae15cd3a2db8b6c9aeef586141ff8b261cab>,
@@ -467,6 +469,18 @@
   shacl:name "date issued"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path dc:issued .
+
+<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/2a651d971ab01625b0570bd938c92580ad8fea8b> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Identifier.issuedby";
+  shacl:description "Agent legally responsible for the Identifier."@en;
+  shacl:name "issued by"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path dc:creator .
+
+<https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/484a62152227f981b9f1377e7b0d39f16f7b7433> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Identifier.issuedby";
+  shacl:class foaf:Agent;
+  shacl:description "Agent legally responsible for the Identifier."@en;
+  shacl:name "issued by"@en;
+  shacl:path dc:creator .
 
 <https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/651087eb9e44542e65790dd9923a0400042fed58> rdfs:seeAlso "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Identifier.schema";
   shacl:description "The schema used to construct the identifier."@en;

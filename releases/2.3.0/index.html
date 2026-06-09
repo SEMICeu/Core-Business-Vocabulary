@@ -84,7 +84,7 @@
 		    name: "Anastasia Sofou",
 		      
 		      
-		    company: "European Commission",
+		    company: "DIGIT-EXT",
 		      
 		      
 		    }
@@ -135,7 +135,17 @@
 	
 	
 		]
-		
+			
+    var myowners = [
+            {
+                value: "SEMIC",
+                href: "https://interoperable-europe.ec.europa.eu/collection/semic-support-centre",
+            },
+            {
+                value: "Georges Lobo (DIGIT)",
+            }
+		]
+	
 	function quickreference() {
 		$('#table-quickoverview').DataTable();
     };
@@ -160,6 +170,12 @@
       publishDate: "2026-05-12",
       editors: myeditors,
       authors: myauthors,
+	  otherLinks: [
+        {
+          key: "Owners:",
+          data: myowners
+        }
+	  ],
       github: "SEMICeu/Core-Business-Vocabulary",
       shortName: "Core Business Vocabulary",
       xref: "web-platform",
@@ -230,7 +246,7 @@
     </style>
      
     <p class="copyright">
-        Copyright © 2024
+        Copyright © 2026
     </p>
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -398,9 +414,9 @@ This specification uses the following prefixes to shorten the URIs for readabili
                 
     </div>
     <div>
-        <a href="https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0/html/overview.jpg"
+        <a href="./html/overview.jpg"
            target="_blank">
-            <img src="https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0/html/overview.jpg"/>
+            <img src="./html/overview.jpg"/>
         </a>
     </div>
 </section>
@@ -525,7 +541,6 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                         <dd>
                             For this entity the following properties are defined: <a href="#Address.addressarea">address area</a>
                             , <a href="#Address.addressID">address ID</a>
-                            , <a href="#Address.administrativeunit">administrative unit</a>
                             , <a href="#Address.administrativeunit">administrative unit</a>
                             , <a href="#Address.administrativeunitlevel1">administrative unit level 1</a>
                             , <a href="#Address.administrativeunitlevel2">administrative unit level 2</a>
@@ -697,50 +712,7 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    A detailed administrative unit organized in a hierarchy.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Address.administrativeunit"
-                                typeof="rdf:Property"
-                                resource="http://data.europa.eu/m8g/adminUnit"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20administrative unit%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Address.administrativeunit" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/m8g/adminUnit"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/adminUnit"
-                                           data-placement="right">
-                                        administrative unit</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#AdministrativeUnit" data-placement="right">Administrative Unit</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class.
+                                    The adminUnit relationship links an Address with the Administrative Unit class.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1638,6 +1610,7 @@ The key difference between a locator designator and a locator name is that the l
                         <dd>
                             For this entity the following properties are defined: <a href="#Identifier.dateissued">date issued</a>
                             , <a href="#Identifier.identifies">identifies</a>
+                            , <a href="#Identifier.issuedby">issued by</a>
                             , <a href="#Identifier.notation">notation</a>
                             , <a href="#Identifier.schema">schema</a>
                             , <a href="#Identifier.schemaagency">schema agency</a>
@@ -1752,6 +1725,49 @@ The key difference between a locator designator and a locator name is that the l
                                 </td>
                                 <td property="rdfs:comment">
                                     The entity that is referenced by the Identifier.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.issuedby"
+                                typeof="rdf:Property"
+                                resource="http://purl.org/dc/terms/creator"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20issued by%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Identifier.issuedby" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/creator"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/creator"
+                                           data-placement="right">
+                                        issued by</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Agent" data-placement="right">Agent</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Agent legally responsible for the Identifier.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -2760,7 +2776,6 @@ They are included in the Core Vocabulary because they form the range of properti
                     
                         <dd>
                             For this entity the following properties are defined: <a href="#Agent.headof">head of</a>
-                            , <a href="#Agent.issuedby">issued by</a>
                             , <a href="#Agent.memberof">member of</a>
                             , <a href="#Agent.name">name</a>
                             , <a href="#Agent.type">type</a>
@@ -2832,49 +2847,6 @@ They are included in the Core Vocabulary because they form the range of properti
                                 </td>
                                 <td property="rdfs:comment">
                                     Indicates that a person (or other agent) is the leader or formal head of the Organization.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Agent.issuedby"
-                                typeof="rdf:Property"
-                                resource="http://purl.org/dc/terms/creator"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20issued by%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23Agent.issuedby" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/creator"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/creator"
-                                           data-placement="right">
-                                        issued by</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Identifier" data-placement="right">Identifier</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Agent legally responsible for the Identifier.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -3170,7 +3142,8 @@ They are included in the Core Vocabulary because they form the range of properti
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#IdentifierSchema.schemaname">schema name</a>
+                            For this entity the following properties are defined: <a href="#IdentifierSchema.ownedBy">ownedBy</a>
+                            , <a href="#IdentifierSchema.schemaname">schema name</a>
                             .
                     </dd>
                 
@@ -3209,6 +3182,50 @@ They are included in the Core Vocabulary because they form the range of properti
                         </tr>
                     </thead>
                     <tbody class="supertype">
+                        
+                            <tr id="IdentifierSchema.ownedBy"
+                                typeof="rdf:Property"
+                                resource="http://purl.org/dc/terms/rightsHolder"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Business-Vocabulary/issues/new?title=Issue%20for%20ownedBy%20in%20Identifier Schema&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0%23IdentifierSchema.ownedBy" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/rightsHolder"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/rightsHolder"
+                                           data-placement="right">
+                                        ownedBy</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Agent" data-placement="right">Agent</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The agent owning or managing rights over the identifier scheme.
+
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
                         
                             <tr id="IdentifierSchema.schemaname"
                                 typeof="rdf:Property"
@@ -3932,7 +3949,7 @@ The shapes can be found <a href="./shacl/core-business-ap-SHACL.ttl">here</a>.
 The RDF representation of the Core Business Vocabulary is available <a href="./voc/core-business-ap.ttl">here</a>.
 
 <h3>UML representation</h3>
-The UML representation from which the Core Business Vocabulary has been build is available <a href="./uml/CoreVocabularies.EAP">here</a>.
+The UML representation from which the Core Business Vocabulary has been build is available <a href="./uml">here</a>.
 
 <!--
 <h3>Mapping</h3>
@@ -4055,10 +4072,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-					
-						
 					
 						
 					
@@ -4102,16 +4115,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Address.addressID">address ID </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#addressId</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Address">Address</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
-								<td></td>
-								<td><a href="#Address.administrativeunit">administrative unit </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/adminUnit</div></td>
 							</tr>
 						
 					
@@ -4277,10 +4280,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-					
-						
 					
 						
 					
@@ -4298,16 +4297,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Agent.headof">head of </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/org#headOf</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Agent">Agent</a></td>
-								<td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
-								<td></td>
-								<td><a href="#Agent.issuedby">issued by </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/creator</div></td>
 							</tr>
 						
 					
@@ -4427,6 +4416,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -4456,6 +4449,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Identifier.identifies">identifies </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/identifies</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.issuedby">issued by </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/creator</div></td>
 							</tr>
 						
 					
@@ -4496,9 +4499,23 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
 					
 						
 					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#IdentifierSchema">Identifier Schema</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#ConceptScheme</div></td>
+								<td></td>
+								<td><a href="#IdentifierSchema.ownedBy">ownedBy </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/rightsHolder</div></td>
+							</tr>
+						
 					
 						
 							<tr>

@@ -482,6 +482,18 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/158700eff342de3a72b62edaca175552a9c8fbf5",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchema.ownedBy",
+          "sh:description": {
+            "en": "The agent owning or managing rights over the identifier scheme.\r\n"
+          },
+          "sh:name": {
+            "en": "ownedBy"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/rightsHolder"
+        },
+        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/177b1655394ab349226e1530547bb130c911016d",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchema.schemaname",
           "sh:description": {
@@ -492,6 +504,18 @@
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/32486e284c1eeb4feb4958f7e6609a7aa1aea13d",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchema.ownedBy",
+          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
+          "sh:description": {
+            "en": "The agent owning or managing rights over the identifier scheme.\r\n"
+          },
+          "sh:name": {
+            "en": "ownedBy"
+          },
+          "sh:path": "http://purl.org/dc/terms/rightsHolder"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierSchemaShape/705b5343471cceaf51c2606a4538eba15caad2b1",
@@ -560,6 +584,30 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/issued"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/2a651d971ab01625b0570bd938c92580ad8fea8b",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Identifier.issuedby",
+          "sh:description": {
+            "en": "Agent legally responsible for the Identifier."
+          },
+          "sh:name": {
+            "en": "issued by"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/484a62152227f981b9f1377e7b0d39f16f7b7433",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Identifier.issuedby",
+          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
+          "sh:description": {
+            "en": "Agent legally responsible for the Identifier."
+          },
+          "sh:name": {
+            "en": "issued by"
+          },
+          "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#IdentifierShape/651087eb9e44542e65790dd9923a0400042fed58",
@@ -1025,19 +1073,7 @@
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/5d7f103641a62a590c3c6d874d2a14987e054924",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit",
           "sh:description": {
-            "en": "A detailed administrative unit organized in a hierarchy."
-          },
-          "sh:name": {
-            "en": "administrative unit"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/adminUnit"
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/5d7f103641a62a590c3c6d874d2a14987e054924",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit",
-          "sh:description": {
-            "en": "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."
+            "en": "The adminUnit relationship links an Address with the Administrative Unit class."
           },
           "sh:name": {
             "en": "administrative unit"
@@ -1050,19 +1086,7 @@
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit",
           "sh:class": "http://data.europa.eu/m8g/AdminUnit",
           "sh:description": {
-            "en": "A detailed administrative unit organized in a hierarchy."
-          },
-          "sh:name": {
-            "en": "administrative unit"
-          },
-          "sh:path": "http://data.europa.eu/m8g/adminUnit"
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AddressShape/60bff98f6076f0828e3b73d73fefc7b1eb56b93a",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Address.administrativeunit",
-          "sh:class": "http://data.europa.eu/m8g/AdminUnit",
-          "sh:description": {
-            "en": "The adminUnit relationship links an Address with the Administrative Unit class.The adminUnit relationship links an Address with the Administrative Unit class."
+            "en": "The adminUnit relationship links an Address with the Administrative Unit class."
           },
           "sh:name": {
             "en": "administrative unit"
@@ -1405,18 +1429,6 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/2a651d971ab01625b0570bd938c92580ad8fea8b",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Agent.issuedby",
-          "sh:description": {
-            "en": "Agent legally responsible for the Identifier."
-          },
-          "sh:name": {
-            "en": "issued by"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/creator"
-        },
-        {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/322371a77364a50f049d46180f6192532eea26dc",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Agent.type",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1439,18 +1451,6 @@
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/org#memberOf"
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/484a62152227f981b9f1377e7b0d39f16f7b7433",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#Agent.issuedby",
-          "sh:class": "http://www.w3.org/ns/adms#Identifier",
-          "sh:description": {
-            "en": "Agent legally responsible for the Identifier."
-          },
-          "sh:name": {
-            "en": "issued by"
-          },
-          "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
           "@id": "https://semiceu.github.io/Core-Business-Vocabulary/releases/2.3.0#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b",

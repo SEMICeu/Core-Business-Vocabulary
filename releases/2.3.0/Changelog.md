@@ -1,4 +1,4 @@
-# Core Criterion and Core Evidences Vocabulary Changelog
+# Core Business Vocabulary Changelog
 
 ## Introduction
 
